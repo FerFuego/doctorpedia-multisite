@@ -1,0 +1,555 @@
+{
+    "key": "group_601a931f4ed4d",
+    "title": "Module: Affiliate Hero",
+    "fields": [
+        {
+            "key": "field_601a933b899b3",
+            "label": "Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6033ef1acfc72",
+            "label": "Content Type",
+            "name": "affiliate__content_type",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Text Content",
+            "ui_off_text": "Form"
+        },
+        {
+            "key": "field_603402caf79c1",
+            "label": "Media Type",
+            "name": "affiliate__media_type",
+            "type": "true_false",
+            "instructions": "If <strong>video<\/strong> is chosen, the image will serve as a placeholder for the uploaded video.<br>\r\nIf you choose <strong>image<\/strong> you only have to load the image in the field.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Image",
+            "ui_off_text": "Video"
+        },
+        {
+            "key": "field_60411e4b8e823",
+            "label": "Video Type",
+            "name": "affiliate__video-type",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Video Popup",
+            "ui_off_text": "Video Autoplay"
+        },
+        {
+            "key": "field_601a935b899b4",
+            "label": "Image",
+            "name": "affiliate__image",
+            "type": "image",
+            "instructions": "<strong>This field is required in both cases<\/strong> (Video \/ Image)",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_603402caf79c1",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_60411e4b8e823",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6054ffc93a26a",
+            "label": "Image Mobile",
+            "name": "affiliate__image_mobile",
+            "type": "image",
+            "instructions": "<strong>This field is required in both cases<\/strong> (Video \/ Image)",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_603402caf79c1",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_60411e4b8e823",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_601a93b9899b5",
+            "label": "Video",
+            "name": "affiliate__video",
+            "type": "url",
+            "instructions": "Works with youtube and vimeo.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_603402caf79c1",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_60411e4b8e823",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_60411ef18e824",
+            "label": "Video Autoplay",
+            "name": "affiliate__video_autoplay",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_603402caf79c1",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_60411e4b8e823",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6033eed1cfc71",
+            "label": "Text Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6033ef1acfc72",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6033efafcfc73",
+            "label": "Title",
+            "name": "affiliate__title",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "visual",
+            "toolbar": "underline_only",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_6033efcccfc74",
+            "label": "Copy",
+            "name": "affiliate__copy",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6040f6d1b8e19",
+            "label": "CTA Content",
+            "name": "affiliate__cta_content_type",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Buttons",
+            "ui_off_text": "Form"
+        },
+        {
+            "key": "field_6040f721b8e1a",
+            "label": "Form",
+            "name": "affiliate__form_cta",
+            "type": "forms",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6040f6d1b8e19",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "allow_null": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_60415169a77ae",
+            "label": "Sponsor Image",
+            "name": "sponsor__image_cta",
+            "type": "image",
+            "instructions": "This content will appear below the form.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6040f6d1b8e19",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6041517da77af",
+            "label": "Sponsor Text",
+            "name": "sponsor__text_cta",
+            "type": "text",
+            "instructions": "This content will appear below the form.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6040f6d1b8e19",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6033efe5cfc75",
+            "label": "Buttons",
+            "name": "affiliate__buttons",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6040f6d1b8e19",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 2,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6033eff2cfc76",
+                    "label": "Button",
+                    "name": "affiliate__button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_6033eaf417fd8",
+            "label": "Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6033ef1acfc72",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6033eea9cfc70",
+            "label": "Form",
+            "name": "affiliate__form",
+            "type": "forms",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "allow_null": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_6022f0c481285",
+            "label": "Sponsor Image",
+            "name": "sponsor__image",
+            "type": "image",
+            "instructions": "This content will appear below the form.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6022f0d981286",
+            "label": "Sponsor Text",
+            "name": "sponsor__text",
+            "type": "text",
+            "instructions": "This content will appear below the form.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6036b13180442",
+            "label": "Appearance",
+            "name": "appearance",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5e4414c9373cb"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1616183267
+}

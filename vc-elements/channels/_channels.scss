@@ -1,0 +1,131 @@
+.channels-container {
+    margin: 0 auto 100px;
+    max-width: 100%;
+    .header {
+        padding: 25px 0 !important;
+        margin-top: 0;
+    }
+    .next, .prev {
+        top: 40% !important;
+    }
+    .prev {
+        left: -35px;
+    }
+    .single-channel-item-container {
+        padding-right: 10px;
+        .single-channel-item {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: flex-end;
+            height: 376px;
+            padding: 30px;
+            position: relative;
+            width: 270px;
+            max-width: 270px;
+            .cat-shadow {
+                background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.71) 24.7%, rgba(0, 0, 0, 0) 45.07%); /* Standard syntax (must be last) */
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                z-index: 1;
+                -webkit-transition: background-color .5s ease-in-out;
+                -moz-transition: background-color .5s ease-in-out;
+                transition: background-color .5s ease-in-out;
+
+                &:hover {
+                    background-color: rgba(0,0,0,0.4);
+                }
+            }
+            .content {
+                min-width: 210px;
+                position: relative;
+                z-index: 2;
+                h2 {
+                    background-color: $baby-blue;
+                    color: $white;
+                    line-height: 24px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    text-align: center;
+                    width: 100%;
+                }
+                h3 {
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+        }
+    
+       /*  &:nth-child(1) {
+            padding-left: 0;
+        }
+        
+        &:nth-child(4n+1) {
+            padding-left: 0;
+        }
+        
+        &:nth-child(4n) {
+            padding-right: 0;
+        } */
+    }
+}
+
+.channels-taxonomy {
+    .fix-height {
+        height: 140px !important;
+    }
+    .categories-container {
+        .header {
+         padding-top: 130px !important;   
+         @media ( max-width: $mobile ) {
+             padding-top: 25px !important;
+         }
+        }
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .doctorpedia-channels-pro {
+        .image-slider .image-slider__container {
+            justify-content: center;
+            .slick-list {
+                justify-content: center;
+                display: block !important;
+                .slick-track {
+                    justify-content: center;
+                }
+            }
+        }
+        .single-channel-item-container {
+            justify-content: center !important;
+            display: block !important;
+            .single-channel-item {
+                width: 100%;
+                max-width: 100% !important;
+                .content {
+                    min-width: 270px !important;
+                }
+            }
+        }
+    }
+    .channels-container .single-channel-item-container .single-channel-item .content {
+        min-width: 270px !important;
+    }
+    .channels-container {
+        margin-bottom: 30px;
+    }
+}
+
+@media ( max-width: 320px ) {
+    .channels-container .single-channel-item-container .single-channel-item .content {
+        min-width: 210px !important;
+    }
+}

@@ -1,0 +1,242 @@
+/*--------- RECENT BLOG POSTS ----------*/
+
+.product-review-container {
+	padding: 50px 0;
+	position: relative;
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+        padding: 0px 15px;
+        width: 100%;
+
+		h2 {
+            font-size: 30px;
+            border-bottom: 0px;
+            padding: initial;
+			color: inherit;
+			
+			//Tablet
+			@media(max-width: $tablet){
+				font-size: 23px;
+				padding: 0;
+			}
+
+			//Tablet
+			@media(max-width: $mobile){
+				font-size: 25px;
+			}
+		}
+
+		a {
+			color: $baby-blue;
+			text-decoration: underline;
+			align-self: center;
+
+			//Mobile 
+			@media(max-width: $mobile){
+				display: none;
+			}
+			
+		}
+	}
+	.body {
+		display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        
+        .prev {
+            margin-left: -35px;
+            padding-right: 15px;
+            // Mobile
+            @media(max-width: $mobile){
+                display: none;
+            }
+        }
+
+        .next {
+            margin-right: -35px;
+            padding-left: 15px;
+            // Mobile
+            @media(max-width: $mobile){
+                display: none;
+            }
+        }
+
+		//Mobile
+        @media(max-width: $mobile){
+            flex-direction: column;
+            .prev, .next{
+                display: none!important;
+            }
+        }
+
+    }
+    .product-review-article{
+        width: 100%;
+    }
+}
+
+
+/*--------- END RECENT BLOG POSTS ----------*/
+
+/*--------- BLOG POST COMPONENT ----------*/
+
+.product-post-preview {
+    background-color: $white;
+    display: flex !important;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 0 15px;
+
+    .app-post-content{
+        margin: 0 10px;
+        //Mobile
+        @media(max-width: $mobile){  
+            flex-basis: auto;
+            flex-grow: unset;
+            margin: 15px;
+        }
+    }
+
+    //Mobile
+    @media(max-width: $mobile){  
+        flex-basis: auto;
+        flex-grow: unset;
+    }
+    
+    
+    .post-thumbnail {
+        width: 100%;
+       
+    }
+    .img-app {
+        height: 225px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .content{
+        padding: 10px 0;
+        flex: 1 1 auto;
+        padding-bottom: 0;
+        h2 {
+            color: $primary-pink;
+            font-size: 25px;
+            flex-grow: 1;
+            font-weight: $regular;
+            line-height: 1.5em;
+            margin-bottom: 10px;
+            margin-top: 20px;
+
+            //Tablet
+            @media(max-width: $tablet){  
+                font-size: 18px;
+            }
+            //Mobile
+			@media (max-width: $mobile){
+				font-size: 25px;
+			}	
+        }
+        p{
+            font-size: 16px;
+            font-family: Arial;
+            margin-bottom: 10px;
+            //Tablet
+            @media(max-width: $tablet){  
+                font-size: 14px;
+            }
+            //Mobile
+			@media (max-width: $mobile){
+				font-size: 16px;
+			}	
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        height: 110px;
+        padding: 15px 0;
+        width: 100%;
+        //Mobile
+        @media(max-width: $mobile){
+            justify-content: center;
+        }
+
+        .post-author {
+            background-color: $white;
+            border: 2px solid $white;
+            border-radius: 100%;
+            height: auto;
+            width: 90%;
+            display: flex;
+            align-items: center;
+
+            &.first{
+                margin-bottom: 12px;
+            }
+
+            h4{
+                display: inline-block;
+                font-size: 20px;
+                font-family: $primary-font;
+                color: $primary-color;
+                font-weight: $medium;
+                //Tablet
+                @media(max-width: $tablet){
+                    font-size: 14px;
+                }
+
+            }
+            .stars-rating{
+                display: inline-block;
+                img{
+                    width: 15px;
+                    margin-right: 3px;
+                    display: inline-block;
+                    //Tablet
+                    @media(max-width: $tablet){
+                        display: inline-block;
+                    }
+                    //Mobile 
+                    @media(max-width: $mobile){
+                        display: inline-block;
+                    }
+                }
+                label{
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    font-weight: $medium;
+                }
+                .reviews-text{
+                    //Tablet
+                    @media(max-width: $tablet) and (min-width: $mobile){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .external-link{
+		padding: 5px 0;
+        display: block;
+        height: auto!important;
+		a{
+			font-size: 18px;
+			border-bottom: 1px solid $baby-blue;
+			padding-bottom: 3px;
+			color: $baby-blue;
+			margin-right: 25px;
+			//Tablet
+			@media(max-width: $tablet){
+				font-size: 17px;
+			}
+		}
+	}
+}
+
+/*--------- END BLOG POST COMPONENT ----------*/

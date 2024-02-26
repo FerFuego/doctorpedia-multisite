@@ -1,0 +1,315 @@
+/* Profile */
+.author-dashboard {
+    padding-top: 75px;
+
+    // Wrapper
+    &__wrapper {
+        padding-top: 75px;
+    }
+}
+.author-dashboard__bio {
+    position: relative;
+    z-index: 1;
+
+    .author-dashboard__bio-content {
+        // Avatar Container
+        .author-dashboard__bio-avatar-container {
+            max-width: 225px;
+            margin-right: 100px;
+            .author-dashboard__bio-avatar {
+                background-size: cover;
+                background-position: center center;
+                border-radius: 50%;
+                width: 225px;
+                height: 225px;
+                margin-bottom: 30px;
+            }
+
+            .author-dashboard__bio-social {
+               
+                
+                .author-dashboard__bio-social-link {
+                    margin-right: 12px;
+                    max-width: 47px;
+                    margin-bottom: 12px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        // Description Container
+        .author-dashboard__bio-description {
+
+            // Title
+            .author-dashboard__bio-description-title {
+                font-size: 40px;
+                line-height: 49px;
+                color: $primary-color;
+                margin-bottom: 10px;
+            }
+            
+            // Subtitle
+            .author-dashboard__bio-description-subtitle {
+                font-size: 28px;
+                color: $black;
+                margin-bottom: 30px;
+            }
+
+            // Copy
+            .author-dashboard__bio-description-copy {
+                /* margin-bottom: 85px; */
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-family: Arial;
+                }
+            
+                a {
+                    color: $baby-blue;
+                    font-weight: $medium;
+                    font-size: 18px;
+                    border-bottom: 1px solid $baby-blue;
+                    padding-bottom: 5px;
+                    font-family: Arial;
+
+                }
+            }
+
+            .author-dashboard__bio-education, .author-dashboard__bio-certifications {
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 25px;
+                    font-weight: $light;
+                    padding-bottom: 15px;
+                    font-family: Arial;
+
+            
+                }
+
+                ul {
+                    margin-left: 20px;
+                    li {
+                        font-size: 18px;
+                        font-family: Arial;
+                        list-style: disc;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-family: Arial;
+                }
+            
+                a {
+                    color: $baby-blue;
+                    font-weight: $medium;
+                    font-size: 18px;
+                    border-bottom: 1px solid $baby-blue;
+                    padding-bottom: 5px;
+                    font-family: Arial;
+
+                }
+            }
+
+            .author-dashboard__bio-certifications {
+                padding-bottom: 30px;
+            }
+        }
+
+        @media ( max-width: 768px ) {
+            flex-direction: column;
+            .author-dashboard__bio-avatar-container {
+                max-width: 100%;
+                margin-right: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .author-dashboard__bio-description {
+                margin: 30px 20px;
+                &-title {
+                    text-align: center;
+                }
+                &-subtitle {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+/* Body */
+.author-container {
+    background-color: #F7F7F7;
+    .body {
+        padding-top: 20px;
+        h2 {
+            margin-bottom: 0 !important;
+            margin-top: 50px !important;
+            font-size: 30px !important;
+            font-weight: $regular !important;
+            line-height: 60px !important;
+        }
+        .author-posts-container {
+            h4 {
+                font-family: $primary-font;
+                font-size: 34px;
+                font-weight: 400;
+                padding: 50px 0;
+            }
+            @media ( max-width: 1024px ){
+                justify-content: center;
+            }
+            .author-post-preview {
+                flex: none;
+                margin: 10px;
+                max-width: 346px;
+                width: 100%;
+                h4 {
+                    color: $baby-blue;
+                    border-bottom: 0!important;
+                    padding-bottom: 15px!important;
+                    padding-top: 0!important;
+                    text-align: left;
+                    font-size: 18px;
+                    font-weight: $regular;
+                    width: 100%;
+                }
+                h3 {
+                    color: #000;
+                    font-size: 20px !important;
+                    flex-grow: 1;
+                    font-weight: $regular;
+                    line-height: 26px;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .footer {
+                    img {
+                        margin-right: 10px;
+                    }
+                    .author {
+                        font-size: 15px;
+                        font-weight: $medium;
+                        color: #5d5d5d;
+                    }
+                }
+            
+                &:nth-child(1) {
+                    margin-left: 0 !important;
+                }
+                &:nth-child(3n+1) {
+                    margin-left: 0;
+                }
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+                @media ( max-width: 1200px ) {
+                    &:nth-child(1) {
+                        margin-left: 0;
+                    }
+                    &:nth-child(2n+1) {
+                        margin-left: 0;
+                        margin-right: 10px;
+                    }
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                        margin-left: 10px;
+                    }
+                }
+                @media ( max-width: 1024px ) {
+                    &:nth-child(1) {
+                        margin-left: 10px!important;
+                    }
+                    &:nth-child(2n+1) {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                    &:nth-child(2n) {
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                } 
+            }
+        }
+    }
+}
+/* Map */
+.body-clinic {
+    width: 100%;
+    height: auto;
+    .active {
+        display: block;
+    }
+    .map {
+        width: 100%;
+        height: 600px;
+    }
+    .map-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #message p {
+        display: none;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-bottom: 10px;
+    }
+    .updated p {
+        color: green;
+    }
+    .error p {
+        color: red;
+    }
+    .header-map-expert {
+        margin-top: 0;
+        h1 {
+            padding: 0 0 10px 0;
+            margin-bottom: 10px;
+        }
+    }
+}
+/* Reviews */
+.author-app-reviews-container {
+    background-color: #ffffff;
+    h2 {
+        font-weight: $regular !important;
+        font-size: 30px !important;
+        margin: 32px 0;
+    }
+    .author-reviews-container {
+        justify-content: space-between;
+        .app-review-module {
+            h2 {
+                font-weight: $regular !important;
+                font-size: 24px !important;
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .app-review-module__all-scores {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 80%;
+            padding-left: 15px;
+        }
+    }
+}
+.read-more-link {
+    color: $primary-pink;
+    opacity: 1;
+    &:hover {
+        color: $primary-pink;
+        opacity: .7;
+    }
+}

@@ -1,0 +1,493 @@
+{
+    "key": "group_5fdcac4159110",
+    "title": "Page: Doctor Platform Landing Page",
+    "fields": [
+        {
+            "key": "field_5fdcac5f52a7d",
+            "label": "Content",
+            "name": "landing_flexible-content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5fdcac6db67df": {
+                    "key": "layout_5fdcac6db67df",
+                    "name": "landing_hero",
+                    "label": "Hero",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fdcac9752a7e",
+                            "label": "Hero",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fdccce2aa721"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fdcaee82fe03": {
+                    "key": "layout_5fdcaee82fe03",
+                    "name": "landing_plataform",
+                    "label": "Plataform",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fdcaf232fe04",
+                            "label": "Plataform",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fdcd3c819baa"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fdcaf8760a01": {
+                    "key": "layout_5fdcaf8760a01",
+                    "name": "landing_video_library",
+                    "label": "Video Library",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fdcafb560a02",
+                            "label": "Video Library",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fdcd54639e3e"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fdcb01f5a56e": {
+                    "key": "layout_5fdcb01f5a56e",
+                    "name": "landing_services",
+                    "label": "Services",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fdcb0365a56f",
+                            "label": "Services",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fdcd7a47a513"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fdcb053c5cd3": {
+                    "key": "layout_5fdcb053c5cd3",
+                    "name": "landing_testimonials",
+                    "label": "Testimonials",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fdcb09ec5cd4",
+                            "label": "Testimonials",
+                            "name": "testimonials",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fdcb20e67674"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fdce98381ab3": {
+                    "key": "layout_5fdce98381ab3",
+                    "name": "landing_needs",
+                    "label": "Needs",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fdce99281ab4",
+                            "label": "Needs",
+                            "name": "needs",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fdce9f35fee4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fdd0d2cd56d3": {
+                    "key": "layout_5fdd0d2cd56d3",
+                    "name": "landing_video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fdd0d48d56d4",
+                            "label": "Video",
+                            "name": "video",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fdd0cb6c4d2a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fdcb0fbc5cd6": {
+                    "key": "layout_5fdcb0fbc5cd6",
+                    "name": "landing_slide_doctors",
+                    "label": "Slider Doctors",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fe0a0fd51a2a",
+                            "label": "Marquee",
+                            "name": "marquee",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fe0a0925fe71"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fe0b1370fdd7": {
+                    "key": "layout_5fe0b1370fdd7",
+                    "name": "landing_text_image",
+                    "label": "Text Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fe0b1570fdd8",
+                            "label": "Text Image",
+                            "name": "text_image",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fe0b0e3d2e53"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fe0c81cb7724": {
+                    "key": "layout_5fe0c81cb7724",
+                    "name": "landing_cta",
+                    "label": "CTA",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fe0c828b7725",
+                            "label": "CTA",
+                            "name": "cta",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5fe0c7b0b61d6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffca2ffe1a79": {
+                    "key": "layout_5ffca2ffe1a79",
+                    "name": "dd_seo_items_rows",
+                    "label": "SEO Items",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffca358e1a7a",
+                            "label": "SEO Items Rows",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5ffca36fe1a7b",
+                            "label": "SEO Items rows",
+                            "name": "seo_items",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ff73b794f464"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffca3ac7cfe7": {
+                    "key": "layout_5ffca3ac7cfe7",
+                    "name": "dd_seo_find_doctors",
+                    "label": "SEO Find Doctors",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffca3bf7cfe8",
+                            "label": "SEO Find Doctors",
+                            "name": "seo_find_doctors",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ff742e8b6ae3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffca3e47cfe9": {
+                    "key": "layout_5ffca3e47cfe9",
+                    "name": "dd_seo_faqs",
+                    "label": "SEO Faqs",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffca3fe7cfea",
+                            "label": "SEO Faqs",
+                            "name": "seo_faqs",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ff86fca1166e"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60b769ef28683": {
+                    "key": "layout_60b769ef28683",
+                    "name": "featured_videos",
+                    "label": "Featured Videos",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60b76a0028684",
+                            "label": "Featured Videos",
+                            "name": "featured_videos",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_60a55d464c71a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page_templates\/landing_page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1622633075
+}

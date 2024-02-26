@@ -1,0 +1,145 @@
+/*--------- NEWSLETTER ----------*/
+
+
+.newsletter {
+	padding: 80px 200px;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	// Tablet
+	@media(max-width: $tablet){
+		padding: 80px 10px;
+		width: 85%;
+	}
+
+	//Mobile
+	@media(max-width: $mobile){
+		flex-direction: column;
+		padding: 50px 0;
+		text-align: center;
+		img {
+			margin: auto;
+			padding-bottom: 15px;
+			
+		}
+		h1{
+			margin-bottom: 10px;
+		}
+	}
+
+	img {
+		width: 150px;
+	}
+	
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-left: 30px;
+
+		//Mobile
+		@media(max-width: $mobile){
+			padding-left: 0;
+		}
+		@media screen and (min-width:0\0) { 
+			/* Styles for IE9, IE10, IE11  */
+			width: 100%;
+		}
+	}
+
+	h1 {
+		color: $primary-color;
+		font-size: 27px;
+		font-weight: $regular;
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 15px;
+
+		//Mobile
+		@media(max-width: $mobile){
+			margin-bottom: 25px;
+		}
+			
+	}
+
+	.input-container {
+		display: flex;
+		justify-content: space-between;
+		
+		input[type=text], input[type=email] {
+			width: 100%;
+			background-color: $off-white;
+			border: 0;
+			font-weight: $regular;
+			&::-webkit-input-placeholder {
+					color: $black;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					color: $black;  
+				}
+				&::-moz-placeholder {  /* Firefox 19+ */
+					color: $black;  
+				}
+				&:-ms-input-placeholder {  
+					color: $black; 
+				}
+		}
+		button, input[type=submit]{
+			margin-left: 15px;
+			font-weight: $light;
+			padding: 6px 25px;
+
+			//Mobile
+			@media(max-width: $mobile){
+				margin-left: 0;
+			}
+		}
+
+		//mailchimp
+		#mc_embed_signup, form, #mc_embed_signup_scroll{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			//Mobile
+			@media(max-width: $mobile){
+				display: block;
+			}
+		}
+
+		#mc_embed_signup_scroll{
+			display: flex;
+			//Mobile
+			@media(max-width: $mobile){
+				display: block;
+			}
+		}
+
+		//Mobile
+		@media(max-width: $mobile){
+			display: block;
+			input {
+				
+				margin-bottom: 15px;
+				padding: 11px 22px;
+				&::-webkit-input-placeholder {
+					text-align: center;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					text-align: center;  
+				}
+				&::-moz-placeholder {  /* Firefox 19+ */
+					text-align: center;  
+				}
+				&:-ms-input-placeholder {  
+					text-align: center; 
+				}
+			}
+		}
+	}
+}
+
+
+/*--------- END NEWSLETTER ----------*/

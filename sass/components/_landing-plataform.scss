@@ -1,0 +1,187 @@
+.m-landing-plataform {
+    width: 100%;
+    position: relative;
+    top: -110px;
+    //right: 0;
+    max-width: 1400px;
+    margin: 0px auto;
+
+    &__primary_box {
+        width: 85%;
+        margin: 0px auto;
+        background-color: $white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 35px;
+        font-family: $primary-font;
+        text-align: center;
+        color: $black;
+
+        @media (max-width: $tablet) {
+            width: 90%
+        }
+    }
+
+    &__title {
+        font-weight: $normalbold;
+        font-size: 32px;
+        line-height: 41px;
+        letter-spacing: 1px;
+        display: block;
+        width: 64%;
+        margin: 0px auto;
+        margin-bottom: 20px;
+
+        @media (max-width: $tablet) {
+            width: 90%
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    &__copy {
+        font-weight: $light;
+        font-size: 20px;
+        line-height: 26px;
+        display: block;
+        width: 50%;
+        margin: 0px auto;
+
+        @media (max-width: $tablet) {
+            width: 80%
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 16px;
+            line-height: 22px;
+            width: auto;
+        }
+    }
+
+    &__secondary_box {
+        width: 100%;
+        margin-bottom: 53px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        @media(max-width: $mobile) {
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .img-box-platform[index="1"] {
+            margin-top: 50px;
+            max-width: 248px;
+
+            @media (max-width: $mobile) {
+                margin-top: initial;
+            }
+
+            @media (max-width: 1100px) {
+                width: 20%;
+            }
+
+            @media (max-width: $mobile) {
+                width: 100%;
+            }
+        }
+
+        .img-box-platform[index="2"] {
+            max-width: 609px;
+
+            @media (max-width: 1100px) {
+                width: 40%;
+            }
+
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+
+        .img-box-platform[index="3"] {
+            position: relative;
+            padding-top: 50px;
+            max-width: 200px;
+
+            span {
+                display: block;
+                position: absolute;
+                top: 18px;
+                right: -34px;
+                width: 83px;
+                height: 83px;
+                background: #F6F7F9;
+                border-radius: 100%;
+                z-index: 1;
+
+                @media (max-width: $mobile) {
+                    top: -25px;
+                }
+            }
+
+            @media (max-width: 1100px) {
+                width: 20%;
+            }
+
+            @media (max-width: $mobile) {
+                padding-top: initial;
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            video {
+                @media (max-width: $mobile) {
+                    margin-top: 0 !important;
+                }
+            }
+
+            img{
+                display: block;
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+
+
+    .btn-rounded {
+        display: block !important;
+        cursor: pointer;
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $white;
+        background-color: $primary-pink;
+        padding: 15px 35px;
+        display: initial;
+        transition: .3s all;
+        margin: 0px auto;
+        width: 265px;
+
+        img {
+            margin-left: 15px;
+            transition: .3s all;
+            transform: translateY(1px);
+        }
+
+        &:hover {
+            img {
+                transform: translateY(1px) translateX(5px);
+            }
+        }
+    }
+}

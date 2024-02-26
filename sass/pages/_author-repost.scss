@@ -1,0 +1,199 @@
+.author-repost-container {
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 13px;
+    right: 0;
+    .author-repost-link {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.33px;
+        color: #767676;
+    
+        svg {
+            margin-right: 10px;
+            fill: #767676;
+            &:hover {
+                fill: $primary-pink;
+            }
+        }
+
+        &:hover {
+            color: $primary-pink;
+            svg {
+                fill: $primary-pink;
+            }
+        }
+    }
+
+    //mobile
+    @media ( max-width: $mobile ){
+        position: absolute;
+        padding-right: 30px !important;
+        margin-top: -43px !important;
+        right: 0 !important;
+        width: auto !important;
+    }
+}
+
+.single-blog-page .author-repost-container  {
+    margin-top: 0;
+}
+
+.author-repost-profile {
+    position: relative;
+    padding-left: 0;
+    margin-top: 0;
+    right: 0;
+
+    .author-repost-link {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 13px;
+        line-height: 1.5em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.33px;
+        color: #767676;
+    
+        svg {
+            margin-right: 5px;
+            fill: #767676;
+            &:hover {
+                fill: $primary-pink;
+            }
+        }
+
+        &:hover {
+            color: $primary-pink;
+            svg {
+                fill: $primary-pink;
+            }
+        }
+        //mobile
+        @media ( max-width: $mobile ){
+            span {
+                display: none;
+            }
+        }
+    }
+
+    //mobile
+    @media ( max-width: $mobile ){
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+.author-repost-modal {
+    .modal-new_article__box {
+        max-width: 921px;
+        padding: 92px 30px 103px;
+
+        // mobile
+        @media (max-width: $mobile) {
+            margin: 0;
+            height: 100vh;
+        }
+    }
+    .modal-new_article__box-title {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: normal!important;
+        font-size: 36px!important;
+        line-height: 43px!important;
+        text-align: center;
+        color: $black!important;
+        max-width: 528px;
+        margin-bottom: 16px;
+
+        // mobile
+        @media (max-width: $mobile) {
+            font-weight: $regular !important;
+            font-size: 18px !important;
+            line-height: 1.2em !important;
+        }
+    }
+    .author-repost-successful {
+        margin-bottom: 59px;
+    }
+    h3 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 31px;
+        text-align: center;
+        color: #363636;
+        margin-bottom: 51px;
+    }
+    form {
+        display: block;
+        max-width: 576px;
+        width: 100%;
+        textarea {
+            border: 1px solid #B3B3B3;
+            box-sizing: border-box;
+            color: #6C6C6C;
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 23px;
+            height: 182px;
+            padding: 18px;
+            width: 100%;
+
+            // mobile
+            @media (max-width: $mobile) {
+                font-weight: $regular !important;
+                font-size: 14px !important;
+                line-height: 1.5em !important;
+            }
+        }
+    }
+    .modal-new_article__box-cta {
+        margin-right: 26px;
+    }
+    .modal-new_article__box .close-modal {
+        top: 29px;
+        right: 27px;
+
+        // mobile
+        @media ( max-width: $mobile ) {
+            top: 24px;
+            right: 10px;
+        }
+    }
+}
+
+.doctor-profile-load-more {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+    background-color: $primary-pink;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all .3s;
+    margin: 0 auto;
+    width: 145px;
+}
+
+.complete-pagination {
+    background-color: #4fa86b !important;
+}

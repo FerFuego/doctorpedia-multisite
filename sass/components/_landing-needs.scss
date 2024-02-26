@@ -1,0 +1,202 @@
+.m-landing-needs {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-top: 66px;
+    background-color: $white;
+    overflow: hidden;
+    margin-bottom: 25px;
+
+    @media (max-width: $mobile) {
+        margin-bottom: 80px;
+    }
+
+    &__primary_box {
+        width: 100%;
+        max-width: 54%;
+        margin: 0px auto;
+        font-family: $primary-font;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: $tablet) {
+            width: 90%;
+            max-width: 90%;
+        }
+    }
+
+    &__title {
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+        font-weight: $normalbold;
+        font-size: 32px;
+        line-height: 41px;
+        letter-spacing: 1px;
+        color: #232323;
+        margin-bottom: 29px;
+
+        @media (max-width: $mobile) {
+            width: auto;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    &__copy {
+        display: block;
+        font-weight: $light;
+        font-size: 20px;
+        line-height: 1.3em;
+        color: $black;
+        margin-bottom: 65px;
+
+        p {
+            display: block;
+            font-weight: $light;
+            font-size: 20px;
+            line-height: 1.3em;
+            color: $black;
+        }
+
+        strong {
+            font-weight: $bold;
+        }
+
+        @media (max-width: $tablet) {
+            width: 90%;
+            margin: 0px auto;
+            margin-bottom: 65px;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 16px;
+            line-height: 22px;
+            width: auto;
+        }
+    }
+
+    &__slider {
+        width: 80%;
+        margin: 0px auto;
+        margin-bottom: 59px;
+        @import './featured_webs';
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: $mobile) {
+            .site-card {
+                padding: 7.5px;
+            }
+        }
+
+        .slick-arrow{
+            top: 120px;
+            transition: .2s all;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            @media (max-width: $mobile) {
+                display: none !important;
+            }
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            left: -30px;
+            top: 130px;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+        .next {
+            right: -30px;
+            left: auto;
+        }
+    }
+
+    .btn-rounded {
+        display: block !important;
+        cursor: pointer;
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $white;
+        background-color: $primary-pink;
+        padding: 15px 35px;
+        display: initial;
+        transition: .3s all;
+        margin: 0px auto;
+        width: 270px;
+
+        img {
+            margin-left: 15px;
+            transition: .3s all;
+            transform: translateY(1px);
+        }
+
+        &:hover {
+            img {
+                transform: translateY(1px) translateX(5px);
+            }
+        }
+    }
+
+    .square {
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .square[index="1"] {
+        background: linear-gradient(180deg, rgba(243, 243, 243, 0.63) 0%, rgba(225, 225, 225, 0.25) 100%);
+        border-radius: 77px;
+        width: 280.93px;
+        height: 280.93px;
+        transform: rotate(-25.28deg);
+        top: 150px;
+        right: -100px;
+
+        @media (max-width: $mobile) {
+            top: 60px;
+            right: -274px;
+        }
+    }
+
+    .square[index="2"] {
+        width: 176.44px;
+        height: 176.44px;
+        background: linear-gradient(180deg, rgba(241, 241, 241, 0.55) 0%, rgba(225, 225, 225, 0.42) 100%);
+        border-radius: 38px;
+        transform: rotate(-17.34deg);
+        top: 100px;
+        left: -80px;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    .square[index="3"] {
+        width: 336px;
+        height: 336px;
+        background: linear-gradient(180deg, rgba(241, 241, 241, 0.75) 0%, rgba(225, 225, 225, 0.315) 100%);
+        border-radius: 77px;
+        transform: rotate(24.69deg);
+        top: 210px;
+        left: -180px;
+
+        @media (max-width: $mobile) {
+            top: 270px;
+            left: -331px;
+        }
+    }
+
+}

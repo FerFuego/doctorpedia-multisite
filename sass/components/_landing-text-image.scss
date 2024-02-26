@@ -1,0 +1,112 @@
+.m-landing-text-image {
+    width: 100%;
+    padding-bottom: 170px;
+    background-color: $white;
+
+    @media (max-width: $mobile) {
+        padding-bottom: 120px;
+    }
+
+    .container-text-image {
+        width: 75%;
+        max-width: 874px;
+        margin: 0px auto;
+        position: relative;
+
+
+        @media (max-width: $tablet) {
+            width: 90%
+        }
+    }
+
+    &__data-box {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 25px;
+        padding-top: 34px;
+        padding-bottom: 54px;
+        font-family: $primary-font;
+        color: $white;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    &__check {
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 18px;
+    }
+
+    &__title {
+        width: 55%;
+        font-weight: $normalbold;
+        font-size: 26px;
+        line-height: 33px;
+        margin: 0px auto;
+        margin-bottom: 13px;
+
+        @media (max-width: $tablet) {
+            width: 90%;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    &__copy {
+        width: 70%;
+        margin: 0px auto;
+        font-weight: $regular;
+        font-size: 20px;
+        line-height: 24px;
+
+        @media (max-width: $tablet) {
+            width: 90%
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    &__shadow {
+        max-width: 874px;
+        width: 96.5%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(196, 212, 232, 0.22) 0%, #D7E2EE 100%);
+        border-radius: 25px;
+        position: absolute;
+        top: 20px;
+        left: 37px;
+        z-index: 2;
+    }
+
+    &__circle1 {
+        position: absolute;
+        top: -40px;
+        left: -40px;
+        width: 86px;
+        height: 86px;
+        border-radius: 100%;
+        background: rgba(185, 216, 245, 0.38);
+    }
+
+    &__circle2 {
+        position: absolute;
+        top: 50px;
+        right: -34%;
+        width: 402px;
+        height: 402px;
+        border: 3px solid #E5F0FA;
+        border-radius: 100%;
+        z-index: 1;
+    }
+
+}

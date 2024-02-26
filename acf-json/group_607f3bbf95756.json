@@ -1,0 +1,43 @@
+{
+    "key": "group_607f3bbf95756",
+    "title": "Options: Upload Video Method",
+    "fields": [
+        {
+            "key": "field_607f3be2c7b20",
+            "label": "Upload Video Method",
+            "name": "upload_video_method",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Set method to upload videos and storage them",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "URLife",
+            "ui_off_text": "Local"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-upload-video-method"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1618951954
+}

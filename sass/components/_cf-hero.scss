@@ -1,0 +1,185 @@
+.cf-hero {
+    background: linear-gradient(180deg, #F6F7F9 0%, rgba(255, 255, 255, 0.29) 100%);
+    background-image: url('../../img/crowdfunding/bg-hero.svg');
+    background-position: top 130% right;
+    background-repeat: no-repeat;
+    background-size: 47%;
+    height: 600px;
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        max-width: 1440px;
+        padding: 0;
+        .copy {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 131px;
+            width: 50%;
+            h1 {
+                font-family: $primary-font-bold;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 70px;
+                line-height: 90px;
+                color: #333333;
+                margin-bottom: 20px;
+                span {
+                    display: block;
+                    font-family: $primary-font;
+                    font-weight: 300;
+                    font-size: 50px;
+                    line-height: 40px;
+                    color: #333333;
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+            p {
+                font-family: $primary-font;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 135%;
+                color: #333333;
+                margin-bottom: 34px;
+                max-width: 480px;
+            }
+            .btn-download {
+                border-radius: 50px;
+                padding: 16px 30px;
+                font-size: 20px;
+                line-height: 24px;
+                &:hover {
+                    color: $white;
+                }
+            }
+            span {
+                font-family: $primary-font-light-italic;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 135%;
+                color: $black;
+                margin-top: 10px;
+                margin-left: 29px;
+            }
+        }
+        .image {
+            display: block;
+            position: relative;
+            height: 100%;
+            width: 50%;
+            &__picture {
+                position: absolute;
+                width: 100%;
+                max-width: 646px;
+                right: 0;
+                top: 80px;
+                z-index: 1;
+            }
+            &__triangle {
+                position: absolute;
+                right: 0;
+                bottom: -50px;
+                z-index: 2;
+            }
+            &__rocket {
+                position: absolute;
+                bottom: 80px;
+                left: -160px;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+@media ( max-width: 1345px ) {
+    .cf-hero {
+        background-position: top 0% right;
+    }
+}
+
+@media ( max-width: 1300px ) {
+    .cf-hero {
+        background-position: top 0% right;
+        .container {
+            .copy {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 1024px ) {
+    .cf-hero {
+        background: none;
+        background-image: none;
+        .container {
+            padding: 0 15px;
+            .copy {
+                padding-left: 15px;
+            }
+            .image {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                position: relative;
+                width: 100%;
+                &__picture {
+                    display: none;
+                }
+                &__triangle {
+                    display: none;
+                }
+                &__rocket {
+                    position: relative;
+                    bottom: 0;
+                    left: inherit;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 768px ) {
+    .cf-hero {
+        background-image: none;
+        height: auto;
+        padding: 100px 0 0;
+        .container {
+            flex-direction: column;
+            max-width: 100%;
+            padding: 0 15px;
+            .copy {
+                padding-left: 0;
+                max-width: 100%;
+                width: 100%;
+                h1 {
+                    font-size: 45px;
+                    line-height: 64px;
+                    span {
+                        font-size: 40px;
+                    }
+                }
+            }
+            .image {
+                position: relative;
+                &__picture {
+                    display: none;
+                }
+                &__triangle {
+                    display: none;
+                }
+                &__rocket {
+                    position: relative;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,233 @@
+.expert-card {
+    display: flex;
+    background: $white;
+    box-shadow: 0px 4px 10px rgba(96, 96, 96, 0.25);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 365px;
+    min-height: 145px;
+    height: auto;
+    padding: 0 22px;
+    position: relative;
+    flex-direction: column;
+    grid-row-end: span 3;
+    justify-content: space-between;
+    z-index: 1;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__header{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+        min-height: 75px;
+        width: 100%;
+
+        // tablet
+        @media (max-width: $tablet) {
+            min-height: 114px;
+        }
+
+        // mobile
+        @media (max-width: $mobile) {
+            width: 90%;
+            min-height: 90px;
+        }
+        
+        .avatar {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 50%;
+            position: relative;
+            top: -10px;
+            height: 68px;
+            width: 68px;
+        }
+        .data {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 14px;
+            margin-bottom: 10px;
+            width: 100%;
+            a {
+                padding-left: 18px;
+            }
+            h3 {
+                font-family: $primary-font;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: $black;
+                text-transform: capitalize;
+            }
+            p {
+                font-family: $primary-font;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #7B7B7B;
+                min-height: 19px;
+            }
+        }
+        .verified_icon {
+            margin-top: 14px;
+            margin-right: -5px;
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+    &__body{
+        height: 100%;
+        &__contact{
+            p {
+                font-family: $primary-font;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color: #333333;
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 7px;
+
+                img {
+                    position: relative;
+                    margin-right: 13px;
+                    height: 14px;
+                    width: 19px;
+                    top: 2.4px;
+                    right: 0;
+                }
+                a {
+                    color: #333333;
+                }
+            }
+        }
+        &__verified {
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            justify-content: flex-end;
+            p,a {
+                font-family: $primary-font;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #333333;
+                display: flex;
+                align-items: center;
+                display: flex;
+                align-items: flex-start;
+                img {
+                    margin-right: 13px;
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+    &__footer{
+        &__activities {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 15px;
+            margin-bottom: 13px;
+            > a {
+                background: #F8F8F8;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column  ;
+                justify-content: center;
+                align-items: center;
+                transition: .3s;
+                margin-right: 12px;
+                height: 73px;
+                width: 100%;
+                &:last-child {
+                    margin-right: 0;
+                }
+                p {
+                    font-family: $primary-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+
+                    color: #333333;
+                }
+                span {
+                    font-family: $primary-font;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #333333;
+                }
+                &:hover {
+                    background-color: $primary-pink;
+                    p,span {
+                        color: $white;
+                    } 
+                }
+            }
+        }
+        .cta-profile-link {
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 60px;
+            color: $baby-blue;
+        }
+    }
+    @media ( max-width: 1250px) {
+     /*    max-width: none; */
+    }
+    @media ( max-width: 1085px) and (min-width: 1024px) {
+        padding: 0 10px;
+    }
+    @media ( max-width: 768px ) {
+        max-width: 100%;
+    }
+    @media ( max-width: 375px ) {
+        padding: 0 10px;
+        margin: 20px 0;
+        &__footer{
+            &__activities {
+                > a {
+                    margin-right: 5px;
+                    height: 73px;
+                    width: 73px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .cta-profile-link {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 60px;
+        color: $baby-blue;
+        transition: .3s all;
+        background-image: linear-gradient($baby-blue, $baby-blue);
+        background-size: 0% 1px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        &:hover {
+            background-size: 100% 1px;
+        }
+    }
+    @media ( max-width: 320px ) {
+        max-width: 100%;
+    }
+}

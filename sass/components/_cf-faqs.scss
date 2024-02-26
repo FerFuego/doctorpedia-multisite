@@ -1,0 +1,207 @@
+.cf-faqs {
+    display: block;
+    //margin-bottom: 120px;
+    position: relative;
+    z-index: 1;
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+
+        // laptop
+        @media ( max-width: $laptop ) {
+            padding: 0 15px;
+            margin-bottom: 60px;
+        }
+
+        // tablet
+        @media ( max-width: $tablet ) {
+            padding: 0;
+        }
+
+        // sm
+        @media ( max-width: $sm ) {
+            padding: 0 15px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 55px;
+
+        // tablet
+        @media ( max-width: $tablet ) {
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-family: $primary-font-bold;
+        font-weight: $bold;
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        color: #333333;
+
+        // mobile
+        @media ( max-width: $mobile ) {
+            font-size: 28px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        //tablet
+        @media ( max-width: $tablet ) {
+            padding: 25px 0 0;
+            width: 100%;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__left-wrapper {
+        width: 32.25%;
+        max-width: 351px;
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        color: $primary-color;
+    }
+
+    &__list {
+        margin-top: 61px;
+
+    }
+
+    &__list-item {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 0;
+        margin-bottom: 16px;
+        list-style: none;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__right-wrapper {
+        width: 66.85%;
+        max-width: 728px;
+
+    }
+}
+
+.cf-faqs--margin {
+    margin: 0;
+    padding-bottom: 88px;
+}
+
+.faq-card {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background: #F7F7F7;
+    border-radius: 20px;
+    margin-bottom: 26px;
+
+    // tablet
+    @media ( max-width: $tablet ) {
+        max-width: 100%;
+    }
+
+    @media ( max-width: $mobile ) {
+        min-height: initial;
+    }
+
+    &--bg-opaque {
+        background-color: $opaque-grey;
+    }
+    
+    &__title-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 41px;
+
+        @media ( max-width: $mobile ) {
+            padding: 15px 20px;
+        }
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-weight: $semibold;
+        font-size: 22px;
+        line-height: 1.5em;
+        color: $black;
+
+        // mobile
+        @media ( max-width: $mobile ) {
+            font-size: 21px;
+            line-height: 1.2em;
+        }
+    }
+
+    &__description {
+        background-color: $white;
+        border: 2px solid #F7F7F7;
+        border-radius: 0  0 20px 20px;
+        color: $black;
+        display: none;
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 18px;
+        line-height: 1.6em;
+        margin-top: 7px;
+        padding: 35px 41px;
+
+        // mobile
+        @media ( max-width: $mobile ) {
+            font-size: 16px;
+        }
+
+        p {
+            font-family: $primary-font;
+            font-weight: $regular;
+            font-size: 18px;
+            line-height: 1.6em;
+
+            // mobile
+            @media ( max-width: $mobile ) {
+                font-size: 16px;
+            }
+        }
+
+        a {
+            color: $primary-pink;
+            border-bottom: 1px solid $primary-pink;
+        }
+    }
+
+    &__description--line-height {
+        line-height: 1.5em;
+    }
+
+    &__cta {
+        margin-top: 82px;
+        display: inline-block;
+        align-self: flex-end;
+        position: relative;
+        transform: translateX(-26px);
+    }
+
+}

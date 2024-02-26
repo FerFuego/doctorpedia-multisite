@@ -1,0 +1,216 @@
+/*--------- POST SLIDER Module ----------*/
+
+.post-slider-element {
+	position: relative;
+	margin: 50px 0;
+
+	// Mobile
+	@media(max-width: $mobile){
+		margin: 15px 0;
+	}
+	// &.left-title {
+	// 	>h2 {
+	// 		font-size: 30px;
+	// 		color: $black;
+	// 		padding-bottom: 25px;
+	// 		margin-left: 10px;
+	// 		font-weight: $medium;
+	// 		text-align: left;
+	// 	}
+	// }
+	> div {
+		
+		.title-post-slider {
+            font-size: 30px !important;
+            border-bottom: 0px;
+            padding: initial;
+			color: inherit;
+			
+			//Tablet
+			@media(max-width: $tablet){
+				font-size: 23px !important;
+				padding: 0;
+			}
+
+			//Tablet
+			@media(max-width: $mobile){
+				font-size: 25px !important;
+			}
+		}
+	
+		// Description
+		p{
+			text-align: left;
+			padding: 0px 15px 50px;
+			width: 85%;
+			font-size: 16px;
+			font-weight: $light;
+
+			//Tablet 
+			@media(max-width: $tablet){
+				text-align: center;
+				margin: auto;
+			}
+
+			//Mobile
+			@media(max-width: $mobile){
+				text-align: left;
+				margin-left: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	// Slider
+	.slider-container {
+		position: relative;
+		&.four-slides {
+			.slider-single-item {
+				.slider-single-title {
+					font-size: 18px;
+				}
+			}
+		}
+
+		.slick-list{
+			.slick-slide{
+				display: flex;
+				&:hover {
+					cursor: pointer;
+				}
+				
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+
+		.slick-dots{
+			li{
+				//Mobile
+				@media (max-width: $mobile){
+					margin: 0 0.8rem;
+				}
+			}
+		}
+
+		// Arrows
+		.prev {
+			position: absolute;
+			left: -30px;
+			top: 26%;
+			cursor: pointer;
+			transition: transform .5s;
+			&:hover {
+				transform: scale(1.1);
+			}
+			//Mobile 
+			@media(max-width: $mobile){
+				left: -14px;
+				display: none !important;
+			}
+		}
+		.next {
+			@extend .prev;
+			right: -30px;
+			left: auto;
+			//Mobile 
+			@media(max-width: $mobile){
+				right: -14px;
+				display: none !important;
+			}
+		}
+
+		// Slider-item container
+		.slides {
+
+			// Slider GRID
+			&.slides_grid{
+				//Mobile
+				@media (max-width: $mobile){
+					.slider-single-item{
+						display: flex;
+						justify-content: center;
+						.trim{
+							width: 50%;
+							position: relative;
+						}
+						.slider-single-item-content{
+							width: 45%;
+							margin-left: 5%;
+							margin-top: 0;
+						}
+						.blog-thumbnail-bg{
+							background-size: cover;
+						}
+					}
+				}
+			}
+
+			// Slider single item
+			.slider-single-item {
+				width: 100%;
+				padding: 0 15px 0 0;
+				display: block;
+				//Mobile 
+				@media(max-width: $mobile){
+					padding: 10px 15px;
+				}
+				.trim {
+					position: relative;
+					background-size:cover;
+					background-position:center center;
+					height:150px;
+					//Mobile
+					@media(max-width: $mobile){
+						max-height: 95px;
+					}
+					.play-video-btn{
+						position: absolute;
+						width: 46px;
+						height: 46px;
+						bottom: 9%;
+						right: 6%;
+						//Tablet
+						@media (max-width: $tablet){
+							width: 36px;
+							height: 36px;
+						}
+
+						// Class added when 3 sliders
+						&.play-video-btn-lg {
+							width: 50px;
+							height: 50px;
+							//Tablet
+							@media (max-width: $tablet){
+								width: 40px;
+								height: 40px;
+							}
+						}
+						img{
+							width: 11px;
+							//Mobile
+							@media (max-width: $tablet){
+								width: 9px;
+							}
+							@media screen and (min-width:0\0) { 
+								/* Styles for IE9, IE10, IE11  */
+								height: 100%;
+							}
+						}
+					}
+				}
+				.slider-single-item-content {
+					margin-top: 10px;
+					.slider-single-title {
+						color: $black;
+						font-size: 16px;
+						line-height: 22px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*--------- END POST SLIDER ----------*/

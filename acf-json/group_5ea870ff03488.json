@@ -1,0 +1,47 @@
+{
+    "key": "group_5ea870ff03488",
+    "title": "Options Simple Template",
+    "fields": [
+        {
+            "key": "field_5ea8711ffe79e",
+            "label": "Background",
+            "name": "background_color",
+            "type": "checkbox",
+            "instructions": "( Default color grey )",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "White": "White"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page_templates\/simple_page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1605643642
+}

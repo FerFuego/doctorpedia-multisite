@@ -1,0 +1,107 @@
+.team-container {
+    position: relative;
+    .header-team {
+        border-bottom: 1px solid $off-white;
+        margin: 25px auto;
+        text-align: center;
+        width: 100%;
+        h2 {
+            background-color: $white;
+            font-family: $primary-font;
+            font-size: 30px;
+            margin: 0 auto -25px;
+            padding: 10px;
+            width: auto;
+            max-width: 500px;
+        }
+    }
+    .body-team-container {
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: 100px;
+        .slider-single-item {
+            max-width: 320px;
+            min-width: 260px;
+            height: 340px;
+            width: auto;
+            .team-image {
+                img {
+                    display: block;
+                    margin: 0 auto 15px;
+                }
+            }
+            .slider-single-item-content {
+                text-align: center;
+
+                h2 {
+                    color: $primary-color;
+                    font-family: $primary-font;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 1.5em;
+                }
+                p {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+                a {
+                    border-bottom: 1px solid #4a90e2;
+                    font-family: $primary-font;
+                    font-size: 18px;
+                    font-weight: 400;
+                    &:hover {
+                        text-decoration: none;
+                        color: #0056b3;
+                    }
+                }
+            }
+        }
+        .fix-width {
+            max-width: 400px;
+        }
+    }
+    // Arrows
+    .prev {
+        position: absolute;
+        left: -30px;
+        top: 45%;
+        cursor: pointer;
+        transition: transform .5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+        //Mobile 
+        @media(max-width: $mobile){
+            left: -14px;
+            display: none !important;
+        }
+    }
+    .next {
+        @extend .prev;
+        right: -30px;
+        left: auto;
+        //Mobile 
+        @media(max-width: $mobile){
+            right: -14px;
+            display: none !important;
+        }
+    }
+}
+
+.team-bg-grey {
+    background-color: $off-white !important;
+    background: linear-gradient(to bottom, #fff 0%, #fff 20%, #fff 40%, #f2f2f2 30%, #f2f2f2 100%) !important;
+}
+
+@media ( max-width: $mobile ) {
+    .team-container {
+        .header-team {
+        }
+        .body-team-container {
+            .slider-single-item {
+                position: relative;
+                margin: 0 auto;
+            }
+        }
+    }
+}

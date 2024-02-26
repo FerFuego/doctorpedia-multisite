@@ -1,0 +1,390 @@
+.sr-discover-health {
+    
+    background-size: cover;
+    background-position: center center;
+    //margin-top: 85px;
+    margin-top: 145px;
+
+    //mobile
+    @media ( max-width: $mobile ) {
+        //margin-top: 75px;
+        margin-top: 133px;
+    }
+
+    .top-elements-filters {
+        background-color: $transparent-background;
+        height: 65px;
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        z-index: 200;
+        a {
+            border-bottom: 1px solid transparent;
+            color: $black;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: $primary-font;
+            margin: 0 10px;
+            min-width: fit-content;
+            width: max-content;
+            &:hover {
+                color: $primary-pink;
+                border-bottom: 1px solid $primary-pink;
+            }
+            &.active {
+                color: $primary-pink;
+                border-bottom: 1px solid $primary-pink;
+            }
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5em;
+            font-weight: 400;
+            padding-right: 10px;
+        }
+    }
+
+    .sr-discover-health-header {
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 550px;
+        width: 100%;
+        .container-form-discover-health {
+            
+            form {
+                max-width: 900px;
+                margin: auto;
+                text-align: center;
+                h2 {
+                    margin-top: 15px;
+                    font-size: 46px;
+                    font-weight: $semibold;
+                    color: #fff;
+                    text-align: center;
+                }
+                label {
+                    margin-bottom: 20px;
+                    font-size: 22px;
+                    color: #fff;
+                    text-align: center;
+                }
+                input[type=text] {
+                    background:url(../../img/condition-icon.svg) no-repeat 96% center $white; 
+                    border-radius: 0;
+                    border: none;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    height: 60px;
+                    width: 70%;
+    
+                     //mobile
+                    @media ( max-width: $mobile ) {
+                        width: 90%;
+                    }
+                }
+                *, *:before, *:after {
+                    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+                }
+                
+                @mixin button {
+                    position: relative;
+                    outline: 0;
+                    background-color: $danger-color;
+                    border-radius: 3px;
+                    color: $white;
+                    font-weight: $medium;
+                    height: 50px;
+                    width: 100%;
+                    overflow: hidden;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: lighten($danger-color, 5%);
+                    }
+                    &:active {
+                        background-color: darken($danger-color, 5%);
+                    }
+                }
+                .hiddenBtn {
+                    visibility: hidden;
+                }
+                .btn-discover {
+                    @include button;
+                    width: 220px;
+                }
+    
+                .btn-discover:before {
+                    visibility: hidden;
+                    content: "";
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    position: absolute;
+                    width: 100%;
+                    padding: inherit;
+                    background: $danger-color;
+                    border-radius: 2px;
+                    transition: width 0.5s;
+                }
+                .btn-discover:after {
+                    visibility: hidden;
+                    font-family: FontAwesome;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #454545;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 26px;
+                    height: 26px;
+                    padding: 5px;
+                    border-radius: 26px;
+                    color: #fff;
+                }
+                .btn-discover.loading:after {
+                    visibility: visible;
+                    content: "\f110";
+                    font-family: FontAwesome;
+                    animation: loader 1s infinite linear;
+                }
+                .btn-discover.loading:before {
+                    visibility: visible;
+                    border-radius: 26px;
+                    margin: 0 auto;
+                    right: 0;
+                    left: 0;
+                    width: 33px;
+                    padding: 10px 25px;
+                }
+                .btn-discover.done {
+                    visibility: hidden;
+                }
+                .btn-discover.done:before {
+                    content: "\f00c";
+                    font-family: FontAwesome;
+                    visibility: visible;
+                    background: #4FA86B;
+                    border-color: #4FA86B;
+                    color: $white;
+                    padding-top: 13px;
+                }
+                  
+                .btn-discover.loading, .btn-discover.done {
+                    cursor: default;
+                }
+    
+                .btn-discover-network {
+                    @extend .btn-discover;
+                    background-color: transparent;
+                    border: 1px solid $primary-pink;
+                    color: $primary-pink;
+                    padding: 10px;
+                    margin-left: 5px;
+                    height: 50px;
+                    width: 58%;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+    
+                .full-width {
+                    background-color: $primary-pink;
+                    border: 1px solid $primary-pink;
+                    //width: 100% !important;
+                }
+                  
+                @keyframes loader {
+                    0%   { transform: rotate(0deg); }
+                    99% { transform: rotate(360deg); }
+                }
+    
+                .form-discover-health-checkbox {
+                    //display: flex;
+                    font-family: $primary-font;
+                    font-weight: $medium;
+                    //flex-direction: row;
+                    //justify-content: space-between;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                    //width: 100%;
+    
+                    //mobile
+                    @media ( max-width: $mobile ) {
+                        flex-direction: column;
+                        label {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+    
+                .incluir {
+                    position: relative;
+                    margin-bottom: 0px;
+                    //display: flex;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    b {
+                        color: #fff;
+                        font-size: 15px;
+                        padding-left: 22px;
+                    }
+                }
+                .incluir input {
+                    border: none;
+                  -webkit-appearance: none;   
+                  -moz-appearance: window;   
+                  -ms-appearance: window;  
+                  appearance: window; 
+                  position: absolute;
+                  top: 0;
+                  width: 18px;
+                  height: 18px;
+                }
+                
+                .incluir input + span::before {
+                  position: absolute;
+                  top: 8px;
+                  left: -2px;
+                  display: inline-block;
+                  background: transparent url('../../img/checkbox-white.svg') no-repeat 0 0;
+                  display: block;
+                  width: 18px;
+                  height: 18px; 
+                  content: '';
+                  vertical-align: middle;
+                }
+                .incluir input:checked + span::before {
+                  background: transparent url('../../img/checkbox-white-checked.svg') no-repeat 0 0;
+                }
+            }
+        }
+    
+        //mobile
+        @media ( max-width: $mobile ) {
+            margin-top: 10px;
+            .container-form-discover-health { 
+                form {
+                    width: 100%;
+                    h2{
+                        font-size: 26px;
+                    }
+                    input[type=text] {
+                        height: 54px;
+                    }
+                    .btn-discover {
+                        height: 45px;
+                        margin-bottom: 15px;
+                        width: 90%;
+                    }
+                    .btn-discover-network {
+                        height: 45px;
+                        margin-left: 0px;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .sr-top-menu {
+        background-color: $primary-pink;
+        color: $white;
+        font-size: 16px;
+        line-height: 1.5em;
+        font-weight: 300;
+        position: fixed;
+        left: 0;
+        top: 85px;
+        padding: 0;
+        height: 60px;
+        width: 100%;
+        transition: all .3s ease-in-out;
+        z-index: 200;
+        &:hover {
+            background-color: rgba(223,5,78, 0.8);
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            p {
+                color: $white;
+                font-size: 16px;
+                line-height: 1.5em;
+                font-weight: 300;
+                span {
+                    color: $white;
+                    font-size: 16px;
+                    line-height: 1.5em;
+                    font-weight: 500;
+                    margin-right: 5px;
+                }
+            }
+        }
+        //mobile
+        @media ( max-width: $mobile ) {
+            .box {
+                padding: 0 15px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.mt-custom {
+    margin-top: 64px;
+}
+
+.pt-custom {
+    padding-top: 124px;
+}
+
+.final-results-sites {
+    margin-bottom: 100px !important;
+    .blog-post-preview {
+        .footer {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+}
+
+.mt-subnavbar {
+    margin-top: 145px !important;
+}
+
+//tablet
+@media ( max-width: $tablet ) {
+    .top-elements-filters {
+        top: 70px !important;
+    }
+    .sr-top-menu {
+        top: 75px !important;
+    }
+}
+
+//mobile
+@media ( max-width: $mobile ) {
+    .top-elements-filters {
+        top: 70px !important;
+    }
+    .sr-top-menu {
+        top: 75px !important;
+    }
+}

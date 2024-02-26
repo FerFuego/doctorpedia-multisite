@@ -1,0 +1,419 @@
+{
+    "key": "group_rip54321",
+    "title": "Reviews",
+    "fields": [
+        {
+            "key": "field_5d64629ede297",
+            "label": "Which App are you reviewing?",
+            "name": "which_app_are_you_reviewing",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "modal-header",
+                "id": ""
+            },
+            "choices": {
+                "": "Select App",
+                "iHeadache": "iHeadache",
+                "Migraine Buddy": "Migraine Buddy",
+                "Migraine Coach": "Migraine Coach",
+                "Migraine Relief Hypnosis": "Migraine Relief Hypnosis",
+                "N1-Headache": "N1-Headache",
+                "Night Shift": "Night Shift",
+                "Ouchie": "Ouchie",
+                "Relax Lite": "Relax Lite",
+                "Symple": "Symple"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "Choose..."
+        },
+        {
+            "key": "field_5d645ddc0ab2c",
+            "label": "Personal Information",
+            "name": "personal",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "personal_info",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "group_rip2322322",
+                    "label": "Full Name",
+                    "name": "full_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "personal_info_name",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "group_rip522322",
+                    "label": "Display Name",
+                    "name": "fullname",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "personal_info_name",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "ex. Deborah W.",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "group_rip54322",
+                    "label": "Email",
+                    "name": "email",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "personal_info_email",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "Your name and email will not be shown in your review",
+                    "maxlength": ""
+                },
+                {
+                    "key": "group_rop54312",
+                    "label": "",
+                    "name": "doctor",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "private-checkbox",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Yes": "Is a Doctor?"
+                    },
+                    "allow_custom": 0,
+                    "save_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "group_rup522322",
+                    "label": "Specialty",
+                    "name": "specialty",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "personal_info_name",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Specialty Doctor",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5d64533dc0ab2c",
+            "label": "Ratings",
+            "name": "ratings",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "ratings",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_app22c07ea20cf9",
+                    "label": "Ease of Use",
+                    "name": "ease_use",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "ease_of_use stars",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": 0,
+                    "max": 5,
+                    "step": 1,
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_app3w307ea20cf9",
+                    "label": "Features",
+                    "name": "features",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "features stars",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": 0,
+                    "max": 5,
+                    "step": 1,
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_app1w1c7ea20cf9",
+                    "label": "Value for Money",
+                    "name": "value_money",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "value_for_money stars",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": 0,
+                    "max": 5,
+                    "step": 1,
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_app3red7ea20cf9",
+                    "label": "Customer Support",
+                    "name": "support",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "features stars",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": 0,
+                    "max": 5,
+                    "step": 1,
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_app3w30723420cf9",
+                    "label": "Overall App Score",
+                    "name": "overall_ranking",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "overall_ratings stars",
+                        "id": "overall_ratings"
+                    },
+                    "default_value": "",
+                    "min": 0,
+                    "max": 5,
+                    "step": 0.1,
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "group_rip54313",
+            "label": "Interest",
+            "name": "interest",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "interest"
+            },
+            "choices": {
+                "Yes": "Yes"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "group_rip54323",
+            "label": "Overall Commentary",
+            "name": "comment",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "app-textarea",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "This is a great app that can really help patients manage their health and wellness.",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "new_lines": "",
+            "rows": ""
+        },
+        {
+            "key": "group_rip54324",
+            "label": "Pros of the App",
+            "name": "pros",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "pros_of_the_app",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "new_lines": "",
+            "rows": ""
+        },
+        {
+            "key": "group_rip54325",
+            "label": "Cons of the App",
+            "name": "cons",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "cons_of_the_app",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "new_lines": "",
+            "rows": ""
+        },
+        {
+            "key": "group_rip543232",
+            "label": "Terms and conditions",
+            "name": "accept_terms",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "private-checkbox",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "I certify that this review is based on my own experience and is my genuine opinion of this resource, and that I have no personal or business relationship with the  resource or service (or any of its competitors), and have not been offered any incentive or payment from the resource to write this review. I understand that Doctorpedia has a zero-tolerance policy on fake reviews.  I understand that I alone am responsible for the content of this review and understand that false, defamatory or fraudulent reviews are prohibited by law in many jurisdictions. "
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5d7102215fe2c",
+            "label": "",
+            "name": "captcha",
+            "type": "recaptcha",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "recaptchaForm"
+            },
+            "site_key": "6LdYlLkUAAAAADvHRW11YeXWBNLquLBcSY3KcrqL",
+            "secret_key": "6LdYlLkUAAAAADIsxIBnZwq4Meb973VD2mV14YVf",
+            "re_theme": "light",
+            "re_type": "image",
+            "re_size": "normal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "user-reviews"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "recaptcha": true,
+    "modified": 1605643631
+}

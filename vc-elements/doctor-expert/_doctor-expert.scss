@@ -1,0 +1,77 @@
+/*----------------- DOCTOR EXPERT ----------------*/
+
+.doctor-expert{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    //Tablet
+    @media(max-width: $tablet){
+        padding: 0 15px;
+    }
+    .blog-title{
+        margin: 15px 0;
+        text-align: center;
+        color: $primary-pink;
+        font-size: 38px;
+        font-weight: $regular;
+    }
+    .doctor-expert-content{
+
+        .doctor-expert-profile{
+            div{
+                display: inline-block;
+                vertical-align: middle;
+                margin: 10px 0;
+                h4{
+                    font-family: $primary-font;
+                    font-size: 18px;
+                    font-weight: $regular;
+                    color: $black;
+                }
+                img{
+                    width: 50px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        h2{
+            font-family: $primary-font;
+            font-size: 30px;
+            font-weight: $regular;
+            color: $primary-pink;
+            margin: 10px 0;
+        }
+        p{
+            font-family: $primary-font;
+            // Mobile
+            @media(max-width: $mobile){
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .doctor-expert-content-posts{
+        .doctor-box-post{
+            a{
+                display: flex;
+                div{
+                    display: inline-block;
+                    vertical-align: top;
+                    img{
+                        max-width: 130px;
+                        margin: 10px; 
+                    }
+                    h3{
+                        color: $black;
+                        margin: 10px 0; 
+                    }
+                    h4{
+                        font-size: 13px;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------- END DOCTOR EXPERT ----------------*/

@@ -1,0 +1,114 @@
+
+/*--------- FAQ COMPONENT ----------*/
+
+.faq {
+	background-color: $teal;
+	width: 30%;
+    padding: 30px;
+    margin: 15px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//Mobile
+	@media(max-width: $mobile){
+		margin-bottom: 22px;
+	}
+	&:focus{
+		outline: none;
+	}
+    .arrow {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        
+        border-top: 20px solid $teal;
+
+        position: absolute;
+        bottom: -18px;
+		left: 50%;
+		transform: translate(-50%,0);
+    }
+    span {
+        color: $white;
+        font-size: 24px;
+		font-weight: $light;
+		font-style: italic;
+		
+    }
+
+    &.baby-blue {
+        background-color: $baby-blue;
+        .arrow {
+            border-top: 20px solid $baby-blue;
+        }
+    }
+
+    &.primary-grey {
+        background-color: $primary-grey;
+        .arrow {
+            border-top: 20px solid $primary-grey;
+        }
+    }
+}
+
+/*--------- END FAQ ----------*/
+
+
+/*--------- FAQS ----------*/
+
+.faqs {
+	text-align: center;
+	margin: 50px 0;
+	h1 {
+		color: $black;
+		font-size: 38px;
+		font-weight: $regular;
+		// Mobile
+		@media(max-width: $mobile){
+			font-size: 27px;
+		}
+	}
+	p {
+		width: 90%;
+		margin: auto;
+		padding: 20px 0 25px 0;
+		font-size: 16px;
+		font-weight: $regular;
+	}
+
+	.faqs-container {
+		display: flex;
+		padding-top: 20px;
+		justify-content: center;
+		@media(max-width: $mobile){
+			flex-flow: column;
+			.slick-list{
+				min-height: 215px;				
+			}
+		}
+	}
+	.view-all{
+		font-size: 26px;
+		color: $baby-blue;
+		padding-top: 50px;
+		display: inline-block;
+		border-bottom: 1px solid $baby-blue;
+		padding-bottom: 5px;
+	}
+
+	//Mobile
+	@media(max-width: $mobile){
+		.faq {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	
+}
+
+
+/*--------- END FAQS ----------*/

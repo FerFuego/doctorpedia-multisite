@@ -1,0 +1,159 @@
+.m-meet-our-doctors {
+    background-color: #FAFAFA;
+    padding: 40px 0;
+
+    @media screen and (max-width: $mobile) {
+        padding: 30px 0 32.5px;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-size: 32px;
+        line-height: 48px;
+        color: $primary-black;
+        font-weight: $bold;
+        margin-bottom: 33px;
+
+        @media screen and (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+
+    &__doctors {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 32px;
+
+        @media screen and (max-width: $tablet) {
+            display: block;
+        }
+
+        /* the slides */
+        .slick-slide {
+            margin: 0 10px;
+        }
+
+        /* the parent */
+        .slick-list {
+            margin: 0 -10px;
+        }
+
+        .slick-dots {
+            justify-content: flex-end;
+            padding: 19px 0 0;
+
+            li {
+                margin: 0 6px;
+
+                button {
+                    height: 14px;
+                    width: 14px;
+                    background-color: transparent;
+                    border: 1px solid $placeholder-grey;
+                    cursor: pointer;
+                }
+            }
+
+            .slick-active button {
+                background-color: $primary-black;
+            }
+        }
+    }
+
+    &__doctors-lastcard {
+        padding: 50px 40px !important;
+        background-color: $white;
+        border: 1px solid #EDEDED;
+        border-radius: 12px;
+
+        @media screen and (max-width: 1025px) {
+            width: calc(100vw - 28px) !important;
+        }
+
+        &-message {
+            font-family: $primary-font;
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: $semibold;
+            color: $primary-black;
+            max-width: 236px;
+            margin-bottom: 16px;
+        }
+
+        &-copy {
+            font-size: 16px;
+            line-height: 24px;
+            color: $opaque-grey-2;
+            margin-bottom: 64px;
+            max-width: 291px;
+        }
+
+        &-cta {
+            display: flex;
+            align-items: center;
+            background-color: $primary-pink;
+            padding: 15px 25px;
+            border-radius: 10px;
+            color: $white;
+            font-size: 20px;
+            line-height: calc(24em / 20);
+            transition: all .3s;
+            width: max-content;
+            max-width: 100%;
+
+            &:hover {
+                color: $white;
+                background-color: $secondary-pink;
+
+                &:after {
+                    transform: translateX(5px);
+                }
+            }
+
+            @media screen and (max-width: $mobile) {
+                font-size: 15px;
+            }
+
+            &::after {
+                content: url(../../img/arrow/doctor-community-arrow.svg);
+                display: block;
+                margin-left: 10px;
+                transition: all .3s;
+            }
+        }
+    }
+
+    &__doctors-mobileCTA {
+        display: none;
+        font-size: 14px;
+        line-height: 18px;
+        color: $primary-pink;
+        font-weight: $regular;
+
+        @media screen and (max-width: $mobile) {
+            display: flex;
+            align-items: center;
+            margin-top: -17px;
+
+            &::after {
+                content: url(../../img/arrow/view-all-arrow.svg);
+                display: block;
+                margin-left: 8px;
+            }
+        }
+
+        &:hover {
+            color: $secondary-pink;
+
+            &:after {
+                margin-left: 13px;
+                transition: .3s all;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.channel-simple-slider {
+    padding: 0 !important;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    //tablet
+    @media(max-width: $tablet) {
+        margin-left: -30px;
+        width: 109%;
+    }
+    //mobile
+    @media(max-width: $mobile) {
+        margin-left: -15px;
+        width: 109%;
+    }
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        padding: 30px 0;
+        width: 100%;
+        //tablet
+        @media(max-width: $tablet) {
+            padding: 30px 15px;
+        }
+    }
+    &__header-title {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 30px;
+        line-height: 1.2em;
+        color: $black;
+    }
+    &__body {
+        display: flex;
+        position: relative;
+        padding: 0 0 72px;
+    }
+    &__slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    &__card {
+        background-color: $white;
+        display: block !important;
+        cursor: pointer;
+        padding: 20px 25px;
+        display: block;
+        height: 264px;
+        width: 100%;
+        max-width: 380px;
+        margin-right: 12px;
+        position: relative;
+        //mobile
+        @media(max-width: $mobile) {
+            margin-right: 0;
+            max-width: none;
+        }
+    }
+    &__card-title {
+        font-family: $primary-font;
+        font-weight: $semibold;
+        font-size: 20px;
+        line-height: 1.3em;
+        color: $primary-black;
+        margin: 15px 0px;
+    }
+    &__card-copy {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 16px;
+        line-height: 1.5em;
+        color: $primary-black;
+        margin: 15px 0px;
+    }
+    &__card-cta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary-pink;
+        width: 86%;
+        bottom: 20px;
+        position: absolute;
+        &:hover {
+            color: $primary-pink;
+            opacity: .8;
+        }
+    }
+    &__prev {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        left: -50px;
+    }
+    &__next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        right: -40px;
+    }
+}
+
+

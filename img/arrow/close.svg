@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="105px" viewBox="0 0 105 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Close Button</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Patient-Journey---Desktop-" transform="translate(-669.000000, -803.000000)">
+            <g id="Journey-Map" transform="translate(1.000000, 86.000000)">
+                <g id="User-Journey-Drop-Down">
+                    <g id="Close-Button" transform="translate(668.000000, 717.000000)">
+                        <circle id="Oval-6" fill="#8D56F9" cx="52.5" cy="52.5" r="52.5"></circle>
+                        <path d="M68.5897436,37.4102564 L37.0239851,68.9760149" id="Line-3-Copy-26" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M37,37 L68,68" id="Line-3-Copy-27" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

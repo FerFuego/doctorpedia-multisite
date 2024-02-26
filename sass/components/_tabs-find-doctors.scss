@@ -1,0 +1,155 @@
+.seo-find-doctors {
+    margin-bottom: 178px;
+    position: relative;
+    z-index: 1;
+
+    // mobile
+    @media ( max-width: $mobile ) {
+        margin-bottom: 78px;
+    }
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+
+        // laptop
+        @media ( max-width: $laptop ) {
+            padding: 0 15px;
+        }
+
+        // tablet
+        @media ( max-width: $tablet ) {
+            padding: 0;
+        }
+
+        // sm
+        @media ( max-width: $sm ) {
+            padding: 0 15px;
+        }
+    }
+
+    &__header {
+        margin-bottom: 40px;
+        
+        // mobile
+        @media ( max-width: $mobile ) {
+            font-size: 25px;
+        }
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-weight: $bold;
+        font-size: 32px;
+        line-height: 1.5em;
+        color: $primary-black;
+
+        // mobile
+        @media ( max-width: $mobile ) {
+            font-size: 28px;
+        }
+    }
+}
+
+.tabs {
+    margin: 0 auto;
+    padding: 0;
+
+    &__container {
+        width: 100%;
+        margin: 0 auto 28px;
+        max-width: 1200px;
+    }
+
+    &__list {
+        display: flex;
+        height: 34px;
+        overflow-x: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        // mobile
+        @media (max-width: $mobile ) {
+            height: 45px;
+        }
+    }
+}
+
+.tab-item {
+    display: inline-block;
+    min-width: fit-content;
+    width: max-content;
+    margin-right: 34px;
+    border-bottom: 2px solid transparent;
+
+    // mobile
+    @media ( max-width: $mobile ) {
+        margin-right: 25px;
+    }
+
+    &__link {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 20px;
+        line-height: 1.5em;
+        color: $light-grey-dd;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+
+        // mobile
+        @media ( max-width: $mobile ) {
+            font-size: 18px;
+        }
+
+        &:hover {
+            color: $primary-pink;
+            border-bottom: 2px solid $primary-pink;
+        }
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.is-active {
+    .tab-item__link {
+        color: $primary-pink;
+        border-bottom: 2px solid $primary-pink;
+    }
+}
+
+.tab-content {
+    background-color: $white;
+    border-radius: 15px;
+    padding: 31px 20px 29px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    // tablet 
+    @media (max-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // mobile 
+    @media (max-width: $mobile) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__link {
+        display: block;
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 17px;
+        line-height: 1.3em;
+        color: $baby-blue;
+        margin: 0 15px 30px;
+        max-width: 255px;
+        vertical-align: top;
+    }
+}

@@ -1,0 +1,165 @@
+/*--------- SPONSORS MODULE ----------*/
+
+.sponsors {
+	background-color: $baby-blue;
+	margin: 50px auto;
+	padding: 100px;
+	position: relative;
+	&--float{
+		background-color: rgba(255,255,255,0.9);
+		padding: 6px 12px;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		.title{
+			color: $primary-pink;
+			font-size: 16px;
+			font-family: $primary-font;
+			text-align: center;
+		}
+		@media(max-width: $tablet){
+			position: relative;
+			right: 0;
+			top: 0;
+			margin: 0 0 15px auto;
+			width: 120px;
+		}
+	}
+	
+	//Tablet
+	@media(max-width: $tablet){
+		padding: 30px;
+	}
+	//Mobile
+	@media(max-width: $mobile){
+		text-align: center;
+	}
+	.description{
+		padding-right: 27px;
+		//Mobile
+		@media(max-width: $mobile){
+			margin-top: 30px;
+		}
+	}
+
+	span {
+		color: $white;
+		font-weight: $medium;
+		font-size: 15px;
+	}
+
+	h1 {
+		color: $white;
+		font-size: 50px;
+		font-weight: $regular;
+		padding: 15px 0;
+    	padding-bottom: 24px;
+		// Tablet
+		@media(max-width: $tablet){
+			font-size: 30px;
+		}
+		// Mobile
+		@media(max-width: $mobile){
+			font-size: 24px;
+			padding-bottom: 10px;
+		}
+	}
+
+	p {
+		color: $white;
+		font-size: 16px;
+	}
+
+	a {
+		color: $white;
+		display: inline-block;
+		padding-top: 25px;
+		border-bottom: 1px solid $white;
+		padding-bottom: 5px;
+		font-weight: $medium;
+		font-size: 17px;
+	}
+	&.colored-sponsor{
+		.video-module {
+			margin: 0;
+		
+			.video-placeholder {
+				button {
+					position: absolute;
+					bottom: 50%;
+					right: 50%;
+					width: 80px;
+					height: 80px;
+					margin-right: -40px;
+					margin-bottom: -40px;
+				}
+			
+			}
+		}
+	}
+}
+
+/*--------- END SPONSORS MODULE ----------*/
+
+// Skip Button
+.network-skip-intro {
+	position: absolute;
+	left: 0;
+	bottom: 50px;
+	height: 33px;
+	width: 85%;
+	z-index: 1999;
+
+	.skip-intro {
+		background-color: $transparent-black;
+		border: none;
+		border-radius: 10px;
+		color: $white;
+		cursor: pointer;
+		right: 10px;
+		text-transform: uppercase;
+		padding: 10px;
+		position: absolute;
+		top: 0;
+	}
+	//mobile
+	@media ( max-width: $mobile ) {
+		.skip-intro {
+			bottom: 0;
+			height: 35px;
+			font-size: 11px;
+			padding: 0 6px;
+			top: 0;
+		}
+	}
+}
+
+/*--------- SKIP INTRO VIDEO ----------*/
+
+@media(min-width: $tablet) {
+	.network-share__social-media__content{
+		.text-sponsor {
+			font-size: 35px !important;
+		}
+		.line-separate-sponsor {
+			margin: 30px auto 15px !important;
+			width: 230px;
+		}
+	}
+}
+
+.share-social-sponsor {
+	hr {
+		margin: 20px auto !important;
+	}
+}
+
+.icon-close-sponsor {
+	top: 10px !important;
+}
+
+.icon-share-sponsor {
+	top: 10px !important;
+}
+
+/*--------- END SKIP INTRO VIDEO ----------*/

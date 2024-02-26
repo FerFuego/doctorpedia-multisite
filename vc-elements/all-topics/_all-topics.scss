@@ -1,0 +1,95 @@
+.search-alphabet{
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 0px;
+        border-bottom: 1px solid $border-color;
+
+        //Tablet
+        @media(max-width: $tablet){
+            margin: 25px 15px 0 15px;
+            padding-bottom: 15px;
+        }
+        //Mobile
+        @media(max-width: $mobile){
+            padding-bottom: 27px;
+        }
+
+        h1 {
+            font-size: 45px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            //Tablet
+            @media(max-width: $tablet){
+                font-size: 30px;
+                margin-left: 0;
+            }
+        }
+
+        svg {
+            align-self: center;
+            padding-bottom: 5px;
+        }
+    }
+    .alphabet{
+        margin: 50px 0;
+        display: none;
+
+        // Tablet
+        @media(max-width: $tablet){
+            margin: 20px 15px;
+        }
+        // Mobile
+        @media(max-width: $mobile){
+            overflow-y: scroll;
+            margin: 20px 15px 25px 15px;
+        }
+        ul{
+            // Mobile
+            @media(max-width: $mobile){
+                width: 700px;
+            }
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li{
+                font-size: 22px;
+                padding: 0 0 5px;
+                border-bottom: 2px solid $white;
+                cursor: pointer;
+                &:hover{
+                    color: $primary-pink;
+                    border-bottom: 2px solid $primary-pink;
+                }
+            }
+        }
+    }
+    .topics{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: flex-start;
+        font-size: 18px;
+        margin-top: 15px;
+        div{
+            border-bottom: 1px solid $alphabet-border;
+            margin: 0 1.5% 20px 1.5%;
+            padding: 15px 0;
+            text-align: left;
+            width: 30%;
+
+            // Mobile
+            @media(max-width: $mobile){
+                width: 100%;
+                margin: 0 15px 20px 15px;
+            }
+            h2{
+                font-weight: $semibold;
+                a{
+                    color: $black;
+                }
+            }
+        }
+    }
+}

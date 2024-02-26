@@ -1,0 +1,415 @@
+.author {
+    &__content-post {
+        width: 100%;
+    
+        @media (max-width: $mobile) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 26px;
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+        } 
+    
+        // Post Head
+        &-head {
+            margin-bottom: 23px;
+            width: 100%;
+            
+            // mobile
+            @media (max-width: $mobile) {
+                //order: 2;
+                padding: 0;
+                margin-bottom: 0;
+                margin-top: 20px;
+            }
+    
+            @media (max-width: 320px) {
+                padding: 0 10px;
+            }
+    
+            .author__content-doctor {
+                display: flex;
+                width: 100%;
+    
+                // mobile
+                @media (max-width: $mobile) {
+                    margin-bottom: 11px;
+                    padding: 0 10px;
+                }
+    
+                .author__content-doctor-image {
+                    background-size: 100%;
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    margin-right: 15px;
+
+                    // mobile
+                    @media (max-width: $mobile) {
+                        width: 64px;
+                        height: 64px;
+                        position: relative;
+                        top: 0;
+                    }
+    
+                    @media (max-width: 320px) {
+                        z-index: 5;
+                    }
+                }
+    
+                .author__content-doctor-text {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: calc(100% - 67px); // 67px come from the image width + margin
+    
+                    // mobile
+                    @media (max-width: $mobile) {
+                        align-items: center;
+                        display: flex;
+                        width: calc(100% - 79px);
+                    }
+    
+                    .author__content-doctor-name {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #363636;
+
+                        // mobile
+                        @media (max-width: $mobile) {
+                            font-weight: $regular;
+                            font-size: 16px;
+                            line-height: 1.4em;
+                            color: $black;
+                            text-align: left;
+                        }
+    
+                    }
+    
+                    .author__content-date {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 25px;
+                        color: rgba(5, 11, 12, 0.7);
+
+                        // mobile
+                        @media (max-width: $mobile) {
+                            font-size: 12px;
+                            font-weight: $light;
+                            line-height: initial;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &-image {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 290px;
+            margin-bottom: 17px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    
+            &--video {
+                height: 331px;
+            }
+    
+            @media (max-width: $mobile) {
+                height: 205px;
+                order: 1;
+            }
+    
+            @media (max-width: 320px) {
+                height: 150px;
+            }
+        }
+    
+        &-image-podcast {
+            background-size: 100%;
+            height: 290px;
+            margin-bottom: 17px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding: 0 20px 28px;
+            width: 100%;
+    
+            &-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+    
+                .cta-to-single {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .box-player {
+                        background: $primary-pink;
+                        border-radius: 40px;
+                        width: 330px;
+                        @media ( max-width: 425px ) {
+                            max-width: 100% !important;
+                        }
+                    }
+                    .mejs-controls {
+                        opacity: 1!important;
+                    }
+                    .wp-audio-shortcode {
+                        background: transparent;
+                        color: $white;
+                        font-family: $tertiary-font;
+                        .mejs-controls{
+                            background: transparent;
+                            color: $white;
+                            font-family: $tertiary-font;
+                            .mejs-time {
+                                span {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    .cta-play {
+                        background: $primary-pink;
+                        color: $white;
+                        border-radius: 40px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        font-family: $tertiary-font;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-transform: uppercase;
+                        padding: 10px 26px;
+                        img {
+                            margin-right: 6px;
+                        }
+                    }
+                    .span {
+                        font-family: $tertiary-font;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #555555;
+                        margin-left: 15px;
+                        text-transform: lowercase;
+                    }
+                }
+    
+                .cta-to-external {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    min-width: 210px;
+                    width: auto;
+                    a:first-child {
+                        font-family: "Roboto", sans-serif;
+                        font-weight: $light;
+                        font-size: 11px;
+                        line-height: 13px;
+                        display: flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        color: $white;
+                        box-sizing: border-box;
+                        padding: 3px 10px;
+                        width: 123px;
+                    }
+                    a:last-child {
+                        font-family: "Roboto", sans-serif;
+                        font-weight: $light;
+                        font-size: 11px;
+                        line-height: 13px;
+                        display: flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        color: $white;
+                        box-sizing: border-box;
+                        padding: 3px 10px;
+                        width: 90px;
+                    }
+                }
+            }
+    
+            @media (max-width: 767px) {
+                height: 205px;
+                order: 4;
+            }
+    
+            @media (max-width: 425px) {
+                background-size: cover;
+                &-container {
+                    .cta-to-external {
+                        a{
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &-body {
+            padding: 0 14px;
+            margin-bottom: 26px;
+    
+            @media (max-width: $mobile) {
+                order: 3;
+                padding: 0 10px !important;
+            }
+    
+            .author__content-type {
+                color: $baby-blue;
+                margin-bottom: 7px;
+    
+                @media (max-width: $mobile) {
+                    display: none;
+                }
+            }
+    
+            .author__content-title {
+                font-size: 20px;
+                margin-bottom: 12px;
+    
+                @media (max-width: $mobile) {
+                    margin-bottom: 15px;
+                }
+    
+                @media (max-width: 320px) {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: initial;
+                }
+            }
+    
+            .author__content-description {
+                font-size: 15px;
+                line-height: 133.2%;
+                margin-bottom: 13px;
+                font-weight: $light;
+                word-break: break-word;
+                .text-muted {
+                    font-size: 15px !important;
+                }
+    
+                @media (max-width: $mobile) {
+                    margin-bottom: 0;
+                }
+            }
+    
+            .author__content-cta {
+                color: $primary-pink;
+                margin-bottom: 31px;
+    
+                @media (max-width: $mobile) {
+                    font-size: 17px;
+                    display: block;
+                    margin-bottom: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        .wp-video-shortcode {
+            .mejs-controls {
+                opacity: 1!important;
+            }
+        }
+    
+        .author-repost__original-author {
+            order: 4;
+        }
+    
+        .author__content-line {
+            width: 100%;
+            height: 1px;
+            background-color: $secondary-line;
+            margin-bottom: 31px;
+    
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.author-comment {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 31px;
+
+    // mobile 
+    @media (max-width: $mobile) {
+        margin-bottom: 0;
+    }
+    .author__content-doctor {
+        padding: 20px 0 0;
+    }
+    .author-repost__body {
+        padding-left: 68px;
+    }
+}
+
+
+.author-repost {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-bottom: 31px;
+    // mobile 
+    @media (max-width: $mobile) {
+        margin-bottom: 26px;
+    }
+    &__head {
+        margin-bottom: 5px!important;
+        .author__content-doctor {
+            padding: 20px 20px 0;
+
+            // mobile
+            @media (max-width: $mobile) {
+                padding: 20px 10px 0;
+            }
+        }
+    }
+    &__body {
+        padding-left: 88px;
+    }
+    &__original-author {
+        background-color: #F9F9F9;
+        padding: 27px;
+        // mobile 
+        @media (max-width: $mobile) {
+            padding: 15px;
+        }
+        .author__content-doctor-text {
+            // mobile
+            @media (max-width: $mobile) {
+                align-items: flex-start !important;
+                flex-direction: column !important;
+                justify-content: flex-start !important;
+            }
+        }
+        .wp-video-shortcode {
+            .mejs-controls {
+                display: none !important;
+            }
+        }
+        .author__content-post-image--video {
+            height: 290px!important;
+        }
+        .author__content-doctor-name a {
+            color: #212529 !important;
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}

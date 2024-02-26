@@ -1,0 +1,44 @@
+.map-container-non-profit {
+    .name-non-profit {
+        font-size: 22px !important;
+    }
+    .actions-non-profit-link a {
+        color: $baby-blue;
+        font-size: 15px;
+        font-weight: $medium;
+    }
+}
+.mouse-pointer {
+    cursor: pointer;
+}
+
+.img-module-round {
+    border-radius: 50%;
+
+    //Mobile
+    @media screen and (max-width: $mobile) {
+        max-width: 55px;
+    }
+}
+
+.round-module {
+    background-color: $primary-pink;
+    border-radius: 50%;
+    color: #fff;
+    font-family: $primary-font;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-doctor {
+    color: $black!important;
+
+    &:hover {
+        color: $primary-pink!important;
+    }
+}

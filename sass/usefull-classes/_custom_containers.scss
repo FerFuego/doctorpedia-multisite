@@ -1,0 +1,78 @@
+.custom-container{
+    max-width: 1200px;
+    margin: 0px auto;
+
+    @media (max-width: $laptop) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $mobile) {
+        max-width: 540px;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/**
+* btn menu mobile - Are you a doctor?
+*/
+.btn-menu-doctor {
+    display: none;
+    a {
+        background-color: $primary-pink !important;
+        border: 1px solid $primary-pink !important;
+        border-radius: 32px;
+        display: flex !important;
+        text-align: center;
+        justify-content: center !important;
+        color: $white !important;
+        padding: 10px 20px;
+        width: 200px !important;
+    }
+
+    //tablet 
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}
+
+/**
+* navbar landing header
+*/
+.custom-landing-menu {
+    //mobile
+    @media (max-width: $mobile) {
+        margin: 0;
+        width: 100% !important;
+    }
+
+    .aling-navigation-landing {
+        //mobile
+        @media (max-width: 320px) {
+            flex-flow: row !important;
+        }
+
+        .btn-header-landing {
+            //mobile
+            @media (max-width: 320px) {
+                margin-right: 7px !important;
+            }   
+        }
+    }
+}
+
+.container-big{
+    max-width: 1282px;
+    margin: 0 auto;
+	padding: 0 41px;
+	
+    @media (max-width: 1080px) {
+		max-width: 992px;
+		padding: 0 14px;
+    }
+
+    @media (max-width: 992px) {
+        max-width: initial;
+    }
+}

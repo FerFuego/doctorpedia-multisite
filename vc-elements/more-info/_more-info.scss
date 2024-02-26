@@ -1,0 +1,37 @@
+.more-info{
+    display: flex;
+    flex-direction: column;
+    margin: 150px auto 0 auto;
+    padding-bottom: 75px;
+    width: 100%;
+    align-items: center;
+    background: #f7f7f7;
+    img{
+        margin-bottom: 25px;
+        width: 150px;
+        margin-top: -75px;
+    }
+    .text-block{
+        font-size: 26px;
+        font-family: $primary-font;
+        font-weight: $regular;
+        width: 70%;
+        line-height: 1.5em;
+        // Tablet
+        @media(max-width: $tablet){
+            font-size: 18.2px;
+            width: 76%;
+        }
+        // Mobile
+        @media(max-width: $mobile){
+            font-size: 19px;
+            width: 100%;
+        }
+    }
+
+    a {
+        color: $baby-blue;
+        padding-bottom: 4px;
+        border-bottom: 1px solid $baby-blue;
+    }
+}

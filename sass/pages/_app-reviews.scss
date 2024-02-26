@@ -1,0 +1,1002 @@
+.container-single-taxonomy-page {
+    background-color: $white;
+}
+
+.shadow {
+    position: fixed;
+}
+
+.doctors-app-reviewed__app-col-right-app {
+    height: initial !important;
+    flex-direction: row !important;
+    justify-content: start !important;
+
+    h1 {
+        line-height: initial !important;
+        font-weight: 300;
+    }
+}
+
+.doctors-app-reviewed__user-review {
+    margin-top: 29px !important;
+}
+
+.doctors-app-reviewed__app-logo {
+    width: 79px;
+    height: 79px;
+    margin-right: 17px;
+    background-size: cover;
+}
+
+.doctors-app-reviewed__box-container__name-app {
+    display: flex;
+}
+
+.doctors-app-reviewed__box-container__doctor-image {
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 36px;
+    background-size: cover;
+}
+
+.app-review {
+    width: 100%;
+    padding: 75px 0 50px 0;
+    background: $white;
+
+    @media (max-width: 340px) {
+        padding: 40px 0 50px 0;
+    }
+
+    &__title {
+        font-size: 30px;
+
+        @media screen and (max-width: $tablet) {
+            padding-left: 20px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            text-align: left;
+            padding-right: 10px;
+        }
+
+        @media (max-width: 340px) {
+            font-size: 22px;
+        }
+    }
+
+    &__head {
+        margin-bottom: 40px;
+
+    }
+
+    .btn-download {
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+
+        @media screen and (max-width: $tablet) {
+            margin-right: 20px;
+        }
+
+        &:hover {
+            color: $white;
+        }
+
+        &--reviews {
+            padding: 10px;
+            white-space: pre;
+            cursor: pointer;
+
+            @media screen and (max-width: $tablet) {
+                width: 130px;
+            }
+        }
+
+        &--teal {
+
+            @media screen and (max-width: $mobile) {
+                margin-right: 0 !important;
+                white-space: pre;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &__review-btn-parent {
+
+        button {
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:$mobile) {
+            padding-right: 20px;
+        }
+    }
+
+
+}
+
+//-------* APP REVIEW MODULE CONTAINER START------- //
+
+.app-review-module__container {
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .navigation {
+
+        margin-top: 3rem;
+
+        .page-numbers {
+            padding: 10px 10px;
+            background-color: #fff;
+            color: #000;
+            font-size: 1.4em;
+            font-weight: 300;
+        }
+        .current {
+            background-color: #fff !important;
+            color: #df054e;
+            text-decoration: underline; 
+        }
+    }
+}
+
+//-------* APP REVIEW MODULE START------- //
+.app-review-module {
+    max-width: 48%;
+    background: $ultra-light-grey;
+    padding: 24px 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    flex-grow: 0;
+    flex-basis: auto;
+    align-items: stretch;
+    min-height: 500px;
+
+    @media screen and (max-width: $tablet) {
+        max-width: 100%
+    }
+
+    @media screen and (max-width: $mobile) {
+        // padding: 40px 15px;
+    }
+
+    .row {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    &__view-rev-parent {
+        @media screen and (max-width:$tablet) {
+            padding-top: 25px;
+        }
+    }
+
+    &__app-container {
+        padding: 7px 15px;
+
+        @media screen and (min-width:1024px) and (max-width:1200px) {
+            padding: 0;
+        }
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__app-img {
+
+        @media screen and (min-width:992px) and (max-width: $tablet) {
+            max-width: 15% !important;
+        }
+
+        @media screen and (max-width: $mobile) {
+            margin-bottom: 20px;
+
+        }
+
+        @media screen and (max-width: $sm) {
+            max-width: 30% !important;
+        }
+    }
+
+    &__app-column-right {
+        @media screen and (max-height: $sm) {
+            max-width: 70%;
+        }
+        @media ( max-width: 450px ) {
+            max-width: 70%!important;
+            padding-right: 5px;
+        }
+    }
+
+
+    &__title {
+        color: $primary-pink;
+        font-size: 34px;
+        margin-bottom: 10px;
+        font-weight: $medium;
+
+        @media screen and (max-width:$tablet) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 18px;
+        }
+    }
+
+    &__btn {
+        padding-top: 50px;
+
+        @media screen and (max-width:992px) {
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            padding-top: 0px;
+        }
+    }
+
+    &__review-link {
+        color: $teal;
+        font-weight: 300;
+    }
+
+    &__review-view-app {
+        color: $teal;
+        font-weight: 300;
+    }
+
+    &__price {
+
+        &-quant {
+            &-text {
+                color: $primary-grey;
+
+                @media screen and (min-width:1024px) and (max-width:1200px) {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    &__price-col-fix {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        
+        @media (max-width: 425px) { 
+            padding-top: 0 !important;
+        }
+    }
+
+
+    &__price-icon {
+        margin-right: 2px;
+
+        &--state-active {
+            #Artboard {
+                fill: $black;
+            }
+        }
+    }
+
+    &__divider-h {
+        margin-top: 15px;
+        margin-bottom: 30px;
+
+        &-line {
+            width: 95%;
+            height: 1px;
+            background-color: $line;
+
+        }
+    }
+
+    &__app-description-group {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @media screen and (max-width:992px) {
+            padding-left: 40px;
+        }
+
+        @media screen and (max-width:$mobile) {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__app-description {
+        display: flex;
+        flex-direction: column;
+        padding-right: 15px;
+        font-size: 16px;
+        font-weight: $light;
+        height: 190px;
+        line-height: 28px;
+        a {
+            margin-top: 10px;
+        }
+    }
+
+    &__app-commentary {
+        color: $light-text;
+        padding-right: 15px;
+        background-color: $white;
+        padding: 22px 20px;
+        border-radius: 6px;
+        span { 
+            font-family: $primary-font;
+            font-style: $italic;
+            font-size: 14px;
+            font-weight: $regular;
+            left: 10px;
+            line-height: 22px;
+            position: relative;
+            quotes: '\201c' '\201d';
+            text-align: justify;
+            &::before { 
+                content: open-quote; 
+                color: $primary-pink;
+                font-size: 24px;
+                left: -14px;
+                position: absolute;
+            } 
+            &::after { 
+                content: close-quote; 
+                bottom: -5px;
+                color: $primary-pink;
+                font-size: 24px;
+                position: absolute;
+            } 
+        }
+        .user-name {
+            font-family: $primary-font;
+            font-style: $italic;
+            font-size: 16px;
+            font-weight: $regular;
+            text-align: justify;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    &__rating-title {
+        font-size: 16px;
+        font-weight: $medium;
+        margin-bottom: 5px;
+    }
+
+    &__rating {
+        @media screen and (max-width: $mobile) {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 0;
+        }
+    }
+
+    &__rating-group {
+        @media screen and (min-width: $tablet) and (max-width:1200px) {
+            align-items: flex-start !important;
+        }
+    }
+
+    &__stars-group {
+        @media screen and (min-width:$tablet) and (max-width: 1200px) {
+            flex-direction: column !important;
+            align-items: start !important;
+        }
+
+        @media screen and (max-width:$sm) {
+            width: 200px;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+        }
+    }
+
+    &__stars-inner-group {
+        @media screen and (max-width: $sm) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__read-more {
+        color: $primary-pink;
+    }
+
+    
+
+
+    .col-border {
+        border-right: 1px solid $line;
+
+    }
+
+
+    .col-p-fix-r {
+        padding-right: 0 !important;
+
+    }
+
+    .col-p-fix-l {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .list-stars {
+        display: flex;
+        &:last-child {
+            margin-right: 10px;
+
+            @media screen and (min-width:$tablet) and (max-width:1200px) {
+                margin-right: 5px;
+            }
+        }
+
+        img {
+            width: 15px;
+        }
+    }
+
+    &__all-scores {
+        padding-left: 0;
+
+        @media screen and (max-width:$mobile) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            padding-left: 15px;
+        }
+
+        @media (max-width: 450px) {
+            width: 100%;
+            .app-review-module__group{
+                width: 100%;
+            }
+        }
+    }
+
+    .btn-download {
+
+        &:hover {
+            color: $white;
+        }
+
+        @media screen and (max-width: $mobile) {
+            width: 130px;
+            margin-right: 0 !important;
+        }
+    }
+
+
+}
+
+//********ADD REVIEW MODAL**********// 
+
+.add-review-modal {
+    background-color: #f9f9f9;
+    overflow: auto;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    height: 91vh;
+    z-index: 98;
+
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        height: 92vh;
+        top: 65px;
+    }
+
+    #message{
+        color: $white;
+    }
+
+    .acf-notice.-error {
+        max-width: 220px;
+    }
+
+    .acf-notice.-dismiss {
+        padding: 10px 35px;
+        position: fixed;
+        right: 15px;
+        top: 72px;
+        z-index: 200;
+    }
+
+    &__box {
+        background: $white;
+        padding: 50px 75px 15px;
+
+        @media screen and (max-width:992px) {
+            padding: 30px 35px;
+        }
+
+        @media screen and (max-width:$sm) {
+            padding: 30px 25px;
+        }
+
+    }
+
+    .close-modal {
+        cursor: pointer;
+        @media screen and (max-width:767px) {
+            padding-right: 15px;
+        }
+    }
+
+    &__rating-box-title {
+        font-size: 20px;
+    }
+
+    &__rating-box-group {
+        :nth-child(3) {
+            border-bottom: 1px solid $line;
+        }
+    }
+
+    &__rating-box {
+        padding: 10px 0;
+    }
+
+    &__overall-group {
+        padding: 15px 0;
+
+        @media screen and (max-width:$sm) {
+            padding-bottom: 25px;
+        }
+    }
+
+    &__overall-number {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    &__overall-text {
+        font-size: 22px;
+    }
+
+
+    &__header {
+        height: 70px;
+        background: $teal;
+    }
+
+    &__title {
+        color: $white;
+        font-weight: 300;
+        font-size: 26px;
+
+        @media screen and (max-width:992px) {
+            padding-left: 35px;
+        }
+    }
+
+    &__which-app {
+        color: $black;
+        font-size: 22px;
+
+        @media screen and (max-width: 992px) {
+            padding-bottom: 10px;
+        }
+    }
+
+    &__personal-info-title {
+        color: $black;
+        font-size: 22px;
+    }
+
+    &__personal-info {
+        color: $black;
+        font-size: 18px;
+    }
+
+
+    &__text-area-section-title {
+        color: $black;
+        font-size: 22px;
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 180px;
+    }
+
+    &__required {
+        color: $primary-pink;
+        padding-left: 5px;
+    }
+
+    &__row-3 {
+        .btn-download--teal {
+            white-space: pre;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    &__approval {
+        @media screen and (max-width:$sm) {
+            padding-bottom: 15px;
+        }
+    }
+
+    .input-group-prepend {
+        width: 100%;
+    }
+
+    .input-group {
+        width: 80%;
+    }
+
+    .close-modal {
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+
+    .acf-fields.-border {
+        border: 0 !important;
+        background: transparent !important;
+    }
+
+    .acf-field[data-width]+.acf-field[data-width] {
+        border-left: 0 !important;
+    }
+
+    .acf-fields>.acf-field {
+        border-top: 0 !important;
+        padding: 10px 0;
+    }
+
+    .acf-field input[type="text"] {
+        width: 100%;
+    }
+
+
+
+
+    //ADVANCED CUSTOM FIELDS FOR MODAL
+
+    //Modal Header
+
+    .acf-fields {
+
+        .modal-header {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: none;
+
+            @media screen and (max-width:992px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .acf-input {
+                width: 50%;
+                background: white;
+                padding: 5px 0;
+                border-radius: 0;
+
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
+
+                select {
+                    padding: 7px 2px;
+                    border: 1px solid $line;
+                }
+            }
+
+            .acf-label {
+                width: 50%;
+
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        //WHICH APP ARE YOU REVIEWING 
+        .app-which-app {
+
+            display: flex;
+
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+            }
+        }
+
+        //Ratings Column
+        .ratings {
+            font-size: 22px;
+            font-weight: 500;
+            padding-top: 15px;
+            position: relative;
+            width: 50%;
+
+            .acf-field {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 0;
+
+            }
+
+            @media screen and (max-width:992px) {
+                width: 100% !important;
+            }
+
+            &:first-child {
+                label {
+                    font-size: 22px;
+                    font-weight: 500 !important;
+                }
+            }
+
+            .value_for_money {
+
+                label {
+                    font-weight: 300;
+                    font-size: 18px;
+                }
+
+
+                .acf-label {
+                    width: 47%;
+
+                    @media screen and (max-width: 992px) {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .ease_of_use {
+
+                label {
+                    font-weight: 300;
+                    font-size: 18px;
+                }
+
+
+                .acf-label {
+                    width: 47%;
+
+                    @media screen and (max-width: 992px) {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .features {
+                label {
+                    font-weight: 300;
+                    font-size: 18px;
+                }
+            }
+            
+            #overall_ratings{
+                border-top: 1px solid $line!important;
+            }
+
+            .stars {
+                a {
+                    font-size: 22px;
+                }
+
+                label {
+                    font-weight: 400;
+
+
+                }
+            }
+
+        }
+
+
+        //Personal Information
+        .personal_info {
+            width: 50%;
+            padding-top: 15px;
+
+            @media screen and (max-width:992px) {
+                width: 100% !important;
+            }
+
+            .acf-label {
+                label {
+                    font-weight: 500;
+                    font-size: 22px;
+                }
+
+            }
+
+            .acf-input {
+                input {
+                    height: 35px;
+                }
+            }
+
+            .personal_info_name {
+                label {
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+
+                input {
+                    width: 90%;
+
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .personal_info_email {
+                label {
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+
+                .acf-input {
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    .acf-input-append {
+                        background: transparent;
+                        border: none;
+                        color: $light-text;
+                        font-family: $primary-font;
+                        margin-top: 5px;
+                    }
+                }
+
+
+                input {
+                    width: 90%;
+
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+        //CHECKBOX
+        .-border {
+            .private-checkbox {
+                label {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                .sub {
+                    color: $light-text;
+                    padding-left: 20px;
+                    font-size: 12px;
+
+
+                    @media screen and (max-width: 1350px) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+
+        ///TEXTAREA
+
+        .app-textarea {
+            textarea {
+                border: 1px solid $line;
+            }
+        }
+
+        .pros_of_the_app {
+            textarea {
+                border: 1px solid $line;
+            }
+        }
+
+        .cons_of_the_app {
+            textarea {
+                border: 1px solid $line;
+            }
+        }
+
+        .acf-field-textarea .acf-label label {
+            font-size: 22px;
+            font-weight: 400;
+
+        }
+
+
+        .acf-input {
+            a {
+                font-size: 16px;
+                padding: 0 1px;
+                cursor: pointer;
+                color: $danger-color;
+                text-decoration: none !important;
+
+                &:hover,
+                &:active,
+                &:visited {
+                    color: $danger-color;
+                }
+            }
+        }
+
+
+        .acf-field .acf-input .acf-input-wrap input {
+            border: 1px solid $line;
+        }
+
+        .acf-field-select .acf-label label {
+            font-size: 18px;
+            font-weight: 300;
+
+        }
+
+        //////////////END AC-FIELDS
+    }
+
+    //////SUBMIT AREA
+    .acf-form-submit .acf-button {
+        background: $teal;
+        color: $white;
+        border: none;
+        outline: none;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    .acf-form-submit {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 70px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .g-recaptcha{
+        position: absolute;
+        left: 0;
+        top: -13px;
+    }
+
+
+}
+
+
+// Success Submit
+.acf-notice.-success {
+    padding: 10px 35px;
+    position: fixed!important;
+    right: 15px;
+    top: 72px;
+    z-index: 200;
+}
+
+// Interest
+#interest{
+    display: none!important;
+}

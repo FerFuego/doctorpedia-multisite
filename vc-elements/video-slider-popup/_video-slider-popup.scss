@@ -1,0 +1,96 @@
+.video_slider_popup-container {
+    .slider-single-item {
+        display: block !important;
+    }
+
+    .video-popup-element {
+        margin: 0;
+        .slider-container {
+            display: block !important;
+        }
+    }
+
+    .header h2 {
+        padding-left: 15px;
+        @media (max-width: $mobile){
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.modal-video-slider-popup{
+    height: 530px;
+    top: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: fixed !important;
+    z-index: 3; 
+    .modal-content{
+        background-color: $black;
+        iframe{
+            height: 500px;
+            width: 100%;
+        }
+    }
+
+
+    @media (max-width: $mobile){
+        height: 400px;
+        top: 70px;
+        width: 100%;
+        .modal-content{
+            iframe{
+                height: 360px;
+            }
+        }
+    }
+}
+
+@media ( max-width: $tablet ) {
+    .video-popup-element .slider-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        max-width: 100% !important;
+        position: relative !important;
+        display: block !important;
+    }
+    .slider-single-item {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .video-popup-element .slider-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        max-width: 100% !important;
+        position: relative !important;
+        display: block !important;
+    }
+    .slider-single-item {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+/*--------- SKIP INTRO VIDEO ----------*/
+
+.social-media-popup {
+    top: 30px !important;
+}
+
+.skip-intro-popup {
+    bottom: 80px !important;
+    @media (max-width: 500px) {
+        bottom: 120px !important;
+    }
+}
+
+/*--------- END SKIP INTRO VIDEO ----------*/

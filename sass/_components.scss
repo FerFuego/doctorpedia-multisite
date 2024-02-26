@@ -1,0 +1,85 @@
+/*-------------------------------
+		2.-COMPONENTS
+--------------------------------*/
+
+
+
+
+/*--------- INFORMATION BOX ----------*/
+
+.information-box {
+    background-color: $transparent-background;
+    width: 450px;
+    height: auto;
+    display: inline-block;
+    .header {
+        padding: 15px 50px;
+        border-bottom: 1px solid $border-color;
+        span {
+            color: $maroon;
+            font-weight: $medium;
+        }
+    }
+
+    .body {
+        padding: 25px 50px;
+        h1 {
+            font-size: 38px;
+            color: $black;
+            font-weight: $light;
+            padding-bottom: 25px;
+        }
+
+        p {
+            color: $black;
+            padding-bottom: 25px;
+            font-size: 16px;
+            font-weight: $light;
+        }
+    }
+
+    .footer {
+        background-color: $primary-pink;
+        text-align: center;
+        padding: 25px 50px;
+        a {
+            color: $white;
+            font-size: 18px;
+        }
+    }
+
+    //Mobile
+    @media(max-width:$mobile) {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 0 15px;
+
+        .body {
+            padding: 15px 0;
+            h1 {
+                font-size: 26px;
+            }
+        }
+
+        .footer {
+            background: transparent;
+            padding: 25px;
+            border-bottom: 1px solid $border-color;
+
+            a {
+                background: $primary-pink;
+                border-radius: 25px;
+                padding: 10px 25px;
+                display: inline-block;
+            }
+            
+        }
+    }
+}
+
+/*--------- END INFORMATION BOX ----------*/
+
+
+
+

@@ -1,0 +1,140 @@
+.video-popup-element {
+	position: relative;
+	margin: 50px 0;
+
+	// Mobile
+	@media(max-width: $mobile){
+		margin: 15px 0;
+    }
+    
+    .header{
+        h2{
+            font-size: 2rem;
+            margin: 40px 20px;
+        }
+    }
+
+
+	// Slider
+	.slider-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+		&.four-slides {
+			.slider-single-item {
+				.slider-single-title {
+					font-size: 18px;
+				}
+			}
+		}
+
+        // Slider single item
+        .slider-single-item {
+            cursor: pointer;
+            padding: 0 15px;
+            display: block;
+            width: 368px;
+            .trim {
+                position: relative;
+                background-size:cover;
+                background-position:center center;
+                height:150px;
+
+                @media (max-width: $tablet){
+                   height: 200px;
+                }
+                .play-video-btn{
+                    cursor: pointer;
+                    position: absolute;
+                    width: 46px;
+                    height: 46px;
+                    bottom: 9%;
+                    right: 6%;
+                    //Tablet
+                    @media (max-width: $tablet){
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    // Class added when 3 sliders
+                    &.play-video-btn-lg {
+                        width: 50px;
+                        height: 50px;
+                        //Tablet
+                        @media (max-width: $tablet){
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    img{
+                        width: 11px;
+                        //Mobile
+                        @media (max-width: $tablet){
+                            width: 9px;
+                        }
+                        @media screen and (min-width:0\0) { 
+                            /* Styles for IE9, IE10, IE11  */
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .slider-single-item-content {
+                margin-top: 10px;
+                .slider-single-title {
+                    color: $black;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        @media (max-width: $mobile){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .slider-single-item {
+                padding: 10px 15px;
+            }
+        }
+	}
+}
+.modal-video-popup{
+    height: 530px;
+    top: 150px;
+    max-width: 800px;
+    margin: 0 auto;
+    .modal-content{
+        background-color: $black;
+        iframe{
+            height: 500px;
+            width: 100%;
+        }
+    }
+    @media (max-width: $mobile){
+        height: 400px;
+        top: 70px;
+        width: 100%;
+        .modal-content{
+            iframe{
+                height: 360px;
+            }
+        }
+    }
+}
+
+
+/*--------- SKIP INTRO VIDEO ----------*/
+
+.social-media-popup {
+    top: 30px !important;
+}
+
+.skip-intro-popup {
+    bottom: 80px !important;
+    @media (max-width: 500px) {
+        bottom: 120px !important;
+    }
+}
+
+/*--------- END SKIP INTRO VIDEO ----------*/

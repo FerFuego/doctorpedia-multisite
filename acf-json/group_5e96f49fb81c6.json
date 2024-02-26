@@ -1,0 +1,39 @@
+{
+    "key": "group_5e96f49fb81c6",
+    "title": "Tax Resources",
+    "fields": [
+        {
+            "key": "field_5e96f51d5f585",
+            "label": "Reviewed By",
+            "name": "reviewed_by",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "resource"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1605643641
+}

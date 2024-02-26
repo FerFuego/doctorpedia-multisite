@@ -1,0 +1,26 @@
+.simple-template {
+    .slider-single-item-content {
+        h1{ 
+            font-size: 16px !important; 
+            font-weight: 400 !important;
+        }
+        h2{
+            font-size: 14px !important;
+            font-weight: 400 !important;
+        }
+    }
+    @media ( max-width: $mobile ) {
+        .wpb_text_column{
+            .wpb_wrapper{
+                ul{
+                    margin: 15px 0;
+                    li{
+                        display: block;
+                        max-width: 100%;
+                        word-break: break-word;
+                    }
+                }
+            }
+        }
+    }
+}

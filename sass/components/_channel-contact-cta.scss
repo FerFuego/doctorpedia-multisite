@@ -1,0 +1,243 @@
+.channel-contact-cta {
+    text-align: center;
+    background: $white;
+    background: url(../../img/modules/channels/bg-left.svg), url(../../img/modules/channels/bg-right.svg);
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+    padding: 80px 0 0 0;
+    width: 100%;
+    //mobile
+    @media(max-width: $mobile) {
+        padding: 50px 15px 58px 15px;
+        background-image: none;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon {
+        /* margin-bottom: 22px; */
+    }
+    &__title {
+        font-family: $primary-font;
+        font-weight: $bold;
+        font-size: 32px;
+        line-height: 1.6em;
+        text-align: center;
+        color: $primary-black;
+        margin-bottom: 15px;
+    }
+    &__copy {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 18px;
+        line-height: 1.5em;
+        text-align: center;
+        color: $primary-black;
+        width: 100%;
+        max-width: 647px;
+        margin-bottom: 40px;
+    }
+    &__cta {
+        background: $primary-pink;
+        border-radius: 50px;
+        border: 0;
+        color: $white;
+        cursor: pointer;
+        padding: 15px 45px;
+        width: 253px;
+        height: 57px;
+
+        font-family: $primary-font;
+        font-weight: $semibold;
+        font-size: 18px;
+        line-height: 1.5em;;
+        text-align: center;
+        &:hover {
+            background-color: #C80245;
+        }
+    }
+}
+
+/* Modal */
+.c-modal {
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 3000;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    &__active {
+        display: block;
+        opacity: 1;
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    &__content {
+        background-color: $white;
+        width: 645px;
+        padding: 48px 43px;
+        position: relative;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    &__close {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        top: 22px;
+        right: 24px;
+    }
+    &__title {
+        font-family: $primary-font;
+        font-weight: $bold;
+        font-size: 24px;
+        line-height: 1.5em;
+        color: $primary-black;
+    }
+    &__success {
+        img {
+            margin-bottom: 0;
+        }
+    }
+    &__text-success {
+        display: flex;
+        color: $opaque-grey-2;
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 26px;
+        line-height: 1.5em;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.2px;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    &__body {
+        form {
+            label {
+                font-family: $primary-font;
+                font-weight: $regular !important;
+                font-size: 16px !important;
+                line-height: 1.5em !important;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.2px;
+                color: $opaque-grey-2;
+                margin: 0 0 5px !important;
+                padding: 0 !important;
+            }
+            input, 
+            textarea {
+                border: 1px solid $thing-white;
+                box-sizing: border-box;
+                border-radius: 10px;
+                margin: 0 0 18px !important;
+                height: 50px;
+                padding: 5px 15px !important;
+                width: 100% !important;
+            }
+            input[type=submit] {
+                background-color: $primary-pink;
+                border-radius: 50px;
+                color: $white;
+                font-family: $primary-font;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.4em;
+                letter-spacing: 0.1em;
+                display: block !important;
+                height: 50px !important;
+                margin: 12px auto 0 !important;
+                width: 190px !important;
+            }
+        }
+    }
+
+    .gform_confirmation_wrapper {
+        h2 {
+            font-family: $primary-font;
+            font-weight: $bold;
+            font-size: 28px;
+            line-height: 1.6em;
+            text-align: center;
+            color: $primary-black;
+            text-align: center;
+        }
+        p {
+            font-family: $primary-font;
+            font-weight: $regular;
+            font-size: 18px;
+            line-height: 1.5em;
+            text-align: center;
+            color: $primary-black;
+            width: 100%;
+            max-width: 647px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .gform_wrapper {
+        margin: 0 !important;
+    }
+    .gform_body {
+        ul {
+            li {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            .ginput_container {
+                margin: 0 !important;
+            }
+        }
+    }
+    .gform_footer {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .validation_error {
+        display: none !important;
+    }
+    .gform_wrapper .description, .gform_wrapper .gfield_description, .gform_wrapper .gsection_description {
+        padding: 0 !important;
+    }
+    .gfield_error {
+        max-width: none !important;
+        background-color: transparent !important;
+        border-bottom: 0 !important;
+        border-top: 0 !important;
+    }
+    .validation_message {
+        padding-top: 5px !important;
+        padding-right: 0 !important;
+        text-align: right !important;
+    }
+    .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+        max-width: 100% !important;
+    }
+}

@@ -1,0 +1,56 @@
+.iframe-module-container {
+    background-color: $white !important;
+    background: linear-gradient(to bottom, $white 0%, $white 100%) !important;
+    padding: 0 !important;
+    position: relative;
+    margin: 0 0 100px;
+    width: 100%;
+    .header-iframe {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        padding: 25px 0;
+        width: 100%;
+        h2 {
+            font-family: $primary-font;
+            font-size: 30px;
+            border-bottom: 0px;
+            padding: initial;
+            color: inherit;
+            @media (max-width: $mobile){
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .iframe-block {
+        height: 70vh;
+        margin: 0;
+        width: 100%;
+        iframe{
+            height: 70vh;
+            width: 100%;
+        }
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .iframe-module-container {
+        margin: 0 0 30px;
+        width: 100%;
+        .header-iframe {
+            padding: 25px 0;
+            margin-bottom: -90px;
+        }
+        .iframe-block {
+            height: auto;
+            margin: 0;
+            width: 100%;
+            iframe{
+                height: 40vh;
+                width: 100%;
+            }
+        }
+    }
+}

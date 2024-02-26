@@ -1,0 +1,433 @@
+.affiliate-hero {
+    display: block;
+    position: relative;
+    width: 100%;
+    //padding: 166px 0 133px;
+    z-index: 1;
+
+    // mobile
+    @media (max-width: $mobile) {
+        //padding: 80px 0 100px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // tablet
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+        // mobile
+        @media (max-width: $mobile) {
+            padding: 0 15px;
+        }
+    }
+
+    &__form {
+        height: auto;
+        width: 432px;
+        background: white;
+        box-shadow: 0px 5px 25px rgba(39, 39, 39, 0.1);
+        border-radius: 10px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 40px;
+        }
+
+        // mobile
+        @media (max-width: $mobile) {
+            height: auto;
+        }
+
+        /* Gravity Form */
+        .gform_wrapper {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        // mobile
+        @media (max-width: $mobile) {
+            width: 100%;
+            max-width: 432px;
+        }
+        
+        &--cta {
+            form {
+                padding: 30px;
+            }
+        }
+    }
+
+
+    &__sponsor {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 60px 60px;
+
+        // mobile
+        @media (max-width: $mobile) {
+            padding: 0 40px 40px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 106px;
+            margin-right: 30px;
+        }
+
+        p {
+            font-family: $primary-font;
+            font-weight: $regular;
+            font-size: 14px;
+            line-height: 1.3em;
+            color: #333333;
+
+            // mobile
+            @media (max-width: $mobile) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__video {
+        background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+        border-radius: 10px;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 620px;
+
+        @media (max-width: $laptop) {
+            max-width: 450px;
+        }
+
+        // tablet
+        @media (max-width: $tablet) {
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        // mobile
+        @media (max-width: $mobile) {
+            width: 100%;
+            order: 1;
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+        max-width: 445px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
+
+        span,
+        p {
+            font-family: $primary-font;
+            font-weight: $normalbold;
+            font-size: 50px;
+            line-height: 55px;
+            color: $primary-black;
+            position: relative;
+            top: 0;
+            left: 0;
+
+            @media (max-width: $mobile) {
+                font-size: 38px;
+                line-height: 43px;
+            }
+
+            @media (max-width: 350px) {
+                font-size: 34px;
+                line-height: 39px;
+            }
+
+            span {
+                text-decoration: none !important;
+                background-image: url('../../img/affiliate/underline.svg');
+                background-size: 100%;
+                background-position: bottom;
+                background-repeat: no-repeat;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    &__copy {
+        display: block;
+        margin-bottom: 60px;
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 20px;
+        line-height: 30px;
+        color: $black;
+
+        @media (max-width: $tablet) {
+            text-align: center;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        @media (max-width: $mobile) {
+            justify-content: center;
+            flex-flow: column wrap;
+        }
+    }
+
+    &__button {
+
+        @media (max-width: $laptop) {
+            min-width: auto;
+        }
+
+        &:first-child {
+            min-width: 210px;
+            background-color: $primary-pink;
+            //margin-right: 22px;
+            transition: .3s background-color;
+
+            &:hover {
+                color: $white;
+                background-color: $secondary-pink;
+            }
+
+            @media (max-width: $mobile) {
+                margin-right: initial;
+                margin-bottom: 20px;
+            }
+        }
+
+        &:last-child {
+            min-width: 222px;
+            background-color: transparent;
+            border: 2px solid $primary-pink;
+            color: $primary-pink;
+        }
+    }
+
+    &__image {
+        max-width: 697px;
+        width: 100%;
+        visibility: hidden;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.affiliate-form {
+    width: 100%;
+    height: auto;
+    padding: 60px 60px 30px;
+
+    // mobile
+    @media (max-width: $mobile) {
+        padding: 40px;
+    }
+
+    /* Markup Form */
+
+    .form-group {
+        width: 100%;
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-weight: $bold;
+        font-size: 30px;
+        line-height: 1.5em;
+        color: $primary-pink;
+        margin: 0 0 30px;
+    }
+
+    &__label {
+        font-family: $primary-font;
+        font-weight: $semibold;
+        font-size: 18px;
+        line-height: 1.5em;
+        color: $opaque-grey-2;
+        margin-bottom: 8px;
+    }
+
+    &__input {
+        background: $white;
+        border: 1px solid $thing-white;
+        box-sizing: border-box;
+        border-radius: 10px;
+        height: 60px;
+        width: 100%;
+    }
+
+    &__button {
+        width: 152px;
+        height: 57px;
+        background: $primary-pink;
+        border-radius: 50px;
+        margin: 30px 0px;
+        color: $white;
+
+        font-family: $primary-font;
+        font-weight: $semibold;
+        font-size: 18px;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    /* Gravity Form */
+
+    .gform_heading {
+        margin-bottom: 0 !important;
+
+        .gform_title {
+            font-family: $primary-font;
+            font-weight: $bold;
+            font-size: 30px;
+            line-height: 1.5em;
+            color: $primary-pink;
+            margin: 0 0 30px;
+        }
+    }
+
+    .gform_fields {
+        li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+            max-width: 100% !important;
+        }
+
+        .gfield {
+            margin-top: 0 !important;
+            padding-right: 0 !important;
+            margin-bottom: 30px !important;
+
+            label {
+                font-family: $primary-font;
+                font-weight: $semibold;
+                font-size: 18px;
+                line-height: 1.5em;
+                color: $opaque-grey-2;
+                margin-bottom: 8px;
+            }
+        }
+
+        .ginput_container {
+            margin-top: 0 !important;
+            position: relative;
+
+            input {
+                background-color: $white;
+                border: 1px solid $thing-white;
+                box-sizing: border-box;
+                border-radius: 10px;
+                height: 60px;
+                width: 100% !important;
+                padding-left: 45px !important;
+            }
+
+            #input_4_1,
+            #input_5_1,
+            #input_6_1,
+            #input_7_1,
+            #input_8_1,
+            #input_9_1 {
+                background-image: url(../../img/affiliate/email.svg);
+                background-repeat: no-repeat;
+                background-position: 5% 50%;
+            }
+
+            #input_4_2,
+            #input_5_2,
+            #input_6_2,
+            #input_7_2,
+            #input_8_2,
+            #input_9_2 {
+                background-image: url(../../img/affiliate/key.svg);
+                background-repeat: no-repeat;
+                background-position: 5% 50%;
+            }
+
+            .js-gf-loader {
+                position: absolute;
+                top: 20px;
+                right: 15px;
+            }
+        }
+    }
+
+    .gform_footer {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        input {
+            width: 152px !important;
+            height: 57px;
+            background: $primary-pink;
+            border-radius: 50px;
+            margin: 0 !important;
+            color: $white;
+            cursor: pointer;
+
+            font-family: $primary-font;
+            font-weight: $semibold;
+            font-size: 18px !important;
+            line-height: 1.5em;
+            text-align: center;
+        }
+    }
+
+    .gfield_error {
+        background-color: $white !important;
+        margin-bottom: 0 !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .validation_error,
+    .validation_message {
+        display: none !important;
+    }
+}
+
+.video_popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &__cta {
+        cursor: pointer;
+    }
+
+    @media (max-width: $mobile) {
+        position: relative;
+    }
+}

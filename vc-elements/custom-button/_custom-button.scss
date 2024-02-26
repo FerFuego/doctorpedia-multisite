@@ -1,0 +1,15 @@
+.custom-button{
+    margin: 50px 0;
+    width: 100%;
+    a{
+        background-color: $primary-pink!important;
+        color: $white!important;
+        display: flex!important;
+        font-family: $primary-font!important;
+        font-size: 15px!important;
+        justify-content: center!important;
+        padding: 15px!important;
+        text-align: center!important;
+        width: 100%!important;
+    }
+}

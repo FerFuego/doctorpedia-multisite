@@ -1,0 +1,113 @@
+{
+    "key": "group_5e4414c9373cb",
+    "title": "Support: Appearance",
+    "fields": [
+        {
+            "key": "field_5e4db455fe860",
+            "label": "Appearance Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e441e1c9ca33",
+            "label": "Padding Options",
+            "name": "padding_options",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_5e441e529ca35",
+                    "label": "Padding Top",
+                    "name": "padding_top",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "padding--top-0": "None",
+                        "padding--top-small": "Small",
+                        "padding--top-default": "Default",
+                        "padding--top-large": "Large",
+                        "padding--top-xlarge": "XLarge"
+                    },
+                    "allow_null": 0,
+                    "default_value": "padding--top-default",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5e441e8f9ca36",
+                    "label": "Padding Bottom",
+                    "name": "padding_bottom",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "padding--bottom-0": "None",
+                        "padding--bottom-small": "Small",
+                        "padding--bottom-default": "Default",
+                        "padding--bottom-large": "Large",
+                        "padding--bottom-xlarge": "XLarge"
+                    },
+                    "allow_null": 0,
+                    "default_value": "padding--bottom-default",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1620396567
+}

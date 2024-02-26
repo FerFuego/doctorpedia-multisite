@@ -1,0 +1,140 @@
+/*--------- FEATURED COLLECTIONS ----------*/
+.collection-review-container {
+    background-color: #f2f2f2;
+    background: linear-gradient(to bottom, #fff 0%, #fff 20%, #fff 40%, #f2f2f2 30%, #f2f2f2 100%);
+    padding: 50px 0;
+    position: relative;
+    h1 {
+        font-size: 30px;
+        color: $black;
+        font-weight: $regular;
+        //Tablet
+        @media (max-width: $tablet) {
+            font-size: 20px !important;
+        }
+        //Mobile
+        @media (max-width: $tablet) {
+            font-size: 23px !important;
+        }
+    }
+    .slider-container {
+        .slick-initialized {
+            .slick-slide {
+                display: flex;
+            }
+        }
+    }
+    .btn-load {
+        background-color: $white;
+        border-color: $border-color;
+        font-weight: $regular;
+        color: $black;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 21px;
+        padding: 10px 50px;
+    }
+    .header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 25px 0px;
+		//Tablet
+		@media(max-width: $tablet){
+			padding: 25px 15px;
+		}
+		h1 {
+			font-size: 30px;
+			//Tablet
+			@media(max-width: $tablet){
+				font-size: 23px; 
+			}
+		}
+
+		a {
+			color: $baby-blue;
+			align-self: center;
+			border-bottom: 1px solid;
+			padding-bottom: 5px;
+
+			//Mobile 
+			@media(max-width: $mobile){
+				display: none;
+			}
+			
+		}
+    }
+    .body {       
+        position: relative;
+        padding-bottom: 50px; 
+        .prev {
+            margin-left: -35px;
+            padding-right: 15px;
+            // Mobile
+            @media(max-width: $mobile){
+                display: none;
+            }
+        }
+
+        .next {
+            margin-right: -35px;
+            padding-left: 15px;
+            // Mobile
+            @media(max-width: $mobile){
+                display: none;
+            }
+        }
+
+		//Mobile
+        @media(max-width: $mobile){
+            flex-direction: column;
+            .prev, .next{
+                display: none!important;
+            }
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 40%;
+            cursor: pointer;
+            transition: transform .5s;
+            transform: translate(0, -50%);
+            &.prev {
+                left: -30px;
+            }
+            &.next {
+                right: -30px;
+            }
+        }
+        .blog-post-preview{
+            h2{
+                color: $teal;
+            }
+        }
+        .app-post-preview {
+            //Tablet
+            @media (max-width: $tablet) {
+                margin: 10px;
+            }
+            .footer {
+                h3 {
+                    color: $baby-blue;
+                    font-size: 20px;
+                    text-decoration: underline;
+                    //Tablet
+                    @media (max-width: $tablet) {
+                        font-size: 18px;
+                    }
+                    //Mobile
+                    @media (max-width: $mobile) {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .app-post-content {
+                margin: 0;
+            }
+        }
+    }
+    
+}
+/*--------- END FEATURED COLLECTIONS ----------*/

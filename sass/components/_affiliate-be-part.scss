@@ -1,0 +1,175 @@
+.affiliate-be-part {
+    padding: 103px 0 127px;
+
+    // mobile
+    @media (max-width: $mobile) {
+        padding: 80px 15px 80px;
+    }
+
+    &__header {
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-family: $primary-font;
+        font-weight: $bold;
+        font-size: 32px;
+        line-height: 1.5em;
+        text-align: center;
+        color: $primary-black;
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1290px; 
+        margin: 0 auto;
+        // tablet
+        @media (max-width: $tablet ) {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 75%;
+        }
+
+        // mobile
+        @media (max-width: $mobile ) {
+            width: 100%;
+        }
+    }
+    &__form {
+        background: $white;
+        box-shadow: 0px 5px 25px rgb(39, 39, 39 / 10%);
+        border-radius: 10px;
+        height: auto;
+        width: 432px;
+
+        // mobile
+        @media (max-width: 450px) {
+            height: auto;
+            width: 100%;
+        }
+
+        /* Gravity Form */
+        .affiliate-form_wrapper {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .gform_heading {
+            margin-bottom: 0 !important;
+            .gform_title {
+                font-family: $primary-font;
+                font-weight: $bold;
+                font-size: 30px;
+                line-height: 1.5em;
+                color: $primary-pink;
+                margin: 0 0 30px;
+                text-align: center;
+            }
+        }  
+        #input_5_1 {
+            background-image: url(../../img/affiliate/email.svg);
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+        }
+        #input_5_2 {
+            background-image: url(../../img/affiliate/key.svg);
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+        }
+        .gform_footer {
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center;
+            input {
+                width: 152px !important;
+                height: 57px;
+                background: $primary-pink;
+                border-radius: 50px;
+                margin: 0 0 0 !important;
+                color: $white;
+                cursor: pointer;
+                font-family: $primary-font;
+                font-weight: $semibold;
+                font-size: 18px !important;
+                line-height: 1.5em;
+                text-align: center;
+            }
+        }
+        .js-gf-loader {
+            position: absolute;
+            top: 20px;
+            right: 15px;
+        }
+    }
+    &__sponsor {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 60px 60px;
+
+        // mobile
+        @media (max-width: $mobile ) {
+            padding: 0 40px 40px;
+        }
+        
+        img {
+            width: 100%;
+            max-width: 106px;
+            margin-right: 30px;
+        }
+        p {
+            font-family: $primary-font;
+            font-weight: $regular;
+            font-size: 14px;
+            line-height: 1.3em;
+            color: #333333;
+
+            // mobile
+            @media (max-width: $mobile ) {
+                font-size: 12px;
+            }
+        }
+    }
+    &__mobile-doctors {
+        display: none;
+        width: 100%;
+        // tablet
+        @media (max-width: $tablet ) {
+            display: block;
+            padding: 0 0 30px;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+    &__left-doctors {
+        margin-top: -45px;
+        width: 315px;
+        img {
+            height: auto;
+            width: 100%;
+        }
+        // tablet
+        @media (max-width: $tablet ) {
+            display: none;
+        }
+    }
+    &__right-doctors {
+        margin-top: -15px;
+        width: 315px;
+        img {
+            height: auto;
+            width: 100%;
+        }
+        // mobile
+        @media (max-width: $tablet ) {
+            display: none;
+        }
+    }
+}

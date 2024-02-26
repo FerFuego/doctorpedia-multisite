@@ -1,0 +1,277 @@
+.doctor-card {
+    background-color: $white;
+    position: relative;
+    border: 1px solid #EDEDED;
+    border-radius: 12px;
+    width: 100%;
+    padding: 16px 0;
+
+    @media screen and (max-width: 1026px) {
+        align-self: flex-start;
+        width: calc(100vw - 28px)!important;
+    }
+
+    @media screen and (max-width: $mobile) {
+        padding: 11px 0 40px;
+        margin-bottom: 24px;
+    }
+
+    &__user {
+        display: grid;
+        grid-template-columns: 68px calc(100% - 68px);
+        column-gap: 16px;
+        align-items: center;
+        padding: 0 16px;
+        margin-bottom: 16px;
+    }
+
+    &__user-avatar {
+        width: 100%;
+        height: 68px;
+        max-width: 68px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__user-info {
+        font-family: $primary-font;
+        font-weight: $regular;
+    }
+
+    &__user-name {
+        font-size: 18px;
+        line-height: calc(27em / 18);
+        color: $primary-black;
+    }
+
+    &__user-specialty {
+        font-size: 16px;
+        line-height: calc(24em / 16);
+        color: $opaque-grey-2;
+    }
+
+    &__features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        width: 100%;
+        margin-bottom: 16px;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background-color: #EDEDED;
+            top: 0;
+        }
+
+        &::before {
+            left: calc(100% / 3);
+        }
+
+        &::after {
+            right: calc(100% / 3);
+        }
+
+        &.double-columns {
+            grid-template-columns: repeat(2, 1fr);
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 100%;
+                width: 1px;
+                background-color: #EDEDED;
+                top: 0;
+                right: calc(100% / 2);
+            }
+        }
+
+        &.single-column {
+            grid-template-columns: 1fr;
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
+        a {
+            color: $primary-black;
+        }
+
+        &-info {
+            padding: 18px 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #ededed;
+                transition: all .5s;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        &-number {
+            font-family: $primary-font;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: $regular;
+        }
+
+        &-feature {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: $light;
+            color: $placeholder-grey;
+        }
+    }
+
+    &__videos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 32px;
+        gap: 9px;
+        padding: 0 16px;
+
+        @media screen and (max-width: $mobile) {
+            margin-bottom: 21px;
+        }
+    }
+
+    &__video {
+        position: relative;
+        max-width: 100%;
+        height: 110px;
+        background-color: #ededed;
+        -webkit-border-radius: 12px;
+        -khtml-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        overflow: hidden;
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+        &:hover{
+            .doctor-card__video-thumbnail{
+                transform: scale(1.1);
+            }
+        }
+
+        &-play-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        &-thumbnail {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+            object-position: center;
+            transition: .3s all;
+        }
+
+        &-duration {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: $semibold;
+            color: $white;
+            background-color: #000;
+            padding: 3px 5px 2px;
+        }
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+            justify-self: unset;
+            align-items: center;
+        }
+
+        &-cta {
+            display: flex;
+            align-items: center;
+            color: #5846BC;
+            font-family: $primary-font;
+
+            @media screen and (max-width: $mobile) {
+                order: 1;
+                width: 100%;
+                border: 1px solid rgba(88, 70, 188, 0.25);
+                padding: 15px;
+                border-radius: 10px;
+                max-width: 289px;
+                margin: 0 auto;
+                justify-content: center;
+                font-size: 18px;
+                line-height: calc(22em / 18);
+
+                &::after {
+                    display: none !important;
+                }
+            }
+
+
+            &::after {
+                content: url(../../img/arrow/arrow-see-profile.svg);
+                display: block;
+                margin-left: 8px;
+                transition: .3s all;
+            }
+
+            &:hover {
+                color: #5846BC;
+
+                &:after {
+                    transform: translateX(5px);
+                }
+            }
+        }
+
+        &-location {
+            display: flex;
+            align-items: flex-start;
+            font-size: 16px;
+            line-height: 20px;
+            color: $opaque-grey-2;
+
+            @media screen and (max-width: $mobile) {
+                order: 0;
+                margin-bottom: 25px;
+            }
+
+            &::before {
+                content: url(../../img/icons/location-icon.svg);
+                display: inline;
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+.blogging-slider-container {
+    margin: 0 auto;
+    max-width: 100%;
+    background: -webkit-linear-gradient(bottom,#F9F9F9 67%,#fff 33%);
+    background: -moz-linear-gradient(bottom,#F9F9F9 67%,#fff 33%);
+    background: -ms-linear-gradient(bottom,#F9F9F9 67%,#fff 33%);
+    background: linear-gradient(to top,#F9F9F9 67%,#fff 33%);
+    padding-bottom: 76px;
+
+    // Dots
+    .slick-dots {
+        padding-top: 24px;
+
+        button {
+            background-color: $light-text;
+        }
+
+        li.slick-active button {
+            background-color: $black;
+        }
+    }
+
+    .header {
+        padding: 25px 0 !important;
+        padding-bottom: 40px !important;
+        margin-top: 0;
+    }
+
+    .next, .prev {
+        top: 40% !important;
+    }
+
+    .next {
+        right: -45px !important;
+    }
+
+    .prev {
+        left: -45px !important;
+    }
+
+    .single-blogging-item-container {
+        padding: 0 22px;
+        
+        &>a {
+            width: 100%;
+        }
+
+        .single-blogging-item-img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: flex-end;
+            height: 237px;
+            position: relative;
+
+            .cat-shadow {
+                background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.71) 24.7%, rgba(0, 0, 0, 0) 45.07%); /* Standard syntax (must be last) */
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                z-index: 1;
+                -webkit-transition: background-color .5s ease-in-out;
+                -moz-transition: background-color .5s ease-in-out;
+                transition: background-color .5s ease-in-out;
+
+                &:hover {
+                    background-color: rgba(0,0,0,0.4);
+                }
+            }
+        }
+
+        .single-blogging-item-text {
+            background-color: $white;
+            z-index: 2;
+            padding: 0 24px 29px;
+
+            h3 {
+                color: $black;
+                line-height: 26px;
+                font-weight: 400;
+                font-size: 20px;
+                margin-bottom: 20px;
+                width: 114px;
+            }
+            
+            p {
+                color: $black;
+                font-size: 15px;
+                font-weight: $light;
+                line-height: 1.33;
+            }
+
+            // Author
+            .content-author-container {
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 28px;
+                margin-top: -10px;
+                position: relative;
+                z-index: 2;
+
+                img {
+                    width: 64.5px;
+                    margin-right: 14px;
+                }
+
+                .content-author-text {
+                    margin-bottom: 8px;
+
+                    .content-author-title {
+                        font-size: 15px; 
+                        line-height: 18px;
+                        font-weight: 500;
+                        color: #363636;
+                    }
+
+                    .content-author-date {
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 25px;
+                        color: rgba(5, 11, 12, 0.7);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.channels-taxonomy {
+    .fix-height {
+        height: 110px !important;
+    }
+    .categories-container {
+        .header {
+         padding-top: 57px !important;   
+         @media ( max-width: $mobile ) {
+             padding-top: 25px !important;
+         }
+        }
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .doctorpedia-channels-pro {
+        .image-slider .image-slider__container {
+            justify-content: center;
+            .slick-list {
+                justify-content: center;
+                display: block !important;
+                .slick-track {
+                    justify-content: center;
+                }
+            }
+        }
+        .single-blogging-item-container {
+            justify-content: center !important;
+            display: block !important;
+            .single-blogging-item-img {
+                width: 100%;
+                max-width: 100% !important;
+            }
+            .single-blogging-item-text {
+                min-width: 270px !important;
+            }
+        }
+    }
+
+
+    .blogging-slider-container .single-blogging-item-container .single-blogging-item-text {
+        min-width: 270px !important;
+    }
+}
+
+@media ( max-width: 320px ) {
+    .blogging-slider-container .single-blogging-item-container .single-blogging-item-text {
+        min-width: 210px !important;
+    }
+}

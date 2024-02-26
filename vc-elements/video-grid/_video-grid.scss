@@ -1,0 +1,83 @@
+/*-------------- GRID CONTAINER -----------------*/
+.grid{
+    padding: 100px 0;
+    .header{
+        h1{
+            font-family: $primary-font;
+            font-size: 26px;
+            font-weight: 500;
+            padding-bottom: 20px;
+            // Mobile
+            @media(max-width: $mobile){
+                padding: 0 10px;
+            }
+        }
+    }
+    .grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .grid-thumbnail{
+            background-color: #fff;
+            position: relative;
+            margin: 10px 10px 40px 10px;
+            width: 250px;
+            // Mobile
+            @media(max-width: $mobile){
+                width: 100%;
+                margin: 10px 10px 0 10px;
+            }
+            a{
+                width: 278px;
+                height: 100%;
+                color: $black;
+
+                // Mobile
+                @media(max-width: $mobile){
+                    width: 100%;
+                }
+                .trim{
+                    height: 140px;
+                    overflow: hidden;
+
+                    // Mobile
+                    @media(max-width: $mobile){
+                        /* 
+                        * This styles broken this page: 
+                        * https://www.doctorpedia.com/video-library-category/hernia/
+                        */
+                        //width: 50%;
+                        //float: left;
+                        //margin-right: 15px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            h1{
+                padding-top: 20px;
+                font-size: 18px;
+            }
+            .play-video-btn{
+                top: 90px;
+                height: 40px;
+                width: 40px;
+                right: 14px;
+                position: absolute;
+
+                // Mobile
+                @media(max-width: $mobile){
+                    /* 
+                    * This styles broken this page: 
+                    * https://www.doctorpedia.com/video-library-category/hernia/
+                    */
+                    //right: auto;
+                    //left: 35%;
+                    //top: 55px;
+                }
+            }
+        }
+    }
+}
+/*------------- END GRID CONTAINER ---------------*/

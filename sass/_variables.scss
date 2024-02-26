@@ -1,0 +1,232 @@
+/*-------------------------------
+		0.1.-VARIABLES
+--------------------------------*/
+
+
+/*----------- Fonts -------------*/
+@font-face {
+    font-family: NeufileGrotesk;
+    src: url(../../fonts/neufile/neufile-grotesk-light.otf);
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NeufileGrotesk;
+    src: url(../../fonts/neufile/neufile-grotesk-regular.otf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NeufileGrotesk;
+    src: url(../../fonts/neufile/neufile-grotesk-medium.otf);
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NeufileGrotesk;
+    src: url(../../fonts/neufile/neufile-grotesk-semibold.otf);
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Visby;
+    src: url(../../fonts/visby/visby-medium.otf);
+    //font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NeufileGrotesk-Bold;
+    src: url(../../fonts/neufile/Neufile-Grotesk-Bold.otf);
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NeufileGrotesk-Italic;
+    src: url(../../fonts/neufile/Neufile-Grotesk-Light-Italic.otf);
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto/Roboto-Regular.ttf);
+    font-display: swap;
+}
+
+$primary-font: 'NeufileGrotesk',
+sans-serif;
+$primary-font-light-italic: 'NeufileGrotesk-Italic',
+sans-serif;
+$primary-font-bold: 'NeufileGrotesk-Bold',
+sans-serif;
+
+$logo-font: 'Visby',
+sans-serif;
+
+$tertiary-font: 'Roboto',
+sans-serif;
+
+$light :300;
+
+$regular:400;
+
+$medium: 500;
+
+$semibold: 600;
+
+$normalbold: 700;
+
+$bold: 900;
+
+$italic:italic;
+
+/*----------- Main Colors -------------*/
+
+//Primary colors
+$primary-color: #4432a7;
+
+$primary-pink: #df054e;
+
+$primary-blue: #303248;
+
+$primary-grey: #626790;
+
+$primary-black: #333333;
+
+//Secondary colors
+$teal: #21d1e3;
+
+$baby-blue: #4a90e2;
+
+$soft-pulple: #F3F3FF;
+
+$light-pulple: #A5A6F6;
+
+$pulple: #5846BC;
+
+$maroon: #50274f;
+
+$bright-purple: #000;
+
+$turquoise: #1CA4B2;
+
+$secondary-pink: #C90043;
+
+//Tertiary colors
+$pea-green: #4432a7;
+
+$ultra-soft-white: #EDEDED;
+
+$off-white: #f2f2f2;
+
+$soft-white: #f9f9f9;
+
+$off-white-2: #FCFCFC;
+
+$lemon-yellow: #f8e71c;
+
+$danger-color:#C61F49;
+
+$explore-color: #8D56F9;
+
+$reviews-color: #7E4CDF;
+
+$videolibrary-footer: #5D5D5D;
+
+$alphabet-border: #D9D9D9;
+
+$line: #E8E6E6;
+
+$secondary-line: #E5E5E5;
+
+$nav-line: #BCBCBC;
+
+$light-text: #8D8D8D;
+
+$blogging-grey: #576C7C;
+
+$appscore-grey: #E3E3E3;
+
+$opaque-grey: #E9E9E9;
+
+$light-grey-dd: #979797;
+
+$light-white: #B4B4B4;
+
+//Basic colors
+$transparent-white: rgba(255, 255, 255, 0.3);
+
+$transparent-background: rgba(255, 255, 255, 0.8);
+
+$transparent-black: rgba(0, 0, 0, 0.5);
+
+$white:#fff;
+
+$black:#000;
+
+$black-2: #333333;
+
+$light-grey: #f2f2f2;
+
+$light-grey-2: #EBEBEB;
+
+$light-grey-3: #EDEDED;
+
+$light-grey-4: #F4F4F4;
+
+$light-grey-5: #fafafa;
+
+$ultra-light-grey: #F6F6F6;
+
+$opaque-grey-2: #696969;
+
+$opaque-grey-3: #949494;
+
+$thing-white: #E1E1E1;
+
+$placeholder-grey: #9F9F9F;
+
+$green: #E5F3F1;
+
+$blue: #C9DAFD;
+
+$red: #FFD9DA;
+
+$placeholder-grey: #9F9F9F;
+
+$purple: #5846BC;
+
+//Action Colors
+$danger: red;
+
+//Elements Colors
+$border-color: #cccccc;
+
+//Border Utilities
+$border-utilities-color: #777777;
+
+//Shadows
+$shadow: 0 0 8px 0 rgba(191, 191, 191, .5);
+
+//Checkbox-width
+$checkbox-width: 18px;
+
+//Responsive Breakpoints
+$laptop: 1200px;
+
+$tablet: 1025px;
+
+$mobile: 767px;
+
+$sm: 576px;
+
+// Home Container Percent
+$position-home: 20%;
+
+$position-home-tablet: 6%;

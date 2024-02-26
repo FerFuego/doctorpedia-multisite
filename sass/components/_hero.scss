@@ -1,0 +1,231 @@
+.hero {
+    margin-top: 80px;
+    height: 400px;
+    width: 100%;
+    z-index: 2;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        max-width: 1200px;
+        &__header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                font-family: $primary-font-bold;
+                font-weight: $bold;
+                font-size: 32px;
+                line-height: 61px;
+                text-align: center;
+                letter-spacing: 1px;
+                color: #333333;
+            }
+            p {
+                font-family: $primary-font;
+                font-weight: $regular;
+                font-size: 22px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: 1px;
+                color: #333333;
+                margin-bottom: 44px;
+                width: 100%;
+                max-width: 728px;
+            }
+        }
+        &__body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            form {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                z-index: 2;
+                select {
+                    font-family: $primary-font;
+                    font-weight: $medium;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #333333;
+                    border: 1px solid #DEDEDE;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    height: 60px;
+                    padding: 0 20px;
+                    -webkit-appearance: none;
+                }
+                ::-webkit-scrollbar {
+                    width: 7px;
+                    background: #EEEEEE;
+                } 
+                ::-webkit-scrollbar-track {
+                    width: 7px;
+                    height: 19px;
+                    background: #EEEEEE;
+                }
+                ::-webkit-scrollbar-thumb {
+                    background: $primary-pink;
+                }
+
+                .searchSpecialty {
+                    border: 1px solid #DEDEDE;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    background: no-repeat 97.5% $white;
+                    display: flex;
+                    left: 0;
+                    align-items: center;
+                    width: 27.4% !important;
+                    .btn {
+                        padding: 10px 15px;
+                    }
+                    .filter-option-inner-inner {
+                        font-family: $primary-font-light-italic;
+                        font-weight: $light;
+                        font-size: 18px;
+                    }
+                    .dropdown-toggle {
+                        font-family: $primary-font;
+                        font-weight: $medium;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #333333 !important;
+                        background: url(../../img/doctor-directory/hero-dropdown.svg) no-repeat 96.5% #fff;
+                        width: 100%;
+                    }
+                }
+                .btn-light.dropdown-toggle {
+                    background-color: transparent !important;
+                    border-radius: 5px !important;
+                    border: 0 !important;
+                    height: 58px;
+                    line-height: 38px;
+                }
+                
+                .dropdown-menu {
+                    border-radius: 0px !important;
+                    top: -3px !important;
+                    left: -1px !important;
+                    min-width: 297px !important;
+                    .dropdown-item {
+                        font-family: $primary-font !important;
+                        font-weight: $light !important;
+                        font-size: 15px !important;
+                        line-height: 18px !important;
+                        color: #333333 !important;
+                        padding: .7rem .5rem!important;
+                        span {
+                            font-family: $primary-font !important;
+                            font-weight: $light !important;
+                            font-size: 15px !important;
+                            line-height: 18px !important;
+                            color: #333333 !important;
+                        }
+                    }
+                    .dropdown-item.active, .dropdown-item:active {
+                        background-color: #E5E5E5;
+                        color: #333333!important;
+                    }
+                    .bs-searchbox, .bs-actionsbox, .bs-donebutton {
+                        padding: 4px 10px;
+                    }
+                    .inner {
+                        margin: 0 10px;
+                        overflow-x: hidden;
+                        max-height: 190px;
+                        max-width: 297px !important;
+                    }
+                    .inner ul {
+                        margin: 0 !important;
+                    }
+                }
+                .dropdown-toggle::after {
+                    display: none;
+                }
+                .bootstrap-select .dropdown-toggle:focus {
+                    outline: none !important;
+                    outline: 0 !important;
+                    outline-offset: 0 !important;
+                }
+
+                .sortBy {
+                    border: 1px solid #DEDEDE;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    background: no-repeat 94% $white;
+                    display: flex;
+                    left: 0;
+                    align-items: center;
+                    width: 15.6% !important;
+                    .btn {
+                        padding: 10px 15px;
+                    }
+                    .filter-option-inner-inner {
+                        font-family: $primary-font-light-italic;
+                        font-weight: $light;
+                        font-size: 18px;
+                        height: 38px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .dropdown-toggle {
+                        font-family: $primary-font;
+                        font-weight: $medium;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #333333 !important;
+                        background: url(../../img/doctor-directory/hero-dropdown.svg) no-repeat 93.2% #fff;
+                        width: 100%;
+                    }
+                }        
+                .sortBy .dropdown-menu {
+                    border-radius: 0px !important;
+                    top: -3px !important;
+                    left: 0px !important;
+                    min-width: 160px !important;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .hero {
+        height: auto;
+        &__content {
+            padding: 40px 15px;
+            &__header {
+                h1 {
+                    line-height: 40px;
+                }
+            }
+            &__body {
+                form {
+                    flex-direction: column;
+                    .searchSpecialty{
+                        width: 100% !important;
+                        margin-bottom: 10px;
+                        height: 60px;
+                        .dropdown-menu {
+                            min-width: 100% !important;
+                            max-width: 100% !important;
+                        }
+                    }
+                    .sortBy {
+                        width: 100% !important;
+                        margin-bottom: 10px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

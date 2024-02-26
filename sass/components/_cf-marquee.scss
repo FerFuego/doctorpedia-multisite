@@ -1,0 +1,78 @@
+.cf-marquee {
+    margin: 103px 0 116px;
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 76px;
+        h2 {
+            font-family: $primary-font;
+            font-weight: $bold;
+            font-size: 32px;
+            line-height: 41px;
+            text-align: center;     
+            color: #333333;
+            width: auto;
+            max-width: 1150px;
+        }
+        .cta-marquee {
+            background: $primary-pink;
+            border-radius: 50px;
+            color: $white;
+            display: block !important;
+            font-family: $primary-font;
+            font-weight: normal;
+            font-size: 17px !important;
+            line-height: 17px !important;
+            margin: 40px auto 0 !important;
+            text-align: center;
+            padding: 20px 40px !important;
+            height: 59px;
+        }
+    }
+    &__body {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        
+        .marquee {
+            display: inline-block;
+            padding-right: 10px;
+            animation: marquee 50s linear infinite;
+            .content {
+                width: 100%;
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &:first-child {
+                        margin-bottom: 48px;
+                    }
+                }
+                img,svg {
+                    margin-left: 51px;
+                }
+                svg:hover {
+                    fill: $primary-pink;
+                    stroke: $white;
+                }
+            }
+        }
+    }
+}
+  
+@keyframes marquee {
+    from {
+        transform: translateX(-100%);
+    }
+    to { 
+        transform: translateX(0%);
+    }
+}

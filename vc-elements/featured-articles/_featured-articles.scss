@@ -1,0 +1,240 @@
+/*--------- RECENT BLOG POSTS ----------*/
+
+.blog-posts-preview-container {
+	background-color: $off-white;
+	background: linear-gradient(to bottom, $white 0%,$white 20%,$white 30%,$off-white 30%,$off-white 100%); /* W3C */
+	
+	padding: 50px 0;
+	position: relative;
+	
+	// Mobile
+	@media(max-width: $mobile){
+		background: linear-gradient(to bottom, $white 0%, $white 17%, $off-white 17%, $off-white 100%);
+		padding: 50px 15px;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 25px 0;
+		margin-top: 0;
+
+		//Tablet
+		@media(max-width: $mobile){
+			padding: initial;
+			padding-bottom: 25px;
+		}
+
+		h1 {
+			font-size: 30px;
+			padding: 10px 0;
+			font-weight: $regular;
+
+			//Tablet
+			@media(max-width: $tablet){
+				font-size: 23px;
+				padding: 0;
+			}
+
+			//Tablet
+			@media(max-width: $mobile){
+				font-size: 25px;
+			}
+		}
+
+		h2 {
+            font-size: 30px;
+            border-bottom: 0px;
+            padding: initial;
+			color: inherit;
+			
+			//Tablet
+			@media(max-width: $tablet){
+				font-size: 23px;
+				padding: 0;
+			}
+
+			//Tablet
+			@media(max-width: $mobile){
+				font-size: 25px;
+			}
+		}
+
+		a {
+			color: $baby-blue;
+			align-self: center;
+			border-bottom: 1px solid;
+			padding-bottom: 5px;
+
+			//Mobile 
+			@media(max-width: $mobile){
+				display: none;
+			}
+			
+		}
+	}
+
+	.body {
+		display: flex;
+		// justify-content: space-between;
+		align-items: stretch;
+		margin: 0 -10px 0 -10px;
+
+		//Mobile
+		@media(max-width: $mobile){
+			flex-direction: column;
+			margin: 0;
+			padding: 0;
+		} 
+	}
+	.footer-view {
+		display: flex;
+		justify-content: center;
+		.view-all {
+			cursor: pointer;
+			font-size: 26px;
+			color: #4a90e2;
+			display: inline-block;
+			border-bottom: 1px solid #4a90e2;
+			padding-bottom: 5px;
+			margin: 30px 0;
+		}
+	}
+}
+
+
+/*--------- END RECENT BLOG POSTS ----------*/
+
+/*--------- BLOG POST COMPONENT ----------*/
+
+.blog-post-preview {
+	background-color: $white;
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px;
+	max-width: 357px;
+	flex: 1 1 0;
+	align-items: stretch;
+
+	//Mobile
+	@media(max-width: $mobile){  
+		flex-basis: auto;
+		flex-grow: unset;
+		margin: 20px 0px;
+		max-width: none;
+	}
+
+	a {
+		height: 225px;
+		overflow: hidden;
+		background-size: cover;
+    	background-position: center center;
+
+		//Mobile
+		@media(max-width: $mobile){
+			height: 213px;
+		}
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+	
+	.post-thumbnail {
+		width: 100%;
+	   
+	}
+	.content{
+		padding: 25px;
+		flex: 1 1 0;
+		padding-bottom: 25px;
+		h3{
+			color: $teal;
+			font-size: 1.1rem;
+			padding-bottom: 15px;
+			font-weight: $light;
+		}
+	}
+	.footer{
+		padding: 25px;
+	}
+
+	.external-link{
+		padding: 25px;
+		display: block;
+		a{
+			font-size: 18px;
+			border-bottom: 1px solid $baby-blue;
+			padding-bottom: 3px;
+			color: $baby-blue;
+			margin-right: 25px;
+			//Tablet
+			@media(max-width: $tablet){
+				font-size: 17px;
+			}
+		}
+	}
+	
+	h2 {
+		color: $black;
+		font-size: 18px;
+		flex-grow: 1;
+		font-weight: $regular !important;
+		line-height: 1.5em;
+		font-size: 20px !important;
+	}
+
+	h3 {
+		color: $teal;
+		font-size: 1.1rem;
+		padding-bottom: 15px;
+		font-weight: $light;
+	}
+
+	.footer {
+		width: 100%;
+		display: flex;
+
+		a{
+			height: auto!important;
+		}
+
+		.post-author {
+			width: 49px;
+			margin-right: 10px;
+			border: 2px solid $white;
+			border-radius: 100%;
+			background-color: $white;
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		span{
+			color: $black;
+			align-self: center;
+			font-size: 15px;
+		}
+	}
+	@media screen and (min-width:0\0) { 
+		/* Styles for IE9, IE10, IE11  */
+		width: 32%;
+		.footer{
+			height: 100px;
+			position: relative;
+			.post-author{
+				bottom: 20px;
+				position: absolute;
+			}
+			span{
+				position: absolute;
+				bottom: 34px;
+				left: 90px;
+			}
+		}
+	}
+}
+
+/*--------- END BLOG POST COMPONENT ----------*/

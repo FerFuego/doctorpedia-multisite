@@ -1,0 +1,564 @@
+.discover-container {
+    background-color: $light-grey;
+    .slick-dots {
+        padding: 2rem 0;
+    }
+    .background-white{
+        background-color: $white;
+        height: 330px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+    .discover-health-header {
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-size: cover;
+        min-height: 550px;
+        margin-top: 60px;
+        width: 100%;
+        .top-elements-filters {
+            background-color: $transparent-background;
+            height: 65px;
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 60px;
+            width: 100%;
+            z-index: 200;
+            a {
+                border-bottom: 1px solid transparent;
+                color: $black;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: $primary-font;
+                margin: 0 10px;
+                min-width: fit-content;
+                width: max-content;
+                &:hover {
+                    color: $primary-pink;
+                    border-bottom: 1px solid $primary-pink;
+                }
+                &.active {
+                    color: $primary-pink;
+                    border-bottom: 1px solid $primary-pink;
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.5em;
+                font-weight: 400;
+                padding-right: 10px;
+            }
+        }
+        .container-form-discover-health {
+        
+            form {
+                max-width: 900px;
+                margin: auto;
+                text-align: center;
+                h2 {
+                    margin-top: 15px;
+                    font-size: 46px;
+                    font-weight: $semibold;
+                    color: #fff;
+                    text-align: center;
+                }
+                label {
+                    margin-bottom: 20px;
+                    font-size: 22px;
+                    color: #fff;
+                    text-align: center;
+                }
+                input[type=text] {
+                    background:url(../../img/condition-icon.svg) no-repeat 96% center $white; 
+                    border-radius: 0;
+                    border: none;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    height: 60px;
+                    width: 70%;
+    
+                     //mobile
+                    @media ( max-width: $mobile ) {
+                        width: 90%;
+                    }
+                }
+                *, *:before, *:after {
+                    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+                }
+                
+                @mixin button {
+                    position: relative;
+                    outline: 0;
+                    background-color: $danger-color;
+                    border-radius: 3px;
+                    color: $white;
+                    font-weight: $medium;
+                    height: 50px;
+                    width: 100%;
+                    overflow: hidden;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: lighten($danger-color, 5%);
+                    }
+                    &:active {
+                        background-color: darken($danger-color, 5%);
+                    }
+                }
+                .hiddenBtn {
+                    visibility: hidden;
+                }
+                .btn-discover {
+                    @include button;
+                    width: 220px;
+                }
+    
+                .btn-discover:before {
+                    visibility: hidden;
+                    content: "";
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    position: absolute;
+                    width: 100%;
+                    padding: inherit;
+                    background: $danger-color;
+                    border-radius: 2px;
+                    transition: width 0.5s;
+                }
+                .btn-discover:after {
+                    visibility: hidden;
+                    font-family: FontAwesome;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #454545;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 26px;
+                    height: 26px;
+                    padding: 5px;
+                    border-radius: 26px;
+                    color: #fff;
+                }
+                .btn-discover.loading:after {
+                    visibility: visible;
+                    content: "\f110";
+                    font-family: FontAwesome;
+                    animation: loader 1s infinite linear;
+                }
+                .btn-discover.loading:before {
+                    visibility: visible;
+                    border-radius: 26px;
+                    margin: 0 auto;
+                    right: 0;
+                    left: 0;
+                    width: 33px;
+                    padding: 10px 25px;
+                }
+                .btn-discover.done {
+                    visibility: hidden;
+                }
+                .btn-discover.done:before {
+                    content: "\f00c";
+                    font-family: FontAwesome;
+                    visibility: visible;
+                    background: #4FA86B;
+                    border-color: #4FA86B;
+                    color: $white;
+                    padding-top: 13px;
+                }
+                  
+                .btn-discover.loading, .btn-discover.done {
+                    cursor: default;
+                }
+    
+                .btn-discover-network {
+                    @extend .btn-discover;
+                    background-color: transparent;
+                    border: 1px solid $primary-pink;
+                    color: $primary-pink;
+                    padding: 10px;
+                    margin-left: 5px;
+                    height: 50px;
+                    width: 58%;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+    
+                .full-width {
+                    background-color: $primary-pink;
+                    border: 1px solid $primary-pink;
+                    //width: 100% !important;
+                }
+                  
+                @keyframes loader {
+                    0%   { transform: rotate(0deg); }
+                    99% { transform: rotate(360deg); }
+                }
+    
+                .form-discover-health-checkbox {
+                    //display: flex;
+                    font-family: $primary-font;
+                    font-weight: $medium;
+                    //flex-direction: row;
+                    //justify-content: space-between;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                    //width: 100%;
+    
+                    //mobile
+                    @media ( max-width: $mobile ) {
+                        flex-direction: column;
+                        label {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+    
+                .incluir {
+                    position: relative;
+                    margin-bottom: 0px;
+                    //display: flex;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    b {
+                        color: #fff;
+                        font-size: 15px;
+                        padding-left: 22px;
+                    }
+                }
+                .incluir input {
+                    border: none;
+                  -webkit-appearance: none;   
+                  -moz-appearance: window;   
+                  -ms-appearance: window;  
+                  appearance: window; 
+                  position: absolute;
+                  top: 0;
+                  width: 18px;
+                  height: 18px;
+                }
+                
+                .incluir input + span::before {
+                  position: absolute;
+                  top: 8px;
+                  left: -2px;
+                  display: inline-block;
+                  background: transparent url('../../img/checkbox-white.svg') no-repeat 0 0;
+                  display: block;
+                  width: 18px;
+                  height: 18px; 
+                  content: '';
+                  vertical-align: middle;
+                }
+                .incluir input:checked + span::before {
+                  background: transparent url('../../img/checkbox-white-checked.svg') no-repeat 0 0;
+                }
+            }
+        }
+    
+        //mobile
+        @media ( max-width: $mobile ) {
+            height: 650px;
+            margin-top: 10px;
+            .top-elements-filters {
+                justify-content: center;
+                overflow-x: scroll;
+                box-shadow: $shadow;
+            }
+            .container-form-discover-health { 
+                margin: 0 auto;
+                width: 95%;
+                form {
+                    width: 100%;
+                    h2{
+                        font-size: 26px;
+                    }
+                    input[type=text] {
+                        height: 54px;
+                    }
+                    .btn-discover {
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .popular-content {
+        background-color: $light-grey;
+        padding: 40px 0;
+        .row {
+            .poppular-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 400px;
+                padding: 30px;
+                h3 {
+                    font-size: 26px;
+                    font-weight: $semibold;
+                    padding: 15px 0;
+                    text-align: center;
+                    width: 100%;
+                }
+                p {
+                    font-size: 16px;
+                    text-align: center;
+                    padding:  0 0 15px;
+                    width: 100%;
+                }
+                &__cta {
+                    width: 100%;
+                    text-align: center;
+                    a {
+                        color: $baby-blue;
+                    }
+                }
+            }
+            div:nth-child(1) {
+                border-right: 1px solid $line;
+            }
+    
+            div:nth-child(2) {
+                border-right: 1px solid $line;
+            }
+        }
+        //mobile
+        @media ( max-width: $mobile ) {
+            .row {
+                .poppular-box {
+                    padding: 30px 60px;
+                    h3 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    
+    .results-content {
+        background-color: $light-grey;
+        background: $light-grey;
+        .app-review-container {
+            background-color: $light-grey;
+            background: $light-grey;
+            .header {
+                h1 {
+                    font-size: 38px;
+                }
+            }
+            .blog-post-preview a {
+                height: 150px;
+            }
+            .clinical-content {
+                background-color: $white;
+                max-height: 95px;
+                padding: 15px;
+                padding-bottom: 0;
+                h2 {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    .final-results-sites {
+        background-color: $off-white;
+        margin-bottom: 50px;
+        h4 {
+            font-family: $primary-font;
+            font-size: 34px;
+            font-weight: 400;
+            padding: 50px 0 30px;
+            text-transform: capitalize;
+            border-bottom: 1px solid $off-white;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            z-index: 2;
+
+            //mobile
+            @media ( max-width: $mobile ) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: $bold;
+            padding: 30px 0;
+        }
+        h5 {
+            border-bottom: 1px solid $white;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: $primary-font;
+            margin: 10px 15px;
+            padding-bottom: 5px;
+            min-width: fit-content;
+            width: max-content;
+            &:hover {
+                color: $primary-pink;
+                border-bottom: 1px solid $primary-pink;
+            }
+            &.active {
+                color: $primary-pink;
+                border-bottom: 1px solid $primary-pink;
+            }
+        }
+        &__header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                font-size: 24px;
+                font-weight: $bold;
+                padding: 30px 0;
+                //mobile
+                @media ( max-width: $mobile ) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        .d-resources-header {
+            max-width: 100%;
+            margin-bottom: 30px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                -webkit-appearance: none;
+                width: 7px;
+                height: 4px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 12px;
+                background-color: #E8E6E6;
+                -webkit-box-shadow: 0 0 1px #E8E6E6;
+            }
+        }
+        .blog-post-preview a {
+            h3 {
+                border-bottom: 0!important;
+                padding-bottom: 15px!important;
+                padding-top: 0!important;
+                text-align: left;
+                width: 100%;
+            }
+        }
+        .blog-post-preview {
+            flex: none;
+            margin: 10px;
+            max-width: 346px;
+            width: 100%;
+        }
+        .container {
+            position: relative;
+            .slider-container {
+                margin-bottom: 50px;
+            }
+        }
+        .mobile-apps-content {
+            width: 250px;
+            a {
+                height: 250px;
+            }
+           /*  &:first-child {
+                margin-left: 0;
+            }
+            &:nth-child(3n + 1) {
+                margin-left: 1%;
+            }
+            &:nth-child(3n + 3) {
+                margin-right: 1%;
+            }
+            &:nth-child(4n + 1) {
+                margin-left: 0;
+            }
+            &:nth-child(4n + 4) {
+                margin-right: 0;
+            } */
+
+            //notebook + tablet
+            @media (max-width: 1200px) {
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:nth-child(3n + 1) {
+                    margin-left: 0;
+                }
+                &:nth-child(3n + 3) {
+                    margin-right: 1%;
+                }
+                &:nth-child(4n + 1) {
+                    margin-left: 0;
+                }
+                &:nth-child(4n + 4) {
+                    margin-right: 2%;
+                }
+            }
+
+            //notebook + tablet
+            @media (max-width: 858px) {
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:nth-child(2n + 1) {
+                    margin-left: 0!important;
+                }
+                &:nth-child(2n + 2) {
+                    margin-right: 1%!important;
+                    margin-left: 1% !important;
+                }
+            }
+            //mobile
+            @media (max-width: $mobile ) {
+                width: 100%!important;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:nth-child(2n + 1) {
+                    margin-left: 0!important;
+                }
+                &:nth-child(2n + 2) {
+                    margin-right: 0 !important;
+                    margin-left: 0 !important;
+                }
+                &:nth-child(3n + 1) {
+                    margin-left: 0;
+                }
+                &:nth-child(3n + 3) {
+                    margin-right: 0;
+                }
+                &:nth-child(4n + 1) {
+                    margin-left: 0;
+                }
+                &:nth-child(4n + 4) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    
+    .large-container {
+        display: none;
+    }
+
+}

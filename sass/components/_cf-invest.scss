@@ -1,0 +1,29 @@
+.cf-invest {
+    margin-top: 89px;
+    margin-bottom: 88px;
+    .container {
+        max-width: 1440px;
+        div {
+            border: 1px solid #BBBBBB;
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            height: 174px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-family: $primary-font;
+                font-weight: 300;
+                font-size: 29px;
+                line-height: 35px;
+                text-align: center;
+                color: $black;
+            }
+            img {
+                position: absolute;
+                top: -90px;
+            }
+        }
+    }
+}

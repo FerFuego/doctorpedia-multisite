@@ -1,0 +1,98 @@
+#animation-top-left,
+#animation-top-right,
+#animation-bottom-left,
+#animation-bottom-right {
+    position: absolute;
+    z-index: 0;
+    // mobile
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+#animation-top-left {
+    top: 250px;
+    left: 0;
+    height: 350px;
+    width: 320px;
+    .animation_container {
+        position: relative;
+        #anim-2 {
+            position: absolute;
+            display: block;
+            top: -70px;
+            right: 20px;
+            animation-timing-function: ease;
+            -webkit-animation: firstmove linear 15s infinite;
+            animation: firstmove linear 15s infinite;
+        }
+        #anim-1 {
+            position: relative;
+            display: block;
+            bottom: 0px;
+        }
+    }
+}
+
+#animation-top-right {
+    top: 250px;
+    right: 0;
+    height: 350px;
+    .animation_container {
+        position: relative;
+        #anim-3 {
+            position: absolute;
+            display: block;
+            left: -55px;
+            top: -30px;
+            animation-timing-function: ease;
+            -webkit-animation: firstmove linear 13s infinite;
+            animation: firstmove linear 13s infinite;
+        }
+        #anim-4 {
+            position: relative;
+            display: block;
+        }
+    }
+}
+
+#animation-bottom-left {
+    //bottom: 380px;
+    bottom: 49%;
+    left: 0;
+    height: 350px;
+    width: 320px;
+
+    #anim-5 {
+        position: absolute;
+        display: block;
+    }
+    #anim-6 {
+        position: relative;
+        display: block;
+        top: 236px;
+        left: 60px;
+        animation-timing-function: ease;
+        -webkit-animation: firstmove linear 10s infinite;
+        animation: firstmove linear 10s infinite;
+    }
+}
+
+#animation-bottom-right {
+    //bottom: 280px;
+    bottom: 50%;
+    right: 0;
+}
+
+/* KEYFRAMES */
+
+@keyframes firstmove {
+    0%, 100% {
+        transform: scale(0.999, 0.999) translate3d(0px, 0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+    50% {
+        transform: scale(0.999, 0.999) translate3d(5px, 10px, 5px);
+        animation-timing-function:ease-in-out
+    }
+}

@@ -1,0 +1,121 @@
+.m-left-right {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+
+        @media (max-width: $tablet) {
+            justify-content: initial;
+            align-items: inherit;
+        }
+    }
+
+    &__image {
+        max-width: 600px;
+        width: 100%;
+
+        @media (max-width: $laptop) {
+            max-width: 500px;
+        }
+
+        @media (max-width: $tablet) {
+            max-width: initial;
+        }
+
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 429px;
+
+        @media (max-width: $tablet) {
+            max-width: initial;
+            margin-bottom: 30px;
+        }
+
+        &--change-order{
+            order: 1;
+
+            @media (max-width: $tablet) {
+                order: initial;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        font-family: $primary-font;
+        font-weight: $semibold;
+        font-size: 32px;
+        line-height: 1em;
+        color: $primary-black;
+        margin-bottom: 20px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+        }
+    }
+
+    &__icon-title {
+        display: block;
+        max-width: 38px;
+        margin-left: 41px;
+    }
+
+    &__subtitle {
+        font-family: $primary-font;
+        font-weight: $medium;
+        font-size: 18px;
+        line-height: 27px;
+        color: $baby-blue;
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
+    }
+
+    &__copy {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 20px;
+        line-height: 30px;
+        color: $primary-black;
+
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
+    }
+
+    &__check-list {
+        &--has-copy {
+            margin-top: 30px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        font-family: $primary-font;
+        font-weight: $medium;
+        font-size: 18px;
+        line-height: 27px;
+        color: $baby-blue;
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: initial;
+        }
+
+        &:before {
+            display: block;
+            content: url('../../img/modules/left-right/check.svg');
+            margin-right: 10px;
+            max-width: 28px;
+        }
+    }
+
+
+
+}

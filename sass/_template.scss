@@ -1,0 +1,168 @@
+/*-------------------------------
+		3.-TEMPLATE
+--------------------------------*/
+
+
+/*--------- MAIN-CONTAINER ----------*/
+
+.main-container {
+	margin-left: 15%;
+	width: 85%;
+	float: left;
+	padding: 5%;
+	background: white;
+	padding-top: 7%;
+}
+
+/*--------- END MAIN-CONTAINER ----------*/
+
+
+/*--------- SIDE-NAVBAR ----------*/
+
+.side-navbar {
+	width: 15%;
+	min-height: 100vh;
+	padding: 25px 0;
+	position: relative;
+	z-index: 2;
+	background-color:#fff;
+	float: left;
+	position: fixed;
+
+	&>img {
+        padding: 0px 25px;
+        width: 170px;
+	}
+
+	ul {
+		padding: 25px 0;
+		li {
+			padding: 15px 25px;
+			vertical-align: middle;
+			font-weight: 400;
+			font-size: 18px;
+			cursor: pointer;
+
+			//SVG animations
+			.sales {
+				.bg {
+					transition: transform .2s, fill-opacity .2s;
+				}
+
+            }
+            
+            a {
+                text-decoration: none;
+            }
+
+			&:hover {
+				.sales {
+					.bg {
+						transform: translate(3px, -3px);    
+						fill-opacity: .3;	
+					}
+				}
+			}
+			&.active {
+				a {
+
+					font-weight: $semibold;
+				}
+			} 
+			img, svg {
+				padding-right: 5px;
+				margin-bottom: -3px;
+			}
+			ul {
+				li {
+					font-weight: $light;
+				}
+
+				a {
+					color: $primary-color;
+					
+				}
+			}
+		}	
+	}	
+}
+
+hr {
+    margin: 75px 0;
+}
+
+/*--------- END SIDE-NAVBAR ----------*/
+
+
+/*--------- TYPOGRAPHY----------*/
+
+
+.typography {
+	font-size: 24px;
+	font-weight: $regular;
+	margin-bottom: 10px;
+	color: #333333;
+}
+
+.typography-title {
+    display: block;
+    padding-top: 40px !important;
+    padding-bottom: 5px;
+    color: rgba(0,0,0,0.7);
+}
+
+
+.btn-title {
+    display: block;
+    padding-top: 40px !important;
+    padding-bottom: 15px;
+    // padding-left: 10px;
+	color: rgba(0,0,0,0.7);
+	line-height: 1.4;
+}
+
+/*--------- // TYPOGRAPHY----------*/
+
+/*--------- BUTTONS ----------*/
+.btn-container{
+	.btn-box{
+		margin-bottom: 30px;
+	}
+}
+
+/*--------- // BUTTONS ----------*/
+
+
+/*--------- ICONS ----------*/
+
+.icons{
+	img{
+		margin-right: 15px;
+	}
+}
+/*--------- // ICONS ----------*/
+
+
+/*--------- FIELDS ----------*/
+
+.fields{
+	.field-element{
+		margin-bottom: 30px;
+	}
+
+}
+/*--------- // FIELDS ----------*/
+
+/*--------- TOOLTIP ----------*/
+
+	.tooltip-container{
+		margin-top: 40px;
+		.icon-tooltip:nth-child(2){
+			margin-left: 200px;
+		}
+		.icon-tooltip:last-child{
+			margin-left: 200px;
+		}
+	}
+
+/*--------- // TOOLTIP ----------*/

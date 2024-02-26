@@ -1,0 +1,12 @@
+.crowdfunding-page {
+    background-color: $white;
+    margin-top: 80px;
+    @media ( max-width: 1250px) {
+        display: block;
+        margin: 86px -15px 0;
+        padding: 0 15px;
+    }
+   .container {
+       max-width: 1439px;
+   }
+}

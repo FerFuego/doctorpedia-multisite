@@ -1,0 +1,420 @@
+.doctorpedia-channels-pro {
+    background-color: $white;
+}
+
+.doctorpedia-channels-menu {
+    background-color: rgba(255,255,255, 0.85) !important;
+    padding-top: 110px !important;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 222;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 1440px;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        height: 45px;
+        max-width: 100%;
+        overflow: auto;
+        justify-content: center;
+
+        @media ( max-width: $mobile ) {
+            justify-content: flex-start;
+        }
+
+
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+            height: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 12px;
+            background-color: #E8E6E6;
+            -webkit-box-shadow: 0 0 1px #E8E6E6;
+        }
+        a {
+            color: $black;
+            font-size: 18px;
+            font-weight: $regular;
+            margin: 0 15px;
+            min-width: fit-content;
+            width: max-content;
+            &:hover {
+                color: $primary-pink;
+            }
+        }
+        .active {
+            color: $primary-pink;
+        }
+    }
+}
+
+// Page Taxonomy categories
+.channels-container-acf  {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    .channels-subcontainer-acf{
+        margin: 0 auto;
+        padding: 0 0 50px;
+        width: 100%;
+    }
+    .header-list {
+        padding: 0 !important;
+        margin-top: 0;
+    }
+    &__content {
+        position: relative;
+        padding-left: 0;
+    }
+    .next, .prev {
+        top: 40% !important;
+    }
+    .prev {
+        left: -65px !important;
+    }
+    .next {
+        right: -60px !important;
+    }
+    .single-channel-item-container {
+        padding-right: 10px;
+        .single-channel-item {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: flex-end;
+            height: 376px;
+            padding: 30px;
+            position: relative;
+            width: 270px;
+            max-width: 270px;
+            .cat-shadow {
+                background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.71) 24.7%, rgba(0, 0, 0, 0) 45.07%); /* Standard syntax (must be last) */
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                z-index: 1;
+                -webkit-transition: background-color .5s ease-in-out;
+                -moz-transition: background-color .5s ease-in-out;
+                transition: background-color .5s ease-in-out;
+
+                &:hover {
+                    background-color: rgba(0,0,0,0.4);
+                }
+            }
+            .content {
+                min-width: 210px;
+                position: relative;
+                z-index: 2;
+                h2 {
+                    background-color: $baby-blue;
+                    color: $white;
+                    line-height: 24px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    padding: 4px;
+                    text-align: center;
+                    width: 100%;
+                }
+                h3 {
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+        }
+    
+       /*  &:nth-child(1) {
+            padding-left: 0;
+        }
+        
+        &:nth-child(4n+1) {
+            padding-left: 0;
+        }
+        
+        &:nth-child(4n) {
+            padding-right: 0;
+            margin-right: 10px;
+        } */
+    }
+
+    .slick-dots {    
+        button {
+            background-color: $primary-grey;
+            opacity: .3;
+        }
+    
+        li.slick-active button {
+            background-color: $primary-grey;
+            opacity: .6;
+        }
+    }
+}
+
+.doctorpedia-channels_menu {
+    background-color: rgba(255,255,255, 0.85) !important;
+    padding-top: 30px !important;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 222;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 1440px;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        height: 45px;
+        max-width: 100%;
+        overflow-x: auto;
+        justify-content: center;
+
+        @media ( max-width: $mobile ) {
+            justify-content: flex-start !important;
+        }
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+            height: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 12px;
+            background-color: #E8E6E6;
+            -webkit-box-shadow: 0 0 1px #E8E6E6;
+        }
+        a {
+            color: $black;
+            font-size: 18px;
+            font-weight: $regular;
+            margin: 0 15px;
+            height: 28px;
+            text-decoration: none;
+            padding: 0 0 5px;
+            min-width: fit-content;
+            width: max-content;
+            &:hover {
+                color: $primary-pink;
+            }
+        }
+        .active {
+            color: $primary-pink;
+            font-weight: 400;
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+    }
+}
+
+// Channel Page
+.fix-header-fixed {
+    padding-top: 120px;
+}
+
+.header-hightlight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+    margin-top: 0;
+    h2 {
+        font-family: $primary-font;
+        font-size: 30px;
+        border-bottom: 0px;
+        padding: initial;
+        color: inherit;
+    }
+}
+//Taxonomy Page
+.header-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+    margin-top: 0;
+    h2 {
+        font-family: $primary-font;
+        font-size: 30px;
+        border-bottom: 0px;
+        padding: initial;
+        color: inherit;
+    }
+}
+
+.default-content-post {
+
+}
+
+.header__channels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #e8e6e6;
+
+    h1 {
+        border: none;
+    }
+
+    .btn-rounded {
+        background-color: $primary-pink;
+        font-family: $primary-font;
+        color: $white !important;
+        font-weight: $medium !important;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        padding: 10px 20px;
+        display: initial;
+        transition: all .3s;
+        height: auto;
+        margin-bottom: 15px;
+        text-decoration: none !important;
+        width: auto;
+        min-width: 196px;
+        img,
+        svg {
+            margin-left: 8px;
+            transition: all .3s;
+            height: 13px;
+            width: 13px;
+        }
+        &:hover {
+            color: $white!important;
+            background-color: $secondary-pink !important;
+            img,
+            svg {
+                transform: translateX(5px);
+            }
+        }
+    }
+}
+
+.tax-categories-category {
+    .background-white {
+        height: 220px !important;
+    }
+}
+
+.arrow-desktop {
+    display: block;
+}
+
+.arrow-mobile {
+    display: none;
+}
+
+@media ( max-width: $mobile ) {
+
+    .arrow-desktop {
+        display: none;
+    }
+    
+    .arrow-mobile {
+        display: block;
+    }
+
+    .default-content-post {
+        .blog-post-preview {
+            .content {
+                flex: none;
+                display: block;
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+    .fix-header-mobile{
+        background-color: $white;
+        padding-top: 100px;
+    }
+
+    .doctorpedia-channels_menu {
+        top: 65px;
+        .doctorpedia-channels_menu__header {
+            justify-content: flex-start !important;
+        }
+    }
+
+    .channels-container-acf {
+        max-width: 110% !important;
+        margin-left: -15px !important;
+        width: calc(108% + 15px);
+    }
+
+    .fix-width-responsive {
+        margin-left: 15px;
+        margin-right: 15px;
+        .highlight-channels .body .blog-post-preview {
+            margin-left: 15px !important;
+            margin-right: 15px !important;
+            max-width: 100% !important;
+        }
+    }
+
+    .single-channel-item-container {
+        justify-content: center !important;
+        .single-channel-item {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+    }
+
+    .header-articles {
+        padding: 25px 15px;
+    }
+
+    .header-hightlight {
+        padding: 25px 15px;
+    }
+
+    .tax-categories-category {
+        margin-bottom: 30px;
+        padding-bottom: 0 !important;
+        background: $off-white;
+    }
+
+    .header__channels {
+        flex-direction: column-reverse;
+    
+        .btn-rounded {
+            background-color: $white;
+            font-family: $primary-font;
+            color: $primary-pink !important;
+            font-weight: $medium !important;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            padding: 10px 20px;
+            display: block !important;
+            transition: all .3s;
+            height: auto;
+            margin-bottom: 0;
+            text-decoration: 1px solid !important;
+            align-self: flex-start !important;
+            padding-left: 5px;
+            text-align: start !important;
+            img,svg {
+                margin-left: 8px;
+                transition: all .3s;
+                height: 13px;
+                width: 13px;
+            }
+            &:hover {
+                background-color: $white !important;
+                color: $primary-pink !important;
+            }
+        }
+    }
+}

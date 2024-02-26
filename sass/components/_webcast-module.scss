@@ -1,0 +1,87 @@
+/*------------ VIDEO PLAYLIST ---------------*/
+.webcast{
+    padding: 100px 0;
+    .container {
+        max-width: 1180px;
+    }
+
+    &__body {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .description{
+            margin: 0 27px 0 0;
+            width: auto;
+            max-width: 450px;
+            span{
+                color: $turquoise;
+            }
+            h2{
+                font-family: $primary-font-bold;
+                font-weight: $bold;
+                font-size: 32px;
+                line-height: 46px;
+                color: #333333;
+            }
+            h3 {
+                font-family: $primary-font;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 46px;
+                color: #333333;
+                margin-bottom: 17px;
+            }
+            p{
+                font-family: $primary-font;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 26px;
+                color: $black;
+            }
+        }
+        .video{
+            width: 100%;
+            padding: 0;
+            .play-video-btn {
+                height: 74px;
+                width: 74px;
+            }
+        }
+    }
+    &__footer {
+        margin-top: 40px;
+        .btn-rounded {
+            font-family: $primary-font;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: $white;
+            background-color: $primary-pink;
+            padding: 15px 35px;
+            display: initial;
+            transition: .3s all;
+            img {
+                margin-left: 15px;
+                transition: .3s all;
+            }
+            &:hover {
+                img {
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .webcast {
+        padding: 60px 15px;
+        &__body {
+            flex-direction: column;
+            .description {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.text-block{
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    p{
+        font-family: $primary-font;
+        font-size: 22px;
+    }
+}
+
+.wpb_text_column{
+    .wpb_wrapper{
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        p{
+            font-family: $primary-font;
+            font-size: 18px;
+        }
+        ul{
+            font-size: 18px;
+            li{
+                padding-bottom: 10px;
+                &::before {
+                    content: "•"; 
+                    color: $primary-color;
+                    display: inline-block;
+                    font-size: 24px;
+                    margin-right: 10px;
+                }                
+            }
+        }
+        a{
+            /* border-bottom: 1px solid $primary-pink; */
+            color: $primary-pink;
+        }
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .wpb_text_column{
+        .wpb_wrapper{
+            ul{
+                li{
+                    display: block;
+                    max-width: 100%;
+                    word-break: break-word;
+                }
+            }
+        }
+    }
+}

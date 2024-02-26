@@ -1,0 +1,78 @@
+.m-icon-repeater {
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+
+        @media (max-width: $laptop) {
+            justify-content: space-around;
+        }
+    }
+
+    &__icon-container {
+        flex: 1;
+        padding: 0 15px;
+        position: relative;
+        left: 0;
+        top: 0;
+
+        @media (max-width: $laptop) {
+            flex: initial;
+            width: 45%;
+            margin-bottom: 30px;
+            padding: initial;
+
+            &:after{
+                content: none !important;
+            }
+        }
+
+        @media (max-width: $mobile) {
+            width: 100%
+        }
+
+        &:last-child{
+            &:after{
+                content: none;
+            }
+        }
+
+        &:after{
+            content: "";
+            height: 80%;
+            width: 1px;
+            background-color:#CCCCCC;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+    &__icon {
+        max-width: 50px;
+        margin: 0px auto;
+        margin-bottom: 53px;
+        display: block;
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-weight: $normalbold;
+        font-size: 22px;
+        line-height: calc((26 /22)em);
+        text-align: center;
+        color: $primary-black;
+        margin-bottom: 15px;
+    }
+
+    &__copy {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: 18px;
+        line-height: calc((22 / 18)em);
+        text-align: center;
+        color: $primary-black;
+    }
+}

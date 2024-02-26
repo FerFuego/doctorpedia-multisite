@@ -1,0 +1,161 @@
+/*--------- DOCTOR PROFILE ----------*/
+.doctor-profile-container{
+	padding: 80px 0 80px 0;
+	background-color: $off-white;
+	//Mobile
+	@media(max-width: $mobile){
+		padding-top: 140px;
+		background-color: $white;
+	}
+}
+.grey {
+	background-color: $off-white;
+}
+.doctor-grey-mobile{
+	background-color: $off-white;
+}
+.doctor-profile {
+    display: flex;
+    flex-direction: row;
+    min-height: 200px;
+	padding: 0 100px;
+	position: relative;
+	
+	//Tablet
+	@media(max-width: $tablet){
+		padding: 0 50px;
+	}
+
+	//Mobile
+	@media(max-width: $mobile){
+		flex-direction: column;
+		padding: 65px 0px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+    img {
+		max-width: 160px;
+		
+		//Mobile
+		@media(max-width: $mobile){
+			position: absolute;
+			top: -75px;
+			margin: auto;
+			width: 150px;
+			height: 150px;
+		}
+	}
+	
+    div {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+	}
+	
+    h1{
+        font-size: 34px;
+        color: $primary-color;
+		font-weight: $regular;
+		margin-bottom: 10px;
+		line-height: 0.8em;
+		//Mobile
+		@media(max-width: $mobile){
+			padding: 15px 0;
+		}
+	}
+	
+	h2 {
+		font-size: 28px;
+		font-weight: $light;
+		padding-bottom: 15px;
+	}
+
+    p {
+		font-size: 18px;
+
+		//Mobile
+		@media(max-width: $mobile){
+			padding-bottom: 25px;
+			text-align: left;
+			margin: 0 15px;
+		}
+    }
+
+    a {
+        color: $baby-blue;
+        font-weight: $medium;
+		font-size: 18px;
+		
+		border-bottom: 1px solid $baby-blue;
+		padding-bottom: 5px;
+		padding-top: 25px;
+	}
+	.selfie{
+		align-items: center;
+		@media screen and (min-width:0\0) { 
+			/* Styles for IE9, IE10, IE11  */
+			width: 20%;
+		}
+	}
+	.networks{
+		width: 250px;
+		// Mobile
+		@media(max-width: $mobile){
+			margin: 0 auto;
+		}
+		ul{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			li{
+				list-style: none;
+				display: inline-flex;
+				a{
+					display: flex;
+					width: 39px;
+					border-bottom: 0px;
+					img{
+						position: initial;
+						width: 35px;
+						height: 35px;
+					}
+				}
+			}
+		}
+	}
+
+	.dc-details{
+		@media screen and (min-width:0\0) { 
+			/* Styles for IE9, IE10, IE11  */
+			width: 80%;
+		}
+		p{
+			line-height: 1.7em;
+		}
+	}
+
+	.call-to-action {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+
+		//Mobile
+		@media(max-width: $mobile){
+			justify-content: center;
+		}
+	}
+	.doc-mobile {
+		//Mobile
+		@media(max-width: $mobile){
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+}
+.author-video-play{
+	display: none;
+}
+
+/*--------- END DOCTOR PROFILE ----------*/

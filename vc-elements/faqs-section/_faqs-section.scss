@@ -1,0 +1,47 @@
+/*---------  FAQ'S PAGE ----------*/
+
+.faqs-section {
+    padding-bottom: 50px;
+    border-bottom: 1px solid $border-color;
+	.faqs-navbar {
+		border-bottom: 1px solid $border-color;
+		width: 100%;
+		padding: 40px 0;
+		margin-bottom: 50px;
+
+		// Tablet
+		@media(max-width: $tablet){
+			padding: 40px 25px;
+        }
+        
+        h2{
+            color: $primary-pink;
+			font-size: 40px;
+			font-weight: $light;
+			//Mobile
+			@media (max-width: $mobile){
+				font-size: 25px;
+			}
+        }
+	}
+	.question {
+        padding: 25px 0;
+		h2 {
+			font-size: 15px;
+			font-weight: $medium;
+			line-height: 1.5em;
+			// Tablet
+			@media(max-width: $tablet){
+				margin-bottom: 10px;
+			}
+		}
+
+		// Tablet
+		@media(max-width: $tablet){
+			padding: 25px;
+		}
+	}	
+}
+
+
+/*---------  END FAQ'S PAGE ----------*/

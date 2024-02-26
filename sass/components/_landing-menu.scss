@@ -1,0 +1,35 @@
+.doctor-platform-landing-page{
+        
+    .aling-navigation-landing {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    
+        .btn-header-landing {
+            color: $primary-pink;
+            font-weight: $regular;
+            font-size: 15px;
+            line-height: 18px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: .3s all;
+    
+            &:hover {
+                color: #C90043
+            }
+        }
+    
+        .btn-header {
+            img {
+                transform: translateY(1px) !important;
+            }
+    
+            &:hover {
+                img {
+                    transform: translateY(1px) translateX(5px) !important;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,110 @@
+.doctors-location-modal {
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 100%;
+    height: 640px;
+    max-width: 705px;
+    z-index: 98;
+
+    &__container {
+        position: relative;
+        margin: 0 auto;
+        padding: 50px 0;
+        height: 640px;
+        width: 100%!important;
+        max-width: 705px;
+        overflow-y: scroll;
+    }
+
+    .location__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        img {
+            margin-bottom: 19.67px;
+        }
+
+        h2 {
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: 6px;
+            text-align: center;
+            color: $black;
+        }
+
+        h3 {
+            color: $black;
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17.1px;
+            line-height: 130%;        
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .doctors-location-modal-group {
+            width: 100%;
+            max-width: 460px;
+        }
+        #js-google-search {
+            background-repeat: no-repeat;
+            background-image: url(http://local.doctorpedia.com/wp-content/plugins/blogging-platform/assets/css/../img/lupa.svg);
+            background-position: 98%;
+            left: 0 !important;
+            position: absolute;
+            top: 0px;
+            width: 100% !important;
+            z-index: 5 !important;
+        }
+        .form-group {
+            width: 100%;
+            max-width: 460px;
+
+            .acf-map {
+                height: 300px;
+            }
+        }
+    }
+
+    .location__save {
+        background-color: $primary-pink;
+        color: $white;
+        padding: 8px 0;
+        text-align: center;
+        width: 171px;
+    }
+
+    .doctor-dashboard__bio-edit-sub-group {
+        .form-group{ 
+            &:first-child {
+                margin-right: 10px;
+            }
+        }
+        label {
+            margin-bottom: 5px;
+        }
+    }
+
+    .close-modal {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        top: 25px;
+        right: 25px;
+        @media screen and (max-width:767px) {
+            padding-right: 15px;
+        }
+    }
+}

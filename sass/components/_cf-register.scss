@@ -1,0 +1,211 @@
+.cf-register {
+    position: relative;
+    margin-bottom: 141px;
+    &__header {
+        margin-bottom: 48px;
+        h3 {
+            font-family: $primary-font;
+            font-weight: $light;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: $black;
+            max-width: 955px;
+            margin: 0 auto 21px;
+            text-align: center;
+            a {
+                color: $black;
+            }
+        }
+        p{
+            font-family: $primary-font;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #606060;
+        }
+    }
+    &__body {
+        background: linear-gradient(180deg, #F4F4F4 0%, #F0F0F0 100%);
+        border-radius: 16px;
+        margin: 0 auto;
+        height: 496px;
+        padding: 48px 58px 0;
+        position: relative;
+        width: 637px;
+        z-index: 1;
+        h2 {
+            font-family: $primary-font-bold;
+            font-weight: $bold;
+            font-size: 32px;
+            line-height: 52px;
+            text-align: center;
+            color: #333333;
+        }
+        p {
+            font-family: $primary-font;
+            font-weight: $light;
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: $black;
+        }
+        &__capital-risk {
+            font-family: $primary-font;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 135%;
+            color: $black;
+            display: block;
+            margin: 70px auto 0;
+            text-align: center;
+        }
+        form {
+            margin-top: 33px !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input,select {
+                background: #FDFDFD;
+                border: 1px solid #CECECE;
+                box-sizing: border-box;
+                color: #606060;
+                font-family: $primary-font;
+                font-weight: $light;
+                font-size: 18px;
+                line-height: 22px;
+                height: 56px;
+                margin-top: 0 !important;
+                margin-bottom: 14px !important;
+                padding: 15px 19px 12px !important;
+                width: 100%;
+                max-width: 443px;
+            }
+            select {
+                background: url('../../img/crowdfunding/select-down-arrow.svg') no-repeat right $white;
+                -webkit-appearance: none;
+                background-position-x: 96%;
+            }
+            input[type=checkbox] {
+                min-width: 20px !important;
+                height: 20px;
+                margin: 0 10px 0 -16px !important;
+            }
+            input[type=submit] {
+                background: $primary-pink;
+                border-radius: 50px;
+                color: $white;
+                display: block !important;
+                font-family: $primary-font;
+                font-weight: normal;
+                font-size: 17px !important;
+                line-height: 17px !important;
+                margin: 0 auto !important;
+                text-align: center;
+                padding: 20px 0 !important;
+                position: absolute;
+                bottom: -29px;
+                left: 0;
+                right: 0;
+                height: 59px;
+                width: 190px !important;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                margin-top: 26px;
+                font-family: $primary-font;
+                font-weight: normal !important;
+                font-size: 16px !important;
+                line-height: 19px !important;
+                color: $black;
+            }
+            .gfield {
+                margin-top: 0 !important;
+                padding-right: 0 !important;
+                max-width: 100% !important;
+            }
+            .ginput_container {
+                margin-top: 0 !important;
+                text-align: center;
+            }
+            .gfield_checkbox {
+                margin-top: 26px !important;
+            }
+            .validation_error {
+                /* margin-bottom: 0;
+                border-top: 0; 
+                border-bottom: 0;
+                padding: 0 0 5px; */
+                display: none;
+            }
+            .gfield_error {
+                max-width: 100% !important;
+                background-color: inherit !important;
+                margin-bottom: 0 !important;
+                border-top: 0 !important;
+                border-bottom: 0 !important;
+                padding-bottom: 0 !important;
+                padding-top: 0 !important;
+                min-width: 100% !important;
+                .validation_message {
+                    max-width: 100% !important;
+                    padding-right: 39px !important;
+                    padding-top: 0;
+                    margin-top: -14px;
+                    text-align: right;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .gform_confirmation_message {
+            padding-top: 0px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+            p {
+                line-height: 28px;
+            }
+            button {
+                background-color: #3CB04E;
+                width: 190px;
+                height: 59px;
+                font-family: $primary-font;
+                color: $white;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 50px;
+                position: absolute;
+                border: 0;
+                bottom: -29px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+    hr {
+        border-top: 1px solid #D9D9D9;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .cf-register {
+        padding: 0 15px;
+        &__body {
+            padding: 48px 24px 0;
+            width: 100%;
+            &__capital-risk {
+                margin: 30px auto 0;
+            }
+        }
+    }
+}

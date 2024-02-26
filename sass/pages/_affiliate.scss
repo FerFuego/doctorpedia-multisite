@@ -1,0 +1,93 @@
+.affiliate-page {
+    position: relative;
+    display: block;
+    //background-color: $light-grey-2;
+
+    &__rectangle-left{
+        position: absolute;
+        top: 350px;
+        left: 0;
+        z-index: 0;
+    }
+    &__rectangle-center{
+        position: absolute;
+        top: 190px;
+        left: 30%;
+        z-index: 0;
+    }
+    &__rectangle-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    // Moedification Modules
+    .m-landing-services {
+
+        // mobile
+        @media (max-width: $mobile) {
+            padding: 0 15px 100px;
+        }
+        
+        &__title {
+            font-family: $primary-font;
+            font-weight: $bold;
+            font-size: 32px;
+            line-height: 1.3em;
+            text-align: center;
+            letter-spacing: 1px;
+            color: $primary-black;
+            width: 100%;
+            max-width: 567px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .m-landing-testimonials {
+        padding-bottom: 70px;
+        &__title {
+            font-family: $primary-font;
+            font-weight: $bold;
+            font-size: 32px;
+            line-height: 1.3em;
+            text-align: center;
+            letter-spacing: 1px;
+            color: $primary-black;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    // gravity form confirmation
+    .gform_confirmation_wrapper {
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-family: $primary-font;
+                font-weight: $bold;
+                font-size: 30px;
+                line-height: 1.5em;
+                color: $primary-pink;
+                margin: 5px 0;
+                text-align: center;
+            }
+            p {
+                font-family: $primary-font;
+                font-weight: $semibold;
+                font-size: 18px;
+                line-height: 1.5em;
+                color: $opaque-grey-2;
+                margin-bottom: 8px;
+                text-align: center;
+            }
+        }
+
+    }
+}

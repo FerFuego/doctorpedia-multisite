@@ -1,0 +1,81 @@
+{
+    "key": "group_5f7b69facaea6",
+    "title": "API Vimeo",
+    "fields": [
+        {
+            "key": "field_5f7b6a0d9e7b7",
+            "label": "Client ID",
+            "name": "client_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f7b6a559e7b8",
+            "label": "Client Secret",
+            "name": "client_secret",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f7b6a709e7b9",
+            "label": "Access Token",
+            "name": "access_token",
+            "type": "text",
+            "instructions": "After install plugin not forget run composer install and npm install, into plugin.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-api-vimeo"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "After install plugin not forget run composer install and npm install, into plugin.",
+    "modified": 1605643645
+}

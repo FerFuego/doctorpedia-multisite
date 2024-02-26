@@ -1,0 +1,65 @@
+.comment-container{
+    padding: 20px 0;
+    display: flex;
+    //Mobile
+    @media (max-width: $mobile){
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .comment-selfie{
+        vertical-align: top;
+        margin-right: 30px;
+        height: 80px;
+        //Mobile
+        @media (max-width: $mobile){
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .comment-author{
+        width: 100%;
+        vertical-align: top;
+        max-width: 600px;
+        h3{
+            color: $primary-color !important;
+            font-size: 20px;
+            padding-bottom: 6px;
+            font-weight: $regular;
+        }
+        .comment-text{
+            font-family: $primary-font;
+            font-size: 14px;
+            line-height: 1.8;
+            word-spacing: 1.3px;
+        }
+        .comment-rating{
+            display: inline-block;
+            font-family: $primary-font;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        .comment-star{
+            display: inline-block;
+            margin-top: 10px;
+            width: 49.5%;
+
+            //mobile
+            @media (max-width: $mobile){
+                text-align: left;
+                width: auto;
+            }
+            img{
+                height: 15px;
+                margin-left: 5px;
+                vertical-align: bottom;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.highlight-channels {
+    margin: 0 auto 100px;
+    padding: 0 0 30px !important;
+    width: 100%;
+    .header {
+        padding: 25px 0 !important;
+        margin-top: 0;
+    }
+    .body {
+        display: flex;
+        align-items: stretch;
+        margin: 0;
+        .blog-post-preview {
+            display: flex !important;
+            margin-bottom: 0;
+            .content {
+                padding-bottom: 50px !important;
+            }
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+            
+            &:nth-child(3n+1) {
+                margin-left: 0;
+            }
+            
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+        .content {
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    &.turquoise {
+        background: linear-gradient(to bottom, #fff 0%, #fff 20%, #fff 40%, $turquoise 30%, $turquoise 100%);
+        @media ( max-width: $mobile ) { 
+            padding: 0 15px;
+            background: linear-gradient(to bottom, #fff 0%, #fff 15%, #fff 5%, $turquoise 5%, $turquoise 100%);
+        }
+    }
+    &.pink {
+        background: linear-gradient(to bottom, #fff 0%, #fff 15%, #fff 5%, $primary-color 5%, $primary-color 100%);
+        @media ( max-width: $mobile ) { 
+            padding: 0 15px;
+        }
+    }
+}
+
+@media ( max-width: $mobile ) {
+
+    .highlight-channels {
+        margin: 0 -4% 30px !important;
+        width: 108% !important;
+        .header {
+            padding: 25px 15px !important;
+            margin-top: 0;
+        }
+        .body {
+            align-items: center !important;
+            .blog-post-preview {
+                margin-left: 15px !important;
+				margin-right: 15px !important;
+            }
+        }
+    }
+    .featured-article-mobile {
+        .blog-posts-preview-container {
+            padding: 0 15px;
+            .blog-post-preview {
+                max-width: calc(100% - 30px) !important;
+            }
+        }
+    }
+}

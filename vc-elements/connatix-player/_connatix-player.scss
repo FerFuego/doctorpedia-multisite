@@ -1,0 +1,13 @@
+.connatix-container{
+    margin-top: 50px; 
+    width: 100%;
+    h2{
+        font-family: $primary-font;
+        font-size: 30px;
+        padding: 25px 0;
+    }
+    @media (max-width: $tablet){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
